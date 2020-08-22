@@ -1,170 +1,217 @@
-@font-face{ /*ES LA FUENTE QUE SE USA EN TODO EL ENTORNO*/
-    font-family: "Personalizada";
-    src: url(../fuentes/CaviarDreams.ttf);
-}
-
-body {
-    font-family: Personalizada;
-    overflow-x: hidden;
-    left: 0;
-}
-
-#header{
-   /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
+    @font-face {
+        /*ES LA FUENTE QUE SE USA EN TODO EL ENTORNO*/
+        font-family: "Personalizada";
+        src: url(../fuentes/CaviarDreams.ttf);
+    }
+    
+    body {
+        font-family: Personalizada;
+        overflow-x: hidden;
+        left: 0;
+    }
+    
+    #header {
+        /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
     width: 100%;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;*/
-    width: 100%;
-    height: 760px;
-    position: static;
-    overflow: hidden;
-    background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
-    margin-top: -50px;
-}
-
-video{
-    width: 100%;
-    height: 759px;
-    object-fit: cover;
-    top: 0;
-    overflow: hidden;
-}
-
-.absolute{
-    width: 100%;
-    height: 1000px;
-    top: 0;
-    right: 0;
-    position: absolute;
-    text-align: center;
-    z-index: -100;  
-    justify-content: center;
-}
-
-
-#quienes{
-    width: 100%;
-    background-image: url(../img/efectowave.png);
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-}
-.social-buttons ul li{
-    list-style: none;
-    display: inline;
-}
-
-.social-buttons{
-    text-align: left;
-}
-
-.social-buttons ul {
-    float: left;
-    width: 100%;
-    padding: 4% 10% 0 0;
-}
-
-.social-buttons i{
-    font-size: 40px;
-    color: #8B4513;
-    padding-right: 6%;
-}
-
-.social-buttons i:hover{
-    font-size: 40px;
-    color: #D2691E ;
-}
-
-.social-buttons a{
-    font-size: 40px;
-    text-decoration: none;
-}
-
-#servicios-internos{
-    text-align: center;
-    width: 60%;
-}
-
-#quienes .h2{
-    text-align: center;
-}
-
-nav a{
-    font-size: 120%;
-}
-
-.iconos-servicios{
-    text-align: center;
-}
-
-.quienes-iconos{
-    text-align: center;
-    float: inherit;
-}
-
-#Fike{
-    font-size: 165%;
-}
-
-#Ware{
-    font-size: 165%;
-}
-
-#servicios .h2  {
-    text-align: center;
-}
-
-#navbar {
-    overflow: hidden;
-    padding: 10px; /* Large padding which will shrink on scroll (using JS) */
-    transition: 0.4s; /* Adds a transition effect when the padding is decreased */
-    width: 100%;
-    top: 0; /* At the top */
-    z-index: 99;
- 
-  }
-
-
-  #contacto{
-    width: 100%;
-    background: #fd746c;  /* fallback for old browsers */
-    background: linear-gradient(to right, #ffac63, #fd8413); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        width: 100%;
+        height: 760px;
+        position: static;
+        overflow: hidden;
+        background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+        margin-top: -50px;
+    }
     
-  }
-
-  .ns{
-    background: #ff7e5f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #feb47b, #ff7e5f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    video {
+        width: 100%;
+        height: 759px;
+        object-fit: cover;
+        top: 0;
+        overflow: hidden;
+    }
     
-  }
-
- footer{
-    background: linear-gradient(to right, #d9601a, #d94e4e);
-    text-align: center;
-}
-
-#header-textos-3{
-    text-align: center;
-}
-
-#header-textos-3 p{
-   display: inline;
-   font-size: 360%;
-   text-align: center;
-   color: #fdf8f2;
-   font-weight: 800;
-}
-
-#navbarNav li a{
-    color: white;
-    font-weight: 500;
-    padding-right: 15px;
-    padding-left: 15px;
-}
-
-#navbarNav li a:hover{
-    color: #d47a05;
-    font-weight: 500;
-}
+    .absolute {
+        width: 100%;
+        height: 1000px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        z-index: -100;
+        justify-content: center;
+    }
+    
+    #quienes {
+        width: 100%;
+        background-image: url(../img/efectowave.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .social-buttons ul li {
+        list-style: none;
+        display: inline;
+    }
+    
+    .social-buttons {
+        text-align: left;
+    }
+    
+    .social-buttons ul {
+        float: left;
+        width: 100%;
+        padding: 4% 10% 0 0;
+    }
+    
+    .social-buttons i {
+        font-size: 40px;
+        color: #8B4513;
+        padding-right: 6%;
+    }
+    
+    .social-buttons i:hover {
+        font-size: 40px;
+        color: #D2691E;
+    }
+    
+    .social-buttons a {
+        font-size: 40px;
+        text-decoration: none;
+    }
+    
+    #servicios-internos {
+        text-align: center;
+        width: 60%;
+    }
+    
+    #quienes .h2 {
+        text-align: center;
+    }
+    
+    nav a {
+        font-size: 120%;
+    }
+    
+    .iconos-servicios {
+        text-align: center;
+    }
+    
+    .quienes-iconos {
+        text-align: center;
+        float: inherit;
+    }
+    
+    #Fike {
+        font-size: 165%;
+    }
+    
+    #Ware {
+        font-size: 165%;
+    }
+    
+    #servicios .h2 {
+        text-align: center;
+    }
+    
+    #navbar {
+        overflow: hidden;
+        padding: 10px;
+        /* Large padding which will shrink on scroll (using JS) */
+        transition: 0.4s;
+        /* Adds a transition effect when the padding is decreased */
+        width: 100%;
+        top: 0;
+        /* At the top */
+        z-index: 99;
+    }
+    
+    #contacto {
+        width: 100%;
+        background-image: linear-gradient(to right, hsla(28, 100%, 69%, 0.479), hsla(29, 98%, 50%, 0.534)), url(../img/CirculoFondo.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .ns {
+        background: #ff7e5f;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #feb47b, #ff7e5f);
+        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    }
+    
+    footer {
+        background: linear-gradient(to right, #d9601a, #d94e4e);
+        text-align: center;
+    }
+    
+    #header-textos-3 {
+        text-align: center;
+    }
+    
+    #header-textos-3 p {
+        display: inline;
+        font-size: 360%;
+        text-align: center;
+        color: #fdf8f2;
+        font-weight: 800;
+    }
+    
+    #navbarNav li a {
+        color: white;
+        font-weight: 500;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    
+    #navbarNav li a:hover {
+        color: #d47a05;
+        font-weight: 500;
+    }
+    
+    @media only screen and (min-width: 1500px) {
+        #header {
+            /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
+        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;*/
+            width: 100%;
+            height: 1002px;
+            position: static;
+            overflow: hidden;
+            background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+            margin-top: -50px;
+        }
+        video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            top: 0;
+            overflow: hidden;
+        }
+        .absolute {
+            width: 100%;
+            height: 1000px;
+            top: 0;
+            right: 0;
+            position: absolute;
+            text-align: center;
+            z-index: -100;
+            justify-content: center;
+        }
+        #navbarNav li a {
+            color: white;
+            font-weight: 500;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+        #Navbarnombres {
+            padding-left: 65%;
+        }
+    }
