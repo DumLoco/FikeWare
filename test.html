@@ -8,7 +8,7 @@
       <a href="#eng" onclick="window.location.href = '#eng'" data-reload>English</a>
       <a href="#es" onclick="window.location.href = '#es'" data-reload>Español</a>   
     
-      <p id="hi">
+      <p id="elemento1">
         español!
       </p> 
 
@@ -28,9 +28,9 @@
          // window hash que define el idioma
          if (window.location.hash) {
             if (window.location.hash === "#es") {
-                hi.textContent = language.es.textoPrueba;
+                elemento1.textContent = language.es.textoPrueba;
             } else if (window.location.hash === "#eng") {
-                hi.textContent = language.eng.textoPrueba;
+                elemento1.textContent = language.eng.textoPrueba;
             }
          }
          
