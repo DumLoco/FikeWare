@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>asd</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+      <a href="#eng" onclick="window.location.href = '#eng'" data-reload>English</a>
+      <a href="#es" onclick="window.location.href = '#es'" data-reload>Español</a>   
+    
+      <p id="hi">
+        español!
+      </p> 
+
+      <script>
+          // anchors para reload
+          var dataReload = document.querySelectorAll("[data-reload]");
+
+          // objeto con diccionario
+         var language = {
+          eng: {
+            textoPrueba: "english!"
+          },
+          es: {
+            textoPrueba: "español!"
+          }
+         };
+         // window hash que define el idioma
+         if (window.location.hash) {
+            if (window.location.hash === "#es") {
+                hi.textContent = language.es.textoPrueba;
+            } else if (window.location.hash === "#eng") {
+                hi.textContent = language.eng.textoPrueba;
+            }
+         }
+         
+        // para que no refreshee al mismo tiempo que cambia el hash
+         let reloadPage = () => {
+        setTimeout(function () {
+        location.reload();
+            }, 100);
+          }
+
+         // define language reload onclick iterator 
+         for (i = 0; i <= dataReload.length; i++) {
+            dataReload[i].onclick = reloadPage 
+        }
+
+
+    </script>
+    </body>
+    </html>
