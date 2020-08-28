@@ -44,16 +44,16 @@
                 <!--Para agregar esta barra a la derecha agregamos ml-auto en la clase-->
                 <ul id="Navbarnombres" class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#header">Inicio</a>
+                        <a class="nav-link" id="inicio2" href="#header">Inicio</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" id="quienes2" href="#quienes">Quienes Somos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#servicios">Servicios</a>
+                        <a class="nav-link" id="servicios2" href="#servicios">Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#contacto">Contacto</a>
+                        <a class="nav-link" id="contacto2" href="#contacto">Contacto</a>
                     </li>
                 </ul>
             </div>
@@ -267,21 +267,30 @@
             // objeto con diccionario
            let language = {
             eng: {
-              fraseprueba: "Cool and sexy phrase!"
+              fraseprueba: "Cool and sexy phrase!",
+              quienes2: "About Us",
+              inicio2: "Home",
+              servicios2: "Services",
+              contacto2: "Contact"
             },
             es: {
-              fraseprueba: "Frase piola y sexy!"
+              fraseprueba: "Frase piola y sexy!",
+              quienes2: "Quienes Somos",
+              inicio2: "Inicio",
+              servicios2: "Servicios",
+              contacto2: "Contacto"
             }
            };
            // window hash que define el idioma
            if (window.location.hash) {
-              if (window.location.hash === "#es") {
-                fraseprueba.textContent = language.es.fraseprueba;
-              } else if (window.location.hash === "#eng") {
-                fraseprueba.textContent = language.eng.fraseprueba;
-              }
+            fraseprueba.textContent = (window.location.hash === "#es") ? language.es.fraseprueba : language.eng.fraseprueba
+            quienes2.textContent = (window.location.hash === "#es") ? language.es.quienes2 : language.eng.quienes2
+            inicio2.textContent = (window.location.hash === "#es") ? language.es.inicio2 : language.eng.inicio2
+            servicios2.textContent = (window.location.hash === "#es") ? language.es.servicios2 : language.eng.servicios2
+            contacto2.textContent = (window.location.hash === "#es") ? language.es.contacto2 : language.eng.contacto2
+
            }
-           
+
           // para que no refreshee al mismo tiempo que cambia el hash
            let reloadPage = () => {
           setTimeout(function () {
