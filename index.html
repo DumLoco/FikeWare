@@ -85,7 +85,7 @@
             <div class="row" style="text-align: justify;">
                 <div id="quienes-nos" class="col-md-5">
                     <div class="h2">
-                        <p>Nosotros</p>
+                        <p id="nosotros" >Nosotros</p>
                     </div>
                     <p>Lorem ipdum dolor sit amet consectetur adipisicing elit. Vero minima necessitatibus qui, quam suscipit fugiat dolorem odio, animi, dolore consequatur corporis vel. Earum eligendi odio at repellendus sit, totam possimus?</p>
 
@@ -100,7 +100,7 @@
                 </div>
                 <div id="quienes-obj" class="col-md-5">
                     <div class="h2">
-                        <p>Objetivo</p>
+                        <p id="objetivo">Objetivo</p>
                     </div>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, dolore iusto quos impedit nulla exercitationem maiores quibusdam quidem reiciendis, ducimus maxime sunt error atque eligendi provident. Veniam, adipisci! Voluptates,
                         alias.
@@ -286,6 +286,8 @@
               mensaje: "Message",
               derechos: " - All rights reserved 2020",
               enviar: "Send",
+              nosotros: "About Us",
+              objetivo: "Our Mission",
             },
             es: {
               fraseprueba: "Frase piola y sexy!",
@@ -307,6 +309,8 @@
               mensaje: "Mensaje",
               derechos: " - Todos los derechos reservados 2020",
               enviar: "Enviar",
+              nosotros: "Nosotros",
+              objetivo: "Objetivo",
             }
            };
            // window hash que define el idioma
@@ -330,6 +334,8 @@
             mensaje.textContent = (window.location.hash === "#es") ? language.es.mensaje : language.eng.mensaje
             derechos.textContent = (window.location.hash === "#es") ? language.es.derechos : language.eng.derechos
             enviar.textContent = (window.location.hash === "#es") ? language.es.enviar : language.eng.enviar
+            nosotros.textContent = (window.location.hash === "#es") ? language.es.nosotros : language.eng.nosotros
+            objetivo.textContent = (window.location.hash === "#es") ? language.es.objetivo : language.eng.objetivo
            }
 
           // para que no refreshee al mismo tiempo que cambia el hash
