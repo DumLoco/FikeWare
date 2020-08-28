@@ -195,7 +195,7 @@
                                 <input id="email" type="email" name="email" placeholder="Email" class="form-control" required>
                             </div>
                             <div class="form-group">
-                                <input id="asunto" type="text" name="asunto" placeholder="Asunto" class="form-control" required>
+                                <input id="asunto2" type="text" name="asunto" placeholder="Asunto" class="form-control" required>
                             </div>
                             <div class="form-group" required>
                                 <!--Aca solo va un mensaje por eso textarea-->
@@ -203,7 +203,7 @@
                                 <textarea id="mensaje" rows="10" cols="30" name="mensaje" placeholder="Mensaje" class="form-control"></textarea>
                             </div>
                             <!--btn-block hace que ocupe todo el ancho y lo otro de la class, es como arriba para dar estilos-->
-                            <button type="submit" class="btn btn-outline-secondary">Enviar</button>
+                            <button id="enviar" type="submit" class="btn btn-outline-secondary">Enviar</button>
                         </div>
                     </form>
                 </div>
@@ -245,7 +245,7 @@
 
     <!--FOOTER-->
     <footer>
-        <a href="https://www.fikeware.com" target="blank">&copy; FikeWare</a> - Todos los derechos reservados 2020
+        <a href="https://www.fikeware.com" target="blank">&copy; FikeWare</a><p id="derechos"> - Todos los derechos reservados 2020</p>
     </footer>
 
 
@@ -282,9 +282,10 @@
               formcontact: "Contact",
               sabermas: "If you wish to know more about our services, plase send us a message!",
               nombre: "Name and Surname",
-              email: "Email",
-              asunto: "Subject",
+              asunto2: "Subject",
               mensaje: "Message",
+              derechos: " - All rights reserved 2020",
+              enviar: "Send",
             },
             es: {
               fraseprueba: "Frase piola y sexy!",
@@ -302,9 +303,10 @@
               formcontact: "Contacto",
               sabermas: "Si queres saber mas sobre nuestros servicios, te invitamos a mandar tu consulta aca.",
               nombre: "Nombre y Apellido",
-              email: "Email",
-              asunto: "Asunto",
+              asunto2: "Asunto",
               mensaje: "Mensaje",
+              derechos: " - Todos los derechos reservados 2020",
+              enviar: "Enviar",
             }
            };
            // window hash que define el idioma
@@ -324,9 +326,10 @@
             formcontact.textContent = (window.location.hash === "#es") ? language.es.formcontact : language.eng.formcontact
             sabermas.textContent = (window.location.hash === "#es") ? language.es.sabermas : language.eng.sabermas
             nombre.textContent = (window.location.hash === "#es") ? language.es.nombre : language.eng.nombre
-            email.textContent = (window.location.hash === "#es") ? language.es.email : language.eng.email
-            asunto.textContent = (window.location.hash === "#es") ? language.es.asunto : language.eng.asunto
+            asunto2.textContent = (window.location.hash === "#es") ? language.es.asunto2 : language.eng.asunto2
             mensaje.textContent = (window.location.hash === "#es") ? language.es.mensaje : language.eng.mensaje
+            derechos.textContent = (window.location.hash === "#es") ? language.es.derechos : language.eng.derechos
+            enviar.textContent = (window.location.hash === "#es") ? language.es.enviar : language.eng.enviar
            }
 
           // para que no refreshee al mismo tiempo que cambia el hash

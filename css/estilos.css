@@ -32,6 +32,10 @@ video {
     overflow: hidden;
 }
 
+#derechos {
+    display: inline-block;
+}
+
 .absolute {
     width: 100%;
     height: 1000px;
