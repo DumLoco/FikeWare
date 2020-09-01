@@ -109,10 +109,10 @@ let objetivo3 = document.getElementById("objetivo3");
             enviar.textContent = (window.location.hash === "#es") ? language.es.enviar : language.eng.enviar
             nosotros.textContent = (window.location.hash === "#es") ? language.es.nosotros : language.eng.nosotros
             objetivo.textContent = (window.location.hash === "#es") ? language.es.objetivo : language.eng.objetivo
-            objetivo2.textContent = (window.location.hash === "#es") ? language.es.objetivo2 : language.eng.objetivo2
-            objetivo3.textContent = (window.location.hash === "#es") ? language.es.objetivo3 : language.eng.objetivo3
             nosotros2.textContent = (window.location.hash === "#es") ? language.es.nosotros2 : language.eng.nosotros2
-            nosotros3.textContent = (window.location.hash === "#es") ? language.es.nosotros3 : language.eng.nosotros3                                             
+            nosotros3.textContent = (window.location.hash === "#es") ? language.es.nosotros3 : language.eng.nosotros3     
+            objetivo2.textContent = (window.location.hash === "#es") ? language.es.objetivo2 : language.eng.objetivo2
+            objetivo3.textContent = (window.location.hash === "#es") ? language.es.objetivo3 : language.eng.objetivo3                                                    
            }
 
           // para que no refreshee al mismo tiempo que cambia el hash
