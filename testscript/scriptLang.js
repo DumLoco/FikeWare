@@ -52,8 +52,8 @@ let language = {
     objetivo: "Objetivo",
     nosotros2: "Somos un equipo de desarrollo que puede ofrecerte soluciones digitales que se adapten a tus necesidades. Podemos plasmar la escencia de tu proyecto para hacer realidad tus ideas, utilizando la solución tecnológica más adecuada según tu contexto particular.",
     nosotros3: "Estamos convencidos de que el mejor producto nace de la interacción constante con nuestro cliente, sin descuidar el factor humano, para así llegar al mejor resultado posible.",
-    objetivo2: "Nuestra meta constante es ofrecer un producto único, que nos diferencia tanto a nosotros como a nuestros clientes del resto de la competencia. Crear productos e ideas nuevas, que se adapten a las necesidades de todos para dar el mayor aporte a la comunidad.",    
-    objetivo3: "Para ello, nos manejamos con metodologías ágiles y siempre receptivos ante cualquier tipo de feedback de nuestros clientes y partners, dando respuesta inmediata frente a cualquier sitaución que pueda surgir.",
+    objetivo2: "Nuestra meta constante es ofrecer un producto único, que nos diferencie tanto a nosotros como a nuestros clientes del resto de la competencia. Proyectar creaciones e ideas nuevas, que se adapten a las necesidades de todos para dar el mayor aporte a la comunidad.",    
+    objetivo3: "Para ello, nos manejamos con metodologías ágiles y siempre receptivos ante cualquier tipo de feedback de nuestros clientes y partners, dando respuesta inmediata frente a cualquier situación que pueda surgir.",
   }
  };
 
