@@ -25,7 +25,7 @@ let language = {
     nosotros2: "We are a development team that can offer you digital solutions that take into account your particular needs. We can and will capture the escence of your project in order to transform your ideas into reality, making use of the most adequate technology in each particular context.",
     nosotros3: "We are certain that the best product is born from the constant interaction with our clients, without ever disregarding the human factor. In that way, we can always reach the best possible result.",
     objetivo2: "Our constant goal is to offer a unique product, which can differentiate us and our client from the rest of the competition. To create new products and ideas, always trying to adapt them to everyone's needs, in order to give back to the comunity.",
-    objetivo2: "In order to accomplish that, we work with agile methodology, always open to whatever feedback we can get from our clients and partners. We also give immediate response to every situation that could arise.",
+    objetivo3: "In order to accomplish that, we work with agile methodology, always open to whatever feedback we can get from our clients and partners. We also give immediate response to every situation that could arise.",
 
   },
   es: {
@@ -78,6 +78,10 @@ let derechos = document.getElementById("derechos");
 let enviar = document.getElementById("enviar");
 let nosotros = document.getElementById("nosotros");
 let objetivo = document.getElementById("objetivo");
+let nosotros2 = document.getElementById("nosotros2");
+let nosotros3 = document.getElementById("nosotros3");
+let objetivo2 = document.getElementById("objetivo2");
+let objetivo3 = document.getElementById("objetivo3");
 
            // anchors para reload
            let dataReload = document.querySelectorAll("[data-reload]");
@@ -105,6 +109,10 @@ let objetivo = document.getElementById("objetivo");
             enviar.textContent = (window.location.hash === "#es") ? language.es.enviar : language.eng.enviar
             nosotros.textContent = (window.location.hash === "#es") ? language.es.nosotros : language.eng.nosotros
             objetivo.textContent = (window.location.hash === "#es") ? language.es.objetivo : language.eng.objetivo
+            objetivo2.textContent = (window.location.hash === "#es") ? language.es.objetivo2 : language.eng.objetivo2
+            objetivo3.textContent = (window.location.hash === "#es") ? language.es.objetivo3 : language.eng.objetivo3
+            nosotros2.textContent = (window.location.hash === "#es") ? language.es.nosotros2 : language.eng.nosotros2
+            nosotros3.textContent = (window.location.hash === "#es") ? language.es.nosotros3 : language.eng.nosotros3                                             
            }
 
           // para que no refreshee al mismo tiempo que cambia el hash
