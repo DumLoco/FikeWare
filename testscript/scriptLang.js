@@ -1,7 +1,7 @@
 // diccionario
 let language = {
   eng: {
-    fraseprueba: "Cool and sexy phrase!",
+    fraseprueba: "We make your ideas a reality.",
     quienes2: "About Us",
     inicio2: "Home",
     servicios2: "Services",
@@ -24,7 +24,7 @@ let language = {
     objetivo: "Our Mission",
   },
   es: {
-    fraseprueba: "Frase piola y sexy!",
+    fraseprueba: "Concretamos tus ideas.",
     quienes2: "Quienes Somos",
     inicio2: "Inicio",
     servicios2: "Servicios",
