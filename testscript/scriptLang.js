@@ -1,7 +1,7 @@
 // diccionario
 let language = {
   eng: {
-    fraseprueba: "We make your ideas a reality.",
+    fraseprueba: "We transform your ideas into reality.",
     quienes2: "About Us",
     inicio2: "Home",
     servicios2: "Services",
