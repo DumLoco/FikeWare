@@ -29,7 +29,7 @@ let language = {
 
   },
   es: {
-    fraseprueba: "Concretamos tus ideas.",
+    fraseprueba: "Hacemos realidad tus ideas.",
     quienes2: "Quienes Somos",
     inicio2: "Inicio",
     servicios2: "Servicios",
