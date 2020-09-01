@@ -6,7 +6,7 @@ let language = {
     inicio2: "Home",
     servicios2: "Services",
     contacto2: "Contact",
-    nuestros2: "We create and develop solutions based on a vast array of technologies, hence we can adapt quickly to the needs of your business or organization. We are a young team who's main focus lies at solving any type of challenge.",
+    nuestros2: "We create and develop solutions based on a great number of technologies, Therefore we can adapt quickly to the needs of your business or organization. We are a young team whose main focus lies in solving any type of challenge.",
     nuestros3: "Our services",
     creaciones: "Our creations",
     mobile2: "Mobile Development",
@@ -22,6 +22,11 @@ let language = {
     enviar: "Send",
     nosotros: "About Us",
     objetivo: "Our Mission",
+    nosotros2: "We are a development team that can offer you digital solutions that take into account your particular needs. We can and will capture the escence of your project in order to transform your ideas into reality, making use of the most adequate technology in each particular context.",
+    nosotros3: "We are certain that the best product is born from the constant interaction with our clients, without ever disregarding the human factor. In that way, we can always reach the best possible result.",
+    objetivo2: "Our constant goal is to offer a unique product, which can differentiate us and our client from the rest of the competition. To create new products and ideas, always trying to adapt them to everyone's needs, in order to give back to the comunity.",
+    objetivo3: "In order to accomplish that, we work with agile methodology, always open to whatever feedback we can get from our clients and partners. We also give immediate response to every situation that could arise.",
+
   },
   es: {
     fraseprueba: "Concretamos tus ideas.",
@@ -29,7 +34,7 @@ let language = {
     inicio2: "Inicio",
     servicios2: "Servicios",
     contacto2: "Contacto",
-    nuestros2: "Diseñamos y desarrollamos soluciones a partir de diversas tecnologias, por lo cual podemos adaptarnos a las necesidades de su organizacion. Somos un equipo joven enfocado en resolver cualquier tipo de desafío.",
+    nuestros2: "Diseñamos y desarrollamos soluciones a partir de diversas tecnologías, por lo cual podemos adaptarnos a las necesidades de tu organización. Somos un equipo joven enfocado en resolver cualquier tipo de desafío.",
     nuestros3: "Nuestros Servicios",
     creaciones: "Nuestras creaciones",
     mobile2: "Desarrollo Mobile",
@@ -45,6 +50,10 @@ let language = {
     enviar: "Enviar",
     nosotros: "Nosotros",
     objetivo: "Objetivo",
+    nosotros2: "Somos un equipo de desarrollo que puede ofrecerte soluciones digitales que se adapten a tus necesidades. Podemos plasmar la escencia de tu proyecto para hacer realidad tus ideas, utilizando la solución tecnológica más adecuada según tu contexto particular.",
+    nosotros3: "Estamos convencidos de que el mejor producto nace de la interacción constante con nuestro cliente, sin descuidar el factor humano, para así llegar al mejor resultado posible.",
+    objetivo2: "Nuestra meta constante es ofrecer un producto único, que nos diferencia tanto a nosotros como a nuestros clientes del resto de la competencia. Crear productos e ideas nuevas, que se adapten a las necesidades de todos para dar el mayor aporte a la comunidad.",    
+    objetivo3: "Para ello, nos manejamos con metodologías ágiles y siempre receptivos ante cualquier tipo de feedback de nuestros clientes y partners, dando respuesta inmediata frente a cualquier sitaución que pueda surgir.",
   }
  };
 
@@ -69,6 +78,10 @@ let derechos = document.getElementById("derechos");
 let enviar = document.getElementById("enviar");
 let nosotros = document.getElementById("nosotros");
 let objetivo = document.getElementById("objetivo");
+let nosotros2 = document.getElementById("nosotros2");
+let nosotros3 = document.getElementById("nosotros3");
+let objetivo2 = document.getElementById("objetivo2");
+let objetivo3 = document.getElementById("objetivo3");
 
            // anchors para reload
            let dataReload = document.querySelectorAll("[data-reload]");
@@ -96,6 +109,10 @@ let objetivo = document.getElementById("objetivo");
             enviar.textContent = (window.location.hash === "#es") ? language.es.enviar : language.eng.enviar
             nosotros.textContent = (window.location.hash === "#es") ? language.es.nosotros : language.eng.nosotros
             objetivo.textContent = (window.location.hash === "#es") ? language.es.objetivo : language.eng.objetivo
+            objetivo2.textContent = (window.location.hash === "#es") ? language.es.objetivo2 : language.eng.objetivo2
+            objetivo3.textContent = (window.location.hash === "#es") ? language.es.objetivo3 : language.eng.objetivo3
+            nosotros2.textContent = (window.location.hash === "#es") ? language.es.nosotros2 : language.eng.nosotros2
+            nosotros3.textContent = (window.location.hash === "#es") ? language.es.nosotros3 : language.eng.nosotros3                                             
            }
 
           // para que no refreshee al mismo tiempo que cambia el hash
