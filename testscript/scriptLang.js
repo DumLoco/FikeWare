@@ -22,6 +22,10 @@ let language = {
     enviar: "Send",
     nosotros: "About Us",
     objetivo: "Our Mission",
+    nosotros2: "We are a development team that can offer you digital solutions that take into account your particular needs. We can and will capture the escence of your project in order to transform your ideas into reality, making use of the most adequate technology in each particular context.",
+    nosotros3: "We are certain that the best product is born from the constant interaction with our clients, without ever disregarding the human factor. In that way, we can always reach the best possible result.",
+    objetivo2: "Our constant goal is to offer a unique product, which can differentiate us and our client from the rest of the competition. To create new products and ideas, always trying to adapt them to everyone's needs, in order to give back to the comunity.",
+
   },
   es: {
     fraseprueba: "Concretamos tus ideas.",
@@ -29,7 +33,7 @@ let language = {
     inicio2: "Inicio",
     servicios2: "Servicios",
     contacto2: "Contacto",
-    nuestros2: "Diseñamos y desarrollamos soluciones a partir de diversas tecnologias, por lo cual podemos adaptarnos a las necesidades de su organizacion. Somos un equipo joven enfocado en resolver cualquier tipo de desafío.",
+    nuestros2: "Diseñamos y desarrollamos soluciones a partir de diversas tecnologías, por lo cual podemos adaptarnos a las necesidades de tu organización. Somos un equipo joven enfocado en resolver cualquier tipo de desafío.",
     nuestros3: "Nuestros Servicios",
     creaciones: "Nuestras creaciones",
     mobile2: "Desarrollo Mobile",
@@ -45,6 +49,9 @@ let language = {
     enviar: "Enviar",
     nosotros: "Nosotros",
     objetivo: "Objetivo",
+    nosotros2: "Somos un equipo de desarrollo que puede ofrecerte soluciones digitales que se adapten a tus necesidades. Podemos plasmar la escencia de tu proyecto para hacer realidad tus ideas, utilizando la solución tecnológica más adecuada según tu contexto particular.",
+    nosotros3: "Estamos convencidos de que el mejor producto nace de la interacción constante con nuestro cliente, sin descuidar el factor humano, para así llegar al mejor resultado posible.",
+    objetivo2: "Nuestra meta constante es ofrecer un producto único, que nos diferencia tanto a nosotros como a nuestros clientes del resto de la competencia. Crear productos e ideas nuevas, que se adapten a las necesidades de todos para dar el mayor aporte a la comunidad.",    
   }
  };
 
