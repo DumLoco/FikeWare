@@ -10,6 +10,9 @@ body {
     left: 0;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 #header {
     /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
 width: 100%;
