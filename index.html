@@ -55,11 +55,20 @@
                     <li class="nav-item">
                         <a class="nav-link" id="contacto2" href="#contacto">Contacto</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            Idioma
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#es" onclick="window.location.href = '#es'; return false;" data-reload>Español</a>
+                            <a class="dropdown-item" href="#eng" onclick="window.location.href = '#eng'; return false;" data-reload>Ingles</a>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-
+    
     <!--HEADER-->
     <section id="header">
         <div class="absolute">
@@ -72,8 +81,6 @@
             <!--Agrega un margin top de 5-->
             <div stlye="width= 100%" class="text-center" id="header-textos-3">
                 <p id="fraseprueba">Hacemos realidad tus ideas.</p>
-                <a href="#eng" onclick="window.location.href = '#eng'; return false;" data-reload>English</a>
-                <a href="#es" onclick="window.location.href = '#es'; return false;" data-reload>Español</a>
             </div>
         </div>
     </section>
