@@ -176,6 +176,11 @@ footer {
     padding-left: 15px;
 }
 
+#mundoLogo{
+    color: #d47a05;
+    filter: contrast(20%) hue-rotate(60deg) brightness(300%) saturate(100%);
+}
+
 #navbarNav li a:hover {
     color: #d47a05;
     font-weight: 500;
@@ -187,7 +192,7 @@ footer {
 }
 
 .dropdown-menu{
-    background-color:  hsla(26, 67%, 70%, 0.562);
+    background-color:  hsla(26, 81%, 72%, 0.068);
     border: none;
 }
 
