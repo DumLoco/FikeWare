@@ -30,6 +30,10 @@ $(document).ready(function() {
             $(".nav-link").css({
                 "color": "black"
             })
+            $(".logoMundo").css({
+                "filter": "contrast(60%) hue-rotate(170deg) saturate(800%)"
+            })
+
 
         } else {
             $(".navbar").css({
@@ -40,6 +44,10 @@ $(document).ready(function() {
             })
             $(".nav-link").css({
                 "color": "white"
+            })
+            $(".logoMundo").css({
+                "filter": "contrast(20%) hue-rotate(60deg) brightness(300%) saturate(100%)"
+               
             })
         }
     })
