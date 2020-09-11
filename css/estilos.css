@@ -176,6 +176,30 @@ footer {
     padding-left: 15px;
 }
 
+
+#Planes{
+    background-color: #fdf5ec;
+}
+
+.PlanesTodos{
+    display: flex;
+    justify-content: center;
+}
+
+.PlanesTodos .RectanguloPlanes{
+    background-color: rgb(255, 145, 0);
+    width: 25%;
+    margin: 20px;
+    text-align: center;
+    height: 600px;
+    transition: transform 0.5s ease;
+}
+
+.PlanesTodos .RectanguloPlanes:hover{
+    transform: translatey(-30px);
+    
+}
+
 #navbarNav li a:hover {
     color: #d47a05;
     font-weight: 500;
@@ -195,6 +219,10 @@ footer {
     color:black;
 }
 
+#PlanesContainer{
+    background-color: red;
+}
+
 @media only screen and (min-width: 1700px) {
     #header {
 /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
@@ -209,6 +237,7 @@ footer {
         background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
         margin-top: -50px;
     }
+    
     video {
         width: 100%;
         height: 100%;
@@ -222,7 +251,7 @@ footer {
         top: 0;
         right: 0;
         position: absolute;
-        text-align: center;
+        text-align: center ;
         z-index: -100;
         justify-content: center;
     }
