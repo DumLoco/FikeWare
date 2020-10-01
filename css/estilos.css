@@ -1,16 +1,16 @@
-@font-face {
+/*@font-face {
     /*ES LA FUENTE QUE SE USA EN TODO EL ENTORNO*/
-    font-family: "Personalizada";
-    src: url(../fuentes/CaviarDreams.ttf);
-}
 
-body {
+font-family: "Personalizada";
+src: url(../fuentes/CaviarDreams.ttf);
+
+}
+*/ body {
     font-family: 'Noto Sans JP', sans-serif;
     font-weight: 500;
     overflow-x: hidden;
 }
-
-html{
+html {
     scroll-behavior: smooth;
 }
 #header {
@@ -19,6 +19,7 @@ width: 100%;
 background-position: center;
 background-attachment: fixed;
 background-size: cover;*/
+    
     width: 100%;
     height: 760px;
     position: static;
@@ -26,7 +27,6 @@ background-size: cover;*/
     background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
     margin-top: -50px;
 }
-
 video {
     width: 100%;
     height: 759px;
@@ -34,11 +34,9 @@ video {
     top: 0;
     overflow: hidden;
 }
-
 #derechos {
     display: inline-block;
 }
-
 .absolute {
     width: 100%;
     height: 1000px;
@@ -49,7 +47,6 @@ video {
     z-index: -100;
     justify-content: center;
 }
-
 #quienes {
     width: 100%;
     background-image: url(../img/efectowave.png);
@@ -57,84 +54,72 @@ video {
     background-attachment: fixed;
     background-size: cover;
 }
-
 .social-buttons ul li {
     list-style: none;
     display: inline;
 }
-
 .social-buttons {
     text-align: left;
 }
-
 .social-buttons ul {
     float: left;
     width: 100%;
     padding: 4% 10% 0 0;
 }
-
 .social-buttons i {
     font-size: 40px;
     color: #8B4513;
     padding-right: 6%;
 }
-
 .social-buttons i:hover {
     font-size: 40px;
     color: #D2691E;
 }
-
 .social-buttons a {
     font-size: 40px;
     text-decoration: none;
 }
-
 #servicios-internos {
     text-align: center;
     width: 60%;
 }
-
 #quienes .h2 {
     text-align: center;
 }
-
 nav a {
     font-size: 120%;
 }
-
 .iconos-servicios {
     text-align: center;
 }
-
 .quienes-iconos {
     text-align: center;
     float: inherit;
 }
-
 #Fike {
     font-size: 165%;
 }
-
 #Ware {
     font-size: 165%;
 }
-
 #servicios .h2 {
     text-align: center;
 }
-
 #navbar {
     /*overflow: hidden;*/
+    
     padding: 10px;
     /* Large padding which will shrink on scroll (using JS) */
+    
     transition: 0.4s;
     /* Adds a transition effect when the padding is decreased */
+    
     width: 100%;
     top: 0;
     /* At the top */
+    
     z-index: 99;
 }
-
 #contacto {
     width: 100%;
     background-image: linear-gradient(to right, hsla(28, 100%, 69%, 0.479), hsla(29, 98%, 50%, 0.534)), url(../img/CirculoFondo.png);
@@ -142,25 +127,23 @@ nav a {
     background-attachment: fixed;
     background-size: cover;
 }
-
 .ns {
     background: #ff7e5f;
     /* fallback for old browsers */
+    
     background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
     /* Chrome 10-25, Safari 5.1-6 */
+    
     background: linear-gradient(to right, #feb47b, #ff7e5f);
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
-
 footer {
     background: linear-gradient(to right, #ffbb87, #fc7540);
     text-align: center;
 }
-
 #header-textos-3 {
     text-align: center;
 }
-
 #header-textos-3 p {
     display: inline;
     font-size: 360%;
@@ -168,18 +151,15 @@ footer {
     color: #fdf8f2;
     font-weight: 800;
 }
-
 #navbarNav li a {
     color: white;
     font-weight: 500;
     padding-right: 15px;
     padding-left: 15px;
 }
-
 #Planes {
     background-color: #fcecd9;
 }
-
 .PlanesTodos .RectanguloPlanes {
     background: linear-gradient(to bottom, #ffe2f6, #ffacb3);
     width: 25%;
@@ -192,105 +172,110 @@ footer {
     -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
 }
-
 .PlanesTodos .RectanguloPlanes:hover {
     transform: translatey(-30px);
 }
-
 #navbarNav li a:hover {
     color: #d47a05;
     font-weight: 500;
 }
-
 #navbarNav {
     position: relative;
     left: 30%;
 }
-
-.dropdown-menu{
-    background-color:  hsla(26, 81%, 72%, 0.068);
+.dropdown-menu {
+    background-color: hsla(26, 81%, 72%, 0.068);
     border: none;
 }
-
-.dropdown-menu a:hover{
-    color:black;
+.dropdown-menu a:hover {
+    color: black;
 }
-
-#PlanesContainer{
+#PlanesContainer {
     background-color: red;
 }
 
-    /*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
-
-    @media only screen and (min-width: 1700px) {
-        /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
-        #header {
-            width: 100%;
-            height: 1002px;
-            position: static;
-            overflow: hidden;
-            background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
-            margin-top: -50px;
-        }
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            overflow: hidden;
-        }
-        .absolute {
-            width: 100%;
-            height: 1000px;
-            top: 0;
-            right: 0;
-            position: absolute;
-            text-align: center;
-            z-index: -100;
-            justify-content: center;
-        }
-        #navbarNav li a {
-            color: white;
-            font-weight: 500;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        #navbarNav {
-            position: relative;
-            left: 60%;
-        }
-        #logo {
-            position: relative;
-            right: 25%;
-        }
-        .containersServicios {
-            width: 450px;
-            margin-right: 1.5%;
-            margin-left: 1.5%;
-            margin-top: 5%;
-            text-align: center;
-            margin-bottom: 5%;
-        }
-        .textosdefrases {
-            text-align: center;
-            padding: 6% 0;
-        }
-        .contenedorServicios{
-            display: flex;
-        }
-        .PlanesTodos {
-            display: flex;
-            justify-content: center;
-        }
-        .btnPlanBasico {
-            margin-bottom: 600px;
-        }
+/*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
+@media only screen and (min-width: 1700px) {
+    /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
+    
+    #header {
+        width: 100%;
+        height: 1002px;
+        position: static;
+        overflow: hidden;
+        background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+        margin-top: -50px;
     }
-    .RectanguloPlanes h1{
-        margin-bottom: 20%;
+    
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        overflow: hidden;
     }
-
-@media only screen and (max-width:1699px){ /*SIRVE PARA PANTALLES MENORES A 1700*/
+    
+    .absolute {
+        width: 100%;
+        height: 1000px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        z-index: -100;
+        justify-content: center;
+    }
+    
+    #navbarNav li a {
+        color: white;
+        font-weight: 500;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    
+    #navbarNav {
+        position: relative;
+        left: 60%;
+    }
+    
+    #logo {
+        position: relative;
+        right: 25%;
+    }
+    
+    .containersServicios {
+        width: 450px;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    
+    .textosdefrases {
+        text-align: center;
+        padding: 6% 0;
+    }
+    
+    .contenedorServicios {
+        display: flex;
+    }
+    
+    .PlanesTodos {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .btnPlanBasico {
+        margin-bottom: 600px;
+    }
+}
+.RectanguloPlanes h1 {
+    margin-bottom: 20%;
+}
+@media only screen and (max-width:1699px) {
+    /*SIRVE PARA PANTALLES MENORES A 1700*/
+    
     .containersServicios {
         width: 335px;
         margin-right: 1%;
@@ -299,21 +284,27 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    
+    .contenedorServicios {
         display: flex;
     }
+    
     .PlanesTodos {
         display: flex;
         justify-content: center;
     }
+    
     .btnPlanBasico {
         margin-bottom: 600px;
     }
-    .RectanguloPlanes h1{
+    
+    .RectanguloPlanes h1 {
         margin-bottom: 20%;
     }
 }
-@media only screen and (max-width: 1300px){ /*SIRVE PARA PANTALLES MENORES A 1300*/
+@media only screen and (max-width: 1300px) {
+    /*SIRVE PARA PANTALLES MENORES A 1300*/
+    
     .containersServicios {
         width: 265px;
         margin-right: 1%;
@@ -322,21 +313,27 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    
+    .contenedorServicios {
         display: flex;
     }
+    
     .PlanesTodos {
         display: flex;
         justify-content: center;
     }
+    
     .btnPlanBasico {
         margin-bottom: 600px;
     }
-    .RectanguloPlanes h1{
+    
+    .RectanguloPlanes h1 {
         margin-bottom: 20%;
     }
 }
-@media only screen and (max-width: 1000px){ /*SIRVE PARA PANTALLES MENORES A 1000*/
+@media only screen and (max-width: 1000px) {
+    /*SIRVE PARA PANTALLES MENORES A 1000*/
+    
     .containersServicios {
         width: 450px;
         margin-right: 1%;
@@ -345,22 +342,28 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    
+    .contenedorServicios {
         display: block;
     }
+    
     .PlanesTodos {
         display: inline-block;
     }
+    
     .PlanesTodos .RectanguloPlanes {
         width: 500px;
         margin-left: auto;
         margin-right: auto;
     }
-    .RectanguloPlanes h1{
+    
+    .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
 }
-@media only screen and (max-width: 410px){ /*SIRVE PARA PANTALLES MENORES A 410*/
+@media only screen and (max-width: 410px) {
+    /*SIRVE PARA PANTALLES MENORES A 410*/
+    
     .containersServicios {
         width: 270px;
         margin-right: 1%;
@@ -369,38 +372,42 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    
+    .contenedorServicios {
         display: block;
     }
+    
     .PlanesTodos {
         display: block;
         justify-content: center;
     }
+    
     .PlanesTodos .RectanguloPlanes {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
     }
-    .RectanguloPlanes h1{
+    
+    .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
 }
-/*-----------------------------------------------------------------------*/
 
+/*-----------------------------------------------------------------------*/
 .TextosFooter {
     padding-top: 12px;
 }
-
 #Frase1 {
     background-image: url(../img/frasefondo1.jpg);
     background-position: center;
-    background-attachment: scroll; /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
+    background-attachment: scroll;
+    /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
+    
     background-size: cover;
     width: 100%;
     height: 300px;
     background-repeat: no-repeat;
 }
-
 #Frase2 {
     background-image: url(../img/frasefondo3.jpg);
     background-position: center;
@@ -410,22 +417,18 @@ footer {
     height: 300px;
     background-repeat: no-repeat;
 }
-
 .textosdefrases {
     text-align: center;
     padding: 8.5% 0;
 }
-
 .textosdefrases h1 {
     font-weight: 900;
     color: black;
 }
-
 .textosdefrases h1 span {
     padding-left: 5px;
     padding-right: 5px;
 }
-
 #spanfrase1 {
     background: linear-gradient(to right, #feb47b, #ff7e5f);
     padding-left: 9px;
@@ -436,7 +439,6 @@ footer {
     -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
 }
-
 #spanfrase2 {
     background: linear-gradient(to left, #feb47b, #fe8060);
     padding-left: 9px;
@@ -446,4 +448,10 @@ footer {
     -webkit-box-shadow: 0px 8px 5px 4px rgba(7, 5, 0, 0.08);
     -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
+}
+.formularioTriple input {
+    margin: 0px 2px 0 2px;
+    width: 245px;
+    border-radius: 4px;
+    border-color: rgb(255, 235, 217);
 }
