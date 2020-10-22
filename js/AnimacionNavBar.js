@@ -34,7 +34,6 @@ $(document).ready(function() {
                 "filter": "contrast(60%) hue-rotate(170deg) saturate(800%)"
             })
 
-
         } else {
             $(".navbar").css({
                 "background": "hsla(0, 0%, 100%, 0)"

@@ -141,6 +141,7 @@ nav a {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    position: static;
 }
 
 .ns {
@@ -312,6 +313,19 @@ footer {
     .RectanguloPlanes h1{
         margin-bottom: 20%;
     }
+    #imagenes-containter{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .proyecto-imagenes{
+        width: 500px; 
+        margin: 0 20px 0 20px
+    }
+    
+    .proyecto-imagenes:hover{
+        filter: invert();
+    }
 }
 @media only screen and (max-width: 1300px){ /*SIRVE PARA PANTALLES MENORES A 1300*/
     .containersServicios {
@@ -446,4 +460,30 @@ footer {
     -webkit-box-shadow: 0px 8px 5px 4px rgba(7, 5, 0, 0.08);
     -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
+}
+
+
+
+/*PROYECTOS, ADAPTADOS A PANTALLA 1366*768*/
+#imagenes-containter{
+    display: flex;
+    justify-content: center;
+}
+
+.proyecto-imagenes{
+    width: 500px; 
+    margin: 0 20px 0 20px
+}
+
+.proyecto-imagenes:hover{
+    filter: invert();
+
+}
+
+#proyectos {
+    width: 100%;
+    background-image: url(../img/efectowave.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
 }
