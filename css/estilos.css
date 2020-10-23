@@ -10,9 +10,10 @@ body {
     overflow-x: hidden;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
+
 #header {
     /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
 width: 100%;
@@ -208,90 +209,93 @@ footer {
     left: 30%;
 }
 
-.dropdown-menu{
-    background-color:  hsla(26, 81%, 72%, 0.068);
+.dropdown-menu {
+    background-color: hsla(26, 81%, 72%, 0.068);
     border: none;
 }
 
-.dropdown-menu a:hover{
-    color:black;
+.dropdown-menu a:hover {
+    color: black;
 }
 
-#PlanesContainer{
+#PlanesContainer {
     background-color: red;
 }
 
-    /*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
 
-    @media only screen and (min-width: 1700px) {
-        /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
-        #header {
-            width: 100%;
-            height: 1002px;
-            position: static;
-            overflow: hidden;
-            background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
-            margin-top: -50px;
-        }
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            overflow: hidden;
-        }
-        .absolute {
-            width: 100%;
-            height: 1000px;
-            top: 0;
-            right: 0;
-            position: absolute;
-            text-align: center;
-            z-index: -100;
-            justify-content: center;
-        }
-        #navbarNav li a {
-            color: white;
-            font-weight: 500;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        #navbarNav {
-            position: relative;
-            left: 60%;
-        }
-        #logo {
-            position: relative;
-            right: 25%;
-        }
-        .containersServicios {
-            width: 450px;
-            margin-right: 1.5%;
-            margin-left: 1.5%;
-            margin-top: 5%;
-            text-align: center;
-            margin-bottom: 5%;
-        }
-        .textosdefrases {
-            text-align: center;
-            padding: 6% 0;
-        }
-        .contenedorServicios{
-            display: flex;
-        }
-        .PlanesTodos {
-            display: flex;
-            justify-content: center;
-        }
-        .btnPlanBasico {
-            margin-bottom: 600px;
-        }
-    }
-    .RectanguloPlanes h1{
-        margin-bottom: 20%;
-    }
+/*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
 
-@media only screen and (max-width:1699px){ /*SIRVE PARA PANTALLES MENORES A 1700*/
+@media only screen and (min-width: 1700px) {
+    /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
+    #header {
+        width: 100%;
+        height: 1300px;
+        position: static;
+        overflow: hidden;
+        background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+        margin-top: -50px;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        overflow: hidden;
+    }
+    .absolute {
+        width: 100%;
+        height: 1300px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        z-index: -100;
+        justify-content: center;
+    }
+    #navbarNav li a {
+        color: white;
+        font-weight: 500;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #navbarNav {
+        position: relative;
+        left: 60%;
+    }
+    #logo {
+        position: relative;
+        right: 25%;
+    }
+    .containersServicios {
+        width: 450px;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+    }
+    .textosdefrases {
+        text-align: center;
+        padding: 7% 0;
+    }
+    .contenedorServicios {
+        display: flex;
+    }
+    .PlanesTodos {
+        display: flex;
+        justify-content: center;
+    }
+    .btnPlanBasico {
+        margin-bottom: 600px;
+    }
+}
+
+.RectanguloPlanes h1 {
+    margin-bottom: 20%;
+}
+
+@media only screen and (max-width:1699px) {
+    /*SIRVE PARA PANTALLES MENORES A 1700*/
     .containersServicios {
         width: 335px;
         margin-right: 1%;
@@ -300,7 +304,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: flex;
     }
     .PlanesTodos {
@@ -310,24 +314,24 @@ footer {
     .btnPlanBasico {
         margin-bottom: 600px;
     }
-    .RectanguloPlanes h1{
+    .RectanguloPlanes h1 {
         margin-bottom: 20%;
     }
-    #imagenes-containter{
+    #imagenes-containter {
         display: flex;
         justify-content: center;
     }
-    
-    .proyecto-imagenes{
-        width: 500px; 
+    .proyecto-imagenes {
+        width: 500px;
         margin: 0 20px 0 20px
     }
-    
-    .proyecto-imagenes:hover{
+    .proyecto-imagenes:hover {
         filter: invert();
     }
 }
-@media only screen and (max-width: 1300px){ /*SIRVE PARA PANTALLES MENORES A 1300*/
+
+@media only screen and (max-width: 1300px) {
+    /*SIRVE PARA PANTALLES MENORES A 1300*/
     .containersServicios {
         width: 265px;
         margin-right: 1%;
@@ -336,7 +340,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: flex;
     }
     .PlanesTodos {
@@ -346,11 +350,13 @@ footer {
     .btnPlanBasico {
         margin-bottom: 600px;
     }
-    .RectanguloPlanes h1{
+    .RectanguloPlanes h1 {
         margin-bottom: 20%;
     }
 }
-@media only screen and (max-width: 1000px){ /*SIRVE PARA PANTALLES MENORES A 1000*/
+
+@media only screen and (max-width: 1000px) {
+    /*SIRVE PARA PANTALLES MENORES A 1000*/
     .containersServicios {
         width: 450px;
         margin-right: 1%;
@@ -359,7 +365,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: block;
     }
     .PlanesTodos {
@@ -370,11 +376,13 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    .RectanguloPlanes h1{
+    .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
 }
-@media only screen and (max-width: 410px){ /*SIRVE PARA PANTALLES MENORES A 410*/
+
+@media only screen and (max-width: 410px) {
+    /*SIRVE PARA PANTALLES MENORES A 410*/
     .containersServicios {
         width: 270px;
         margin-right: 1%;
@@ -383,7 +391,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: block;
     }
     .PlanesTodos {
@@ -395,10 +403,12 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    .RectanguloPlanes h1{
+    .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
 }
+
+
 /*-----------------------------------------------------------------------*/
 
 .TextosFooter {
@@ -408,7 +418,8 @@ footer {
 #Frase1 {
     background-image: url(../img/frasefondo1.jpg);
     background-position: center;
-    background-attachment: scroll; /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
+    background-attachment: scroll;
+    /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
     background-size: cover;
     width: 100%;
     height: 300px;
@@ -463,21 +474,20 @@ footer {
 }
 
 
-
 /*PROYECTOS, ADAPTADOS A PANTALLA 1366*768*/
-#imagenes-containter{
+
+#imagenes-containter {
     display: flex;
     justify-content: center;
 }
 
-.proyecto-imagenes{
-    width: 500px; 
+.proyecto-imagenes {
+    width: 500px;
     margin: 0 20px 0 20px
 }
 
-.proyecto-imagenes:hover{
+.proyecto-imagenes:hover {
     filter: invert();
-
 }
 
 #proyectos {
