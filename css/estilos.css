@@ -128,9 +128,6 @@ nav a {
 #navbar {
     /*overflow: hidden;*/
     padding: 10px;
-    /* Large padding which will shrink on scroll (using JS) */
-    transition: 0.4s;
-    /* Adds a transition effect when the padding is decreased */
     width: 100%;
     top: 0;
     /* At the top */
@@ -174,6 +171,13 @@ footer {
 
 #navbarNav li a {
     color: white;
+    font-weight: 500;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+#navbarContacto li a {
+    color: black;
     font-weight: 500;
     padding-right: 15px;
     padding-left: 15px;
@@ -303,7 +307,7 @@ footer {
     .proyecto-imagenes {
         width: 500px;
         height: 228px;
-        margin: 0 20px 0 20px
+        margin: 0 50px 0 50px
     }
     .proyecto-imagenes:hover .overlay {
         opacity: 1;
@@ -544,3 +548,51 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }*/
+
+.imagenes-proyectos-p{
+    width: 700px;
+    margin-top: 130px;
+    margin-left: 70px;
+    background-color: rgb(66, 94, 255);
+    height: 319px;
+    opacity: 0.7;
+}
+
+.imagenes{
+    width: 700px;
+    margin-top: -376px;
+    margin-left: 86px;
+    height: 319px;
+    position: relative;
+    transition: transform 0.7s ease;
+}
+
+.imagenes:hover{
+    transform: translate(10px,-10px);
+}
+
+
+
+.imagenes-proyectos-pi{
+    width: 700px;
+    margin-top: 130px;
+    margin-left: 70px;
+    background-color: rgb(66, 94, 255);
+    height: 319px;
+    opacity: 0.7;
+}
+
+.imagenesi{
+    width: 700px;
+    margin-top: -376px;
+    margin-left: 86px;
+    height: 319px;
+    position: relative;
+    transition: transform 0.7s ease;
+}
+
+.imagenesi:hover{
+    transform: translate(10px,-10px);
+}
+
+
