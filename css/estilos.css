@@ -595,4 +595,11 @@ footer {
     transform: translate(10px,-10px);
 }
 
-
+#proyectosprincipal {
+    width: 100%;
+    background-image: linear-gradient(to right, #feb47bf3, #ff7f5fe5), url(../img/CirculoFondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: static;
+}
