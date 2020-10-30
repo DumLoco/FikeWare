@@ -337,6 +337,13 @@ footer {
         transform: translate(-50%, -50%);
         text-align: center;
     }
+    #formatotexto{
+        width: 100%; 
+        margin-top: 130px; 
+        text-align: right; 
+        margin-right: 86px;
+    }
+    
 }
 
 .RectanguloPlanes h1 {
@@ -372,10 +379,96 @@ footer {
     }
     .proyecto-imagenes {
         width: 500px;
-        margin: 0 20px 0 20px
+        margin: 0 20px 0 20px;
+        height: 228px;
     }
-    .proyecto-imagenes:hover {
-        filter: invert();
+    
+    .proyecto-imagenes:hover .overlay {
+        opacity: 1;
+    }
+    .overlay {
+        position: relative;
+        top: -230px;
+        bottom: inherit;
+        left: inherit;
+        right: inherit;
+        height: 228px;
+        width: inherit;
+        opacity: 0;
+        transition: .8s ease;
+        background-color: rgba(255, 136, 0, 0.623);
+        border-radius: 10px;
+        border: 2px solid rgb(187, 124, 7);
+    }
+    .text {
+        color: white;
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: 800;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .imagenes-proyectos-p{
+        width: 700px;
+        margin-top: 130px;
+        margin-left: 70px;
+        background-color: rgb(66, 94, 255);
+        height: 319px;
+        opacity: 0.7;
+    }
+    
+    .imagenes{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenes:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    .imagenes-proyectos-pi{
+        width: 700px;
+        margin-top: 130px;
+        margin-left: 70px;
+        background-color: rgb(66, 94, 255);
+        height: 319px;
+        opacity: 0.7;
+    }
+    
+    .imagenesi{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenesi:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    #proyectosprincipal {
+        width: 100%;
+        background-image: linear-gradient(to right, #feb47bf3, #ff7f5fe5), url(../img/CirculoFondo.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
+    }
+    #formatoTexto{
+        width: 100%; 
+        margin-top: 130px; 
+        text-align: right; 
+        margin-right: 86px;
+        margin-left: 20px;
     }
 }
 
@@ -548,7 +641,7 @@ footer {
     background-attachment: fixed;
     background-size: cover;
 }*/
-
+/*
 .imagenes-proyectos-p{
     width: 700px;
     margin-top: 130px;
@@ -603,3 +696,4 @@ footer {
     background-size: cover;
     position: static;
 }
+*/
