@@ -337,11 +337,63 @@ footer {
         transform: translate(-50%, -50%);
         text-align: center;
     }
-    #formatotexto{
+    .formatotexto{
         width: 100%; 
         margin-top: 130px; 
         text-align: right; 
         margin-right: 86px;
+    }
+    .imagenes-proyectos-p{
+        width: 700px;
+        margin-top: 130px;
+        margin-left: 70px;
+        background-color: rgb(66, 94, 255);
+        height: 319px;
+        opacity: 0.7;
+    }
+    
+    .imagenes{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenes:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    .imagenes-proyectos-pi{
+        width: 700px;
+        margin-top: 130px;
+        margin-left: 70px;
+        background-color: rgb(66, 94, 255);
+        height: 319px;
+        opacity: 0.7;
+    }
+    
+    .imagenesi{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenesi:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    #proyectosprincipal {
+        width: 100%;
+        background-image: linear-gradient(to right, #feb47bf3, #ff7f5fe5), url(../img/CirculoFondo.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
     }
     
 }
