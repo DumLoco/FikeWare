@@ -56,10 +56,10 @@ video {
 
 #quienes {
     width: 100%;
-    background-image: url(../img/efectowave.png);
+    /*background-image: url(../img/efectowave.png);
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
 }
 
 .social-buttons ul li {
@@ -146,12 +146,10 @@ nav a {
 }
 
 .ns {
-    background: #ff7e5f;
-    /* fallback for old browsers */
+    /*background: #ff7e5f;
     background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #feb47b, #ff7e5f);*/
+    background-color: white;
 }
 
 footer {
@@ -190,16 +188,16 @@ footer {
 }
 
 .PlanesTodos .RectanguloPlanes {
-    background: linear-gradient(to bottom, #ffe2f6, #ffacb3);
+    background: white;
     width: 25%;
     margin: 20px;
     text-align: center;
-    height: 930px;
+    height: 1100px;
     transition: transform 0.5s ease;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
-    -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
+    -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);*/
+    box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.075), -5px -5px 6px 12px rgba(0, 0, 0, 0.075);
 }
 
 .PlanesTodos .RectanguloPlanes:hover {
@@ -229,6 +227,15 @@ footer {
     background-color: red;
 }
 
+.blur{
+    width: 25%;
+    height: 930px;
+     -webkit-filter: blur(20px);
+     -moz-filter: blur(20px);
+     -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+     filter: blur(20px);
+}
 
 /*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
 
@@ -436,6 +443,7 @@ footer {
     #imagenes-containter {
         display: flex;
         justify-content: center;
+        margin-top: 65px;
     }
     .proyecto-imagenes {
         width: 500px;
@@ -529,6 +537,14 @@ footer {
         text-align: right; 
         margin-right: 86px;
         margin-left: 20px;
+    }
+    .subrayado{
+       /* background-color: rgb(255, 136, 0);*/
+        background: linear-gradient(to right, #fdae72, rgb(255, 136, 0)); 
+        width: 90px; 
+        height: 6px; 
+        margin-left: auto; 
+        margin-right: auto;
     }
 }
 
