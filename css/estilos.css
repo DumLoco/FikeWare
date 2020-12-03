@@ -202,6 +202,7 @@ footer {
 
 .PlanesTodos .RectanguloPlanes:hover {
     transform: translatey(-30px);
+    box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.120), -5px -5px 6px 12px rgba(0, 0, 0, 0.120);
 }
 
 #navbarNav li a:hover {
@@ -413,8 +414,10 @@ footer {
     
 }
 
-.RectanguloPlanes h1 {
-    margin-bottom: 20%;
+.TitulosRectangulos {
+    font-size: 30px; 
+    font-weight: 700;
+    margin-bottom: 60px;
 }
 
 @media only screen and (max-width:1699px) {
