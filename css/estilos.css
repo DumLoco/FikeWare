@@ -68,7 +68,7 @@ video {
     text-align: left;
 }
 
-.social-buttons ul {
+.social-buttons ul {    
     float: left;
     width: 100%;
     padding: 4% 10% 0 0;
@@ -775,3 +775,54 @@ footer {
     position: static;
 }
 */
+
+.cardServicios{
+    margin: 0 auto;
+    width: 350px;
+    margin-top: 5%;
+    text-align: left;
+    margin-bottom: 10%;
+    position: relative;
+    height: 200px;
+    padding: 3em;
+    border: 1px solid rgba(187, 187, 187, 0.623) ;
+}
+
+.cardServicios::before, .cardServicios::after{
+    content: "";
+    position: absolute;
+    height: 200px;
+    width: 34%;
+    background-color: rgb(255, 226, 226);
+    top: 0;
+    right: 0;
+    z-index: -2;
+}
+
+.cardServicios::after{
+    width: 0%;
+    background-color: rgb(255, 145, 0);
+    left: 0;
+    z-index: -1;
+}
+
+.parrafosCardServicios{
+    clip-path: circle(0% at 100% 0);
+    color: white;
+    font-size: .9em;
+    line-height: 1.6em;
+    margin: 0;
+    padding: 0.4em 0 0 2.6em;
+    position: relative;
+    transform: translateX(20px);
+}
+
+.parrafosCardServicios::before{
+    content: "";
+    position: absolute;
+    height: 80%;
+    top: 1em;
+    left: 0%;
+    width: 5px;
+    background: rgb(180, 100, 2);
+}
