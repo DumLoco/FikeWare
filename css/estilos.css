@@ -455,10 +455,17 @@ footer {
         backface-visibility: hidden;
         transform: perspective(500px) rotateY(0deg);
     }
-
     .cardServicios .cara.frente{
-
+        text-align: center;
+        margin-top: 30%;
     }
+
+    .cardServicios .cara.frente h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: rgb(92, 91, 91);
+    }
+
 
     .cardServicios:hover .cara.frente{
         transform: perspective(500px) rotateY(180deg);
@@ -590,6 +597,50 @@ footer {
         margin-left: auto; 
         margin-right: auto;
     }
+    .botonServiciosMas{
+        border-radius: 10px;
+        background-color: #ffc48152;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        padding: 6px;
+        width: 140px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+        font-weight: 600;
+        border: 2px solid rgb(250, 219, 187);
+        margin-top: 20px;
+    }
+    .botonServiciosMas span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonServiciosMas span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonServiciosMas:hover span {
+        padding-right: 25px;
+      }
+
+      .botonServiciosMas:hover{
+       
+        border: 2px solid rgb(255, 123, 0);
+      }
+      
+      .botonServiciosMas:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
 }
 
 @media only screen and (max-width: 1300px) {
