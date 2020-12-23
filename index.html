@@ -107,7 +107,6 @@
 
 
     <!--Servicios-->
-
     
     <section id="servicios">
         <div class="ns">
@@ -138,7 +137,49 @@
             </div>
             <br>
         </div>
-        
+        <div class="container" style="display: flex; justify-content: center; width: 100%;" >
+                <div class="contenedorServicios">
+                    <div class="cardServicios">
+                        <div class="cara frente">
+                            <div class="iconos-servicios">
+                                <img src="img/DesarrolloWebIcono.png " style="width: 25%; ">
+                            </div>  
+                            <h1>Desarrollo Web</h1>
+                        </div>
+                        <div class="cara atras">
+                            <h1 style="font-size: 30px; font-weight: 700; margin-top: 25px;">Desarrollo Web</h1>
+                            <div style="display: flex; text-align: left; width: 280px; margin-left: 25px;"> 
+                                <div style="width: 10px; height: 55px; background-color: red; margin-left: 25px;"></div>
+                                <p style="margin-right: 25px; margin-left: 5px;">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores aut, vel cupiditate fugit soluta aliquid.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cardServicios">
+                        <div class="cara frente">
+                            <h1>FRENTE</h1>
+                        </div>
+                        <div class="cara atras">
+                            <h1>ATRAS</h1>
+                        </div>
+                    </div>
+                    <div class="cardServicios">
+                        <div class="cara frente">
+                            <h1>FRENTE</h1>
+                        </div>
+                        <div class="cara atras">
+                            <h1>ATRAS</h1>
+                        </div>
+                    </div>
+                    <div class="cardServicios">
+                        <div class="cara frente">
+                            <h1>FRENTE</h1>
+                        </div>
+                        <div class="cara atras">
+                            <h1>ATRAS</h1>
+                        </div>
+                    </div>
+                </div>
+        </div>
         <!--
         <div class="contenedorServiciosCards">
             <div class="cardServicios" id="cardServicios">
@@ -152,27 +193,6 @@
         <!--SCRIPTS PARA PERMITIR ACCEDE POR JS A PROPIEDADES ESPECIFICAS DEL CSS (Funciona con los selectores before y after - Para animar, distorcionar, etc)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ==" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/CSSRulePlugin.min.js" integrity="sha512-6MT8e40N5u36Um5SXKtwZmoKcCSg1XaKtexnXZPpQ4iJDHrBEHXKz37fnDovXezsaCd4oKCH5Y+vrcl7qpLPoA==" crossorigin="anonymous"></script>
-
-        <script>
-
-            var card = document.getElementById("cardServicios");
-
-            var vbefore = CSSRulePlugin.getRule(".cardServicios::before");
-            var vafter = CSSRulePlugin.getRule(".cardServicios::after");
-
-            var tl = gsap.timeline({defaults: {ease: "power2.inOut"}}); //cambia la animacion, el efecto
-
-            tl.to(vbefore, {
-                width: '100%'
-            })
-            tl.pause();
-
-            card.addEventListener('mouseenter', () => {
-            tl.play();
-        })
-            
-        </script>
-
 
         <!--
         <div class="container" style="display: flex; justify-content: center;" style="justify-content: center;">

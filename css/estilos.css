@@ -420,16 +420,60 @@ footer {
 @media only screen and (max-width:1699px) {
     /*SIRVE PARA PANTALLES MENORES A 1700*/
     .containersServicios {
-        width: 335px;
+        width: 300px;
         margin-right: 1%;
         margin-left: 1%;
         margin-top: 5%;
         text-align: center;
         margin-bottom: 5%;
+        height: 300px;
     }
+
     .contenedorServicios {
         display: flex;
     }
+
+    .cardServicios{
+        position: relative;
+        width: 280px;
+        height: 300px;
+        transform-style: preserve-3d;
+        margin-left: 15px;
+        margin-right: 15px;
+        border: 1px solid rgb(238, 238, 238) ;
+        border-radius: 2%;
+    }
+
+    .cardServicios .cara{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 0.5s ease-in-out;
+        backface-visibility: hidden;
+        transform: perspective(500px) rotateY(0deg);
+    }
+
+    .cardServicios .cara.frente{
+
+    }
+
+    .cardServicios:hover .cara.frente{
+        transform: perspective(500px) rotateY(180deg);
+      }
+
+    .cardServicios:hover .cara.atras{
+        transform: perspective(500px) rotateY(360deg);
+      }
+    .cardServicios .cara.atras{
+        background-color: rgb(255, 136, 0);
+        transform: perspective(500px) rotateY(180deg);
+        color: white;
+        text-align: center;
+      }
+
     .PlanesTodos {
         display: flex;
         justify-content: center;
@@ -775,54 +819,3 @@ footer {
     position: static;
 }
 */
-
-.cardServicios{
-    margin: 0 auto;
-    width: 350px;
-    margin-top: 5%;
-    text-align: left;
-    margin-bottom: 10%;
-    position: relative;
-    height: 200px;
-    padding: 3em;
-    border: 1px solid rgba(187, 187, 187, 0.623) ;
-}
-
-.cardServicios::before, .cardServicios::after{
-    content: "";
-    position: absolute;
-    height: 200px;
-    width: 34%;
-    background-color: rgb(255, 226, 226);
-    top: 0;
-    right: 0;
-    z-index: -2;
-}
-
-.cardServicios::after{
-    width: 0%;
-    background-color: rgb(255, 145, 0);
-    left: 0;
-    z-index: -1;
-}
-
-.parrafosCardServicios{
-    clip-path: circle(0% at 100% 0);
-    color: white;
-    font-size: .9em;
-    line-height: 1.6em;
-    margin: 0;
-    padding: 0.4em 0 0 2.6em;
-    position: relative;
-    transform: translateX(20px);
-}
-
-.parrafosCardServicios::before{
-    content: "";
-    position: absolute;
-    height: 80%;
-    top: 1em;
-    left: 0%;
-    width: 5px;
-    background: rgb(180, 100, 2);
-}
