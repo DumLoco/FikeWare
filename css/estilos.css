@@ -652,7 +652,7 @@ footer {
         margin-right: 10px;
       }
       #creaciones{
-        border-radius: 10px;
+       /* border-radius: 100%;
         background: linear-gradient(to bottom right, #fdd0d4, #fae3c4);
         border: none;
         color: #000000;
@@ -666,6 +666,19 @@ footer {
         font-weight: 700;
         border: 1px solid rgb(255, 180, 105);
         margin-top: 20px;
+*/
+        text-align: center;
+        padding: 7px;
+        width: 200px;
+        height: 36px;
+        border-radius: 18px;
+        background-color: #ffb01c;
+        border: solid 1px transparent;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
       }
 }
 
