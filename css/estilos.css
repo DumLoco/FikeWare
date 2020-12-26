@@ -21,7 +21,7 @@ html {
     height: 762px;
     position: static;
     overflow: hidden;
-    background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+    background-image: linear-gradient(to right, hsla(26, 97%, 35%, 0.342), hsla(22, 79%, 53%, 0.562));
     margin-top: -50px;
     clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
     object-fit: cover;
@@ -162,14 +162,28 @@ footer {
 
 #header-textos-3 {
     text-align: center;
+    display: inline;
+    text-justify: auto;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#fraseprueba{
+    display: inline;
+    font-size: 80px;
+    text-align: center;
+    color: #fffcf9;
+    font-weight: 900;
 }
 
 #header-textos-3 p {
     display: inline;
-    font-size: 360%;
+    font-size: 20px;
     text-align: center;
-    color: #fdf8f2;
-    font-weight: 800;
+    color: #fcedde;
+    font-weight: 600;
+    width: 100%;
 }
 
 #navbarNav li a {
