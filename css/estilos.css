@@ -109,7 +109,7 @@ nav a {
 }
 
 .iconos-servicios img{
-    width: 170px;
+    width: 190px;
     
 }
 
@@ -690,12 +690,12 @@ footer {
         width: 230px;
         height: 36px;
         border-radius: 18px;
-        background-color: #ffb01c;
+        background: linear-gradient(to bottom right, #fd505e71, #f8b6596b);
         border: solid 1px transparent;
         color: rgb(0, 0, 0);
         font-size: 18px;
         font-weight: 300;
-        transition: all 0.5s;
+        transition: ease-in 0.2s;
         cursor: pointer;
         margin-top: 20px;
         text-decoration: none;
@@ -727,6 +727,17 @@ footer {
         opacity: 1;
         right: 0;
       }
+
+      .textosdefrases {
+        text-align: center;
+        padding: 8% 0;
+        font-family: 'Amatic SC', cursive;
+    }
+    .textosdefrases h1 {
+        font-weight: 800;
+        color: black;
+        font-size: 50px;
+    }
 
 }
 
