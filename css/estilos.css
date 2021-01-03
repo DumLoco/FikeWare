@@ -105,12 +105,11 @@ nav a {
 
 .iconos-servicios {
     text-align: center;
-
 }
 
 .iconos-servicios img{
     width: 190px;
-    
+   margin-top: 15%;
 }
 
 .quienes-iconos {
@@ -686,19 +685,6 @@ footer {
         transition: all .1s ease-in-out;
       }
       .botonNC{
-        /*border-radius: 10px;
-        background-color: #ffc48152;
-        border: none;
-        color: #ffffff;
-        text-align: center;
-        font-size: 16px;
-        padding: 6px;
-        width: 140px;
-
-        margin: 2px;
-        font-weight: 600;
-        border: 2px solid rgb(250, 219, 187);
-        margin-top: 20px;*/
         text-align: center;
         padding: 6px 10px 6px 10px;
         width: 230px;
@@ -735,6 +721,7 @@ footer {
 
       .botonNC:hover{
         border: 2px solid rgb(255, 136, 0);
+        color: black;
       }
       
       .botonNC:hover span:after {
@@ -752,6 +739,53 @@ footer {
         color: black;
         font-size: 50px;
     }
+
+    .botonHeader{
+        text-align: center;
+        padding: 10px 16px 10px 16px;
+        width: 380px;
+        height: 46px;
+        border-radius: 18px;
+        background: linear-gradient(to bottom right, #fd505e, #ffae00);
+        border: solid 1px transparent;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        transition: ease-in 0.2s;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        margin-left: 120px;
+    }
+    .botonHeader span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonHeader span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonHeader:hover span {
+        padding-right: 25px;
+      }
+
+      .botonHeader:hover{
+        border: 2px solid rgb(255, 136, 0);
+        color: white;
+      }
+      
+      .botonHeader:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
 
 }
 
