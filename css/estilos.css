@@ -574,6 +574,7 @@ footer {
         border-radius: 10px; 
         border: 2px solid rgb(187, 124, 7);
         margin-bottom: 15px;
+        
     }
     .container-quienes{
         display: flex;
@@ -942,8 +943,8 @@ footer {
       .img-proyectos{
         width: 500px; 
         border-radius: 10px; 
-        border: 2px solid rgb(187, 124, 7);
         margin-bottom: 15px;
+        box-shadow:0px 8px 15px 5px rgba(0, 0, 0, 0.151);
     }
     .container-quienes{
         display: flex;
