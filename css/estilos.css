@@ -956,6 +956,27 @@ footer {
         font-size: 35px; 
         margin-top: 120px;
     }
+
+    .rectanguloCentro{
+        width: 99%;
+        height: 320px;
+        background-color: #3b4143;
+        position: absolute;
+        margin-top: 8px;
+    }
+    .cuadradoIzq, .cuadradoDer{
+        width: 6000px;
+        height: 180px;
+        z-index: -1;
+        background-color: rgb(255, 136, 0);
+    }
+    .cuadradoIzq{
+        margin-left: 0;
+    }
+    .cuadradoDer{
+        margin-left: 70%;
+        margin-top: 11.5%;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
