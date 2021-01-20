@@ -213,7 +213,7 @@ footer {
     border-radius: 4px;
     /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
     -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);*/
-    box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.075), -5px -5px 6px 12px rgba(0, 0, 0, 0.075);
+    box-shadow: 5px 8px 12px 15px rgba(0, 0, 0, 0.075), -5px -5px 6px 12px rgba(0, 0, 0, 0.075);
 }
 
 .PlanesTodos .RectanguloPlanes:hover {
