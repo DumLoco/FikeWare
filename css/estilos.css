@@ -960,8 +960,7 @@ footer {
     .rectanguloCentro{
         width: 99%;
         height: 320px;
-        background-color: #3b4143;
-        position: absolute;
+        background: linear-gradient(90deg, rgba(94,102,105,1) 0%, rgba(56,62,64,1) 25%, rgba(56,62,64,1) 50%, rgba(56,62,64,1) 75%, rgba(94,102,105,1) 100%);       position: absolute;
         margin-top: 8px;
     }
     .cuadradoIzq, .cuadradoDer{
