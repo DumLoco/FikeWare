@@ -4,6 +4,10 @@
     src: url(../fuentes/CaviarDreams.ttf);
 }
 
+h1{
+    font-family: 'Work Sans', sans-serif;
+}
+
 body {
     /*font-family: 'Noto Sans JP', sans-serif;*/
     /*font-weight: 500;*/
@@ -49,7 +53,11 @@ video {
     text-align: center;
     z-index: -100;
     justify-content: center;
+    
 }
+/*.absolute video{
+    opacity: 0.7;
+}*/
 
 #quienes {
     width: 100%;
@@ -165,7 +173,7 @@ footer {
     text-justify: auto;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 1600px;
 }
 
 #fraseprueba{
@@ -370,6 +378,9 @@ footer {
         margin: 0 50px 0 50px
     }
     .proyecto-imagenes:hover .overlay {
+        opacity: 1;
+    }
+    .proyecto-imagenes:hover{
         opacity: 1;
     }
     .overlay {
