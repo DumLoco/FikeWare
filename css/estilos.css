@@ -4,9 +4,10 @@
     src: url(../fuentes/CaviarDreams.ttf);
 }
 
-h1{
+.titulo{
     font-family: 'Work Sans', sans-serif;
 }
+
 
 body {
     /*font-family: 'Noto Sans JP', sans-serif;*/
