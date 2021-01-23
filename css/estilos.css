@@ -8,7 +8,6 @@
     font-family: 'Work Sans', sans-serif;
 }
 
-
 body {
     /*font-family: 'Noto Sans JP', sans-serif;*/
     /*font-weight: 500;*/
@@ -28,7 +27,7 @@ html {
     overflow: hidden;
     background-image: linear-gradient(to right, hsla(26, 97%, 35%, 0.342), hsla(22, 79%, 53%, 0.562));
     margin-top: -50px;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+    /*clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);*/
     object-fit: cover;
 }
 
@@ -38,7 +37,7 @@ video {
     object-fit: cover;
     top: 0;
     overflow: hidden;
-    clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+    /*clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);*/
 }
 
 #derechos {
@@ -662,7 +661,7 @@ footer {
     .ProyectosCuadradoColor{
         width: 450px;
         height: 350px;
-        background-color: rgb(253, 166, 94); /*linear-gradient(to right, #ffa600, #ff9a01);*/
+        background-color: rgb(255, 136, 0);/*linear-gradient(to right, #ffa600, #ff9a01);*/
         margin-top: 220px;
         margin-left: 60px;
         z-index: -1;
@@ -1122,7 +1121,7 @@ footer {
     .ProyectosCuadradoColor{
         width: 450px;
         height: 350px;
-        background-color: rgb(253, 166, 94); /*linear-gradient(to right, #ffa600, #ff9a01);*/
+        background-color: rgb(255, 136, 0); /*linear-gradient(to right, #ffa600, #ff9a01);*/
         margin-top: 220px;
         margin-left: 60px;
         z-index: -1;
@@ -1380,6 +1379,11 @@ footer {
     box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
 }
 
+.wave{
+    position: absolute;
+    top: 83.5%;
+    left: 0;
+}
 
 /*PROYECTOS, ADAPTADOS A PANTALLA 1366*768*/
 
