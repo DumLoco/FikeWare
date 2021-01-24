@@ -523,6 +523,7 @@ footer {
         margin-right: 40px;
         margin-top: 60px;
         border-radius: 5%;
+
     }
 
     .cardServicios .cara{
@@ -754,7 +755,6 @@ footer {
         transform-style: preserve-3d;
         margin-left: 15px;
         margin-right: 15px;
-        border: 1px solid rgb(238, 238, 238) ;
         border-radius: 5%;
     }
 
@@ -1384,10 +1384,10 @@ footer {
     overflow: hidden;
     position: relative;
     color: rgb(252, 134, 0);
-    font-weight: 700;
-    font-size: 15px;
+    font-weight: 900;
+    font-size: 17px;
     background-color: rgb(255, 255, 255);
-    padding: 17px 60px;
+    padding: 10px 55px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
@@ -1417,6 +1417,9 @@ footer {
   }
   .botonMidImportancia:hover{
     color: white;
+  }
+  .botonMidImportancia:focus {
+    outline: none;
   }
   
 
@@ -1463,7 +1466,7 @@ footer {
 
 
 .botonMaxImportancia{
-    background:#ec9421;
+    background:#ff7b00;
     color:#fff;
     border:none;
     position:relative;
