@@ -715,21 +715,21 @@ footer {
         margin-left: 21%
     }
     .planesWebInicial{
-        margin-top: 62%;
+        margin-top: 84%;
       }
     .planesWebEmprendedor{
-        margin-top: 37%;
+        margin-top: 25%;
       }
     .planesWebCoorporativo{
-          margin-top: 12%;
+          margin-top: 8.8%;
       }
     
 }
 
 .TitulosRectangulos {
     font-size: 30px; 
-    font-weight: 700;
-    margin-bottom: 60px;
+    font-weight: 900;
+    margin-bottom: 40px;
 }
 
 @media only screen and (max-width:1699px) {
@@ -1181,13 +1181,13 @@ footer {
         margin-left: 9%
     }   
     .planesWebInicial{
-        margin-top: 90%;
+        margin-top: 123%;
       }
     .planesWebEmprendedor{
-        margin-top: 55%;
+        margin-top: 40%;
       }
     .planesWebCoorporativo{
-          margin-top: 12%;
+          margin-top: 8.8%;
       }
 
 }
