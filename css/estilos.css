@@ -723,6 +723,14 @@ footer {
     .planesWebCoorporativo{
           margin-top: 8.8%;
       }
+      .tituloQuieneSomos{
+        font-weight: 900;
+        font-size: 35px; 
+        margin-top: 120px;
+    }
+    .imagenQuienesSomos{
+        margin-right: 15%;
+    }
     
 }
 
