@@ -1197,6 +1197,22 @@ footer {
     .planesWebCoorporativo{
           margin-top: 8.8%;
       }
+    .procesoTextoGrande{
+        color: black;
+        font-size: 80px;
+        font-weight: 900;
+    }
+    .procesoTextos{
+        margin-left: 10%;
+    }
+    .procesoTextoImagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .procesoImagen{
+        margin-right: 8%;
+    }
 
 }
 
