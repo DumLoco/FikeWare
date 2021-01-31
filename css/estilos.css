@@ -6,6 +6,10 @@
 
 .titulo{
     font-family: 'Work Sans', sans-serif;
+    text-align: center; 
+    margin-top: 30px; 
+    font-size: 40px; 
+    font-weight: 900;
 }
 
 body {
@@ -731,7 +735,23 @@ footer {
     .imagenQuienesSomos{
         margin-right: 15%;
     }
-    
+    .procesoTextoGrande{
+        color: black;
+        font-size: 80px;
+        font-weight: 900;
+    }
+    .procesoTextos{
+        margin-left: 15%;
+    }
+    .procesoTextoImagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .procesoImagen{
+        margin-right: 13%;
+    }
 }
 
 .TitulosRectangulos {
@@ -1189,10 +1209,10 @@ footer {
         margin-left: 9%
     }   
     .planesWebInicial{
-        margin-top: 123%;
+        margin-top: 130%;
       }
     .planesWebEmprendedor{
-        margin-top: 40%;
+        margin-top: 47%;
       }
     .planesWebCoorporativo{
           margin-top: 8.8%;
@@ -1209,9 +1229,39 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin-top: 100px;
     }
     .procesoImagen{
         margin-right: 8%;
+    }
+    .planesAplicaciones{
+
+    }
+    .planesAplicacionesBarra{
+        width: 100%;
+        background-color: #3d3a39;
+        height: 200px;
+        margin-top: 100px;
+    }
+    .planesAppsCards{
+        width: 280px;
+        height: 350px;
+        background-color: #fff;
+        border: 1px solid black;
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+    .planesAppsCardContainer{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        margin-top: -100px;
+        justify-content: center;
+    }
+    .tituloPlanesApps{
+        font-size: 35px;
+        font-weight: 900;
+        color: white;
     }
 
 }
