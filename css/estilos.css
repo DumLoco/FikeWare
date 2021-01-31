@@ -1255,27 +1255,39 @@ footer {
     }
     .planesAppsGlass{
         background: white;
-        width: 30%;
+        width: 27%;
         height: 350px;
-        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );
         border-radius: 10px;
-        backdrop-filter: blur(20px);
+        backdrop-filter: blur(10px);
         margin-left: 25px;
         margin-right: 25px;
         z-index: 2;
     }
 
     .planesAppsCuadradoColor{
-        width: 200px;
-        height: 200px;
-        background-color: rgb(255, 136, 0);
+        width: 120px;
+        height: 120px;
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
         position: absolute;
-        top: 5px;
-        left: 0px;
-        z-index: 1;
+        border-radius: 50%;
     }
     .tituloplanesAppsGlass{
         font-size: 30px;
+    }
+    .planesAppsCuadradoColor.der{
+        top: 74%;
+        left: 26%;
+        z-index: 1;
+    }
+    .planesAppsCuadradoColor.izq{
+        top: -30px;
+        left: 30px;
+        z-index: 1;
+    }
+
+    .seccionProceso{
+        margin-bottom: 120px;
     }
 
 }
