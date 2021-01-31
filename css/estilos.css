@@ -1234,34 +1234,48 @@ footer {
     .procesoImagen{
         margin-right: 8%;
     }
-    .planesAplicaciones{
 
-    }
     .planesAplicacionesBarra{
         width: 100%;
-        background-color: #3d3a39;
+        background-color: #ff7d04;
         height: 200px;
         margin-top: 100px;
     }
-    .planesAppsCards{
-        width: 280px;
-        height: 350px;
-        background-color: #fff;
-        border: 1px solid black;
-        margin-left: 35px;
-        margin-right: 35px;
-    }
+
     .planesAppsCardContainer{
         display: flex;
         position: relative;
         z-index: 2;
-        margin-top: -100px;
         justify-content: center;
     }
     .tituloPlanesApps{
         font-size: 35px;
         font-weight: 900;
-        color: white;
+        color: black;
+    }
+    .planesAppsGlass{
+        background: white;
+        width: 30%;
+        height: 350px;
+        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.3) );
+        border-radius: 10px;
+        backdrop-filter: blur(20px);
+        margin-left: 25px;
+        margin-right: 25px;
+        z-index: 2;
+    }
+
+    .planesAppsCuadradoColor{
+        width: 200px;
+        height: 200px;
+        background-color: rgb(255, 136, 0);
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        z-index: 1;
+    }
+    .tituloplanesAppsGlass{
+        font-size: 30px;
     }
 
 }
