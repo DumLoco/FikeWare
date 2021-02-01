@@ -1289,8 +1289,45 @@ footer {
         z-index: 1;
     }
 
+    .planesAppsCirculoColor.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+    }
+
+    .planesAppsCirculoColor.segunda.der{
+        top: 74%;
+        left: 57%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.segunda.izq{
+        top: -30px;
+        left: 33%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+    }
+
+    .planesAppsCirculoColor.tercera.der{
+        top: 74%;
+        left: 87.5%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.tercera.izq{
+        top: -30px;
+        left: 65%;
+        z-index: 1;
+    }
+
     .seccionProceso{
         margin-bottom: 120px;
+    }
+
+    .botonMaxImportancia.appsCard.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+        margin-top: 45px;
     }
 
 }
