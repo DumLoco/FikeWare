@@ -1257,12 +1257,13 @@ footer {
         background: white;
         width: 27%;
         height: 350px;
-        background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );
+        background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
         border-radius: 10px;
         backdrop-filter: blur(10px);
         margin-left: 25px;
         margin-right: 25px;
         z-index: 2;
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.158);
     }
 
     .planesAppsCuadradoColor{
