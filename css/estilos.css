@@ -504,26 +504,30 @@ footer {
     
     .imagenes{
         width: 700px;
-        margin-top: -376px;
+        margin-top: -335px;
         height: 319px;
-        position: relative;
+        position: absolute;
         transition: transform 0.7s ease;
         margin-right: 60px;
         margin-left: 75px;
     }
     .formatoImagenConSombra:hover .overlayProyectos {
         opacity: 1;
+        transform: translate(10px,-10px);
     }
     .formatoImagenConSombra:hover{
         opacity: 1;
     }
+    .formatoImagenConSombra:hover .imagenes{
+        transform: translate(10px,-10px);
+    }
     .overlayProyectos {
         opacity: 0;
         transition: .8s ease;
-        background-color: rgba(255, 136, 0, 0.623);
+        background-color: rgba(0, 0, 0, 0.788);
         border-radius: 10px;
         width: 700px;
-        margin-top: -376px;
+        margin-top: -335px;
         height: 319px;
         position: relative;
         transition: transform 0.7s ease;
