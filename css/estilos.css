@@ -513,19 +513,19 @@ footer {
     }
     .formatoImagenConSombra:hover .overlayProyectos {
         opacity: 1;
-        transform: translate(10px,-10px);
+        transform: translate(-15px, 16px);
     }
     .formatoImagenConSombra:hover{
         opacity: 1;
     }
     .formatoImagenConSombra:hover .imagenes{
-        transform: translate(10px,-10px);
+        transform: translate(-15px, 16px);
     }
     .overlayProyectos {
         opacity: 0;
         transition: .8s ease;
         background-color: rgba(0, 0, 0, 0.788);
-        border-radius: 10px;
+   
         width: 700px;
         margin-top: -335px;
         height: 319px;
