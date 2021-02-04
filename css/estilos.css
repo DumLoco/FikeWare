@@ -89,7 +89,7 @@ video {
 
 .social-buttons i {
     font-size: 40px;
-    color: #8B4513;
+    color: #ff8800;
     padding-right: 6%;
 }
 
@@ -296,6 +296,76 @@ footer {
     border-bottom:2px solid rgb(185, 1, 1); 
     outline: none;
 }
+
+.botonMaxImportancia.appsCard.primera:hover{
+    color: black;
+}
+
+.botonMaxImportancia.appsCard.segunda:hover{
+    color: black;
+}
+
+.botonMaxImportancia.appsCard.tercera:hover{
+    color: black;
+}
+
+.botonMaxImportancia.appsCard.segunda:before, .botonMaxImportancia.appsCard.segunda:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1bf6b4;
+    transition:400ms ease all;
+  }
+  .botonMaxImportancia.appsCard.segunda:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .botonMaxImportancia.appsCard.segunda:hover:before, .botonMaxImportancia.appsCard.segunda:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .botonMaxImportancia.appsCard.segunda:focus{
+      outline: none;
+  }
+
+  .botonMaxImportancia.appsCard.tercera:before, .botonMaxImportancia.appsCard.tercera:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #eb656e ;
+    transition:400ms ease all;
+  }
+  .botonMaxImportancia.appsCard.tercera:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .botonMaxImportancia.appsCard.tercera:hover:before, .botonMaxImportancia.appsCard.tercera:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .botonMaxImportancia.appsCard.tercera:focus{
+      outline: none;
+  }
+
+  .Contactotriangulo{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 800px 0 0;
+    border-color: #ff8800 transparent transparent transparent;
+    position: absolute;
+    z-index: -1;
+  }
 /*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
 
 @media only screen and (min-width: 1700px) {
@@ -424,33 +494,47 @@ footer {
     .imagenes-proyectos-p{
         width: 700px;
         margin-top: 130px;
-        margin-left: 70px;
-        background-color: rgb(66, 94, 255);
+        background-color: rgb(255, 136, 0);
         height: 319px;
         opacity: 0.7;
+        margin-right: 60px;
+        margin-left: 60px;
+        z-index: -1;
     }
     
     .imagenes{
         width: 700px;
         margin-top: -376px;
-        margin-left: 86px;
         height: 319px;
         position: relative;
         transition: transform 0.7s ease;
+        margin-right: 60px;
+        margin-left: 75px;
+    }
+    .formatoImagenConSombra:hover .overlayProyectos {
+        opacity: 1;
+    }
+    .formatoImagenConSombra:hover{
+        opacity: 1;
+    }
+    .overlayProyectos {
+        opacity: 0;
+        transition: .8s ease;
+        background-color: rgba(255, 136, 0, 0.623);
+        border-radius: 10px;
+        width: 700px;
+        margin-top: -376px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+        margin-right: 60px;
+        margin-left: 75px;
     }
     
     .imagenes:hover{
         transform: translate(10px,-10px);
     }
     
-    .imagenes-proyectos-pi{
-        width: 700px;
-        margin-top: 130px;
-        margin-left: 70px;
-        background-color: rgb(66, 94, 255);
-        height: 319px;
-        opacity: 0.7;
-    }
     
     .imagenesi{
         width: 700px;
@@ -467,7 +551,6 @@ footer {
     
     #proyectosprincipal {
         width: 100%;
-        background-image: linear-gradient(to right, #feb47bf3, #ff7f5fe5), url(../img/CirculoFondo.png);
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
@@ -798,12 +881,12 @@ footer {
     }
     .planesAppsCirculoColor.primera.der{
         top: 74%;
-        left: 26%;
+        left: 29.5%;
         z-index: 1;
     }
     .planesAppsCirculoColor.primera.izq{
         top: -30px;
-        left: 30px;
+        left: 80px;
         z-index: 1;
     }
 
@@ -813,13 +896,13 @@ footer {
 
     .planesAppsCirculoColor.segunda.der{
         top: 74%;
-        left: 57%;
+        left: 59%;
         z-index: 1;
     }
 
     .planesAppsCirculoColor.segunda.izq{
         top: -30px;
-        left: 33%;
+        left: 34.5%;
         z-index: 1;
     }
 
@@ -829,13 +912,13 @@ footer {
 
     .planesAppsCirculoColor.tercera.der{
         top: 74%;
-        left: 87.5%;
+        left: 88.5%;
         z-index: 1;
     }
 
     .planesAppsCirculoColor.tercera.izq{
         top: -30px;
-        left: 65%;
+        left: 64%;
         z-index: 1;
     }
 
@@ -864,6 +947,11 @@ footer {
         background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
         margin-top: 45px;
     }
+    .tituloContacto{
+        text-align: left;
+    }
+
+
 
 }
 
