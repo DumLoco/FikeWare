@@ -1557,6 +1557,12 @@ footer {
         margin-top: 45px;
     }
 
+    .imagenQuienesSomos{
+        margin-right: 5%;
+    }
+    .textosQuienesSomos{
+        margin-left: -10%;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1649,7 +1655,7 @@ footer {
     }
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 450px) {
     /*SIRVE PARA PANTALLES MENORES A 410*/
     .containersServicios {
         width: 270px;
@@ -1708,7 +1714,108 @@ footer {
         font-weight: 900;
         font-size: 35px; 
     }
- 
+    .wave{
+        position: absolute;
+        top: 107.5%;
+        left: 0;
+     }
+     .procesoTextoImagenes{
+         display: block;
+     }
+     .procesoTextoGrande{
+         font-size: 55px;
+         line-height: 75px;
+     }
+     .procesoImagen img{
+         width: 100%;
+     }
+
+     .planesAppsCardContainer{
+        display: block;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+    }
+    .tituloPlanesApps{
+        font-size: 35px;
+        font-weight: 900;
+        color: black;
+    }
+    .planesAppsGlass{
+        background: white;
+        width: 90%;
+        height: 350px;
+        background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        margin-left: 25px;
+        margin-right: 25px;
+        z-index: 2;
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.158);
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+        margin-top: 35px;
+    }
+    
+    .planesAppsCirculoColor{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        border-radius: 50%;
+
+    }
+    .planesAppsCirculoColor.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+    }
+    .tituloplanesAppsGlass{
+        font-size: 30px;
+        transform: translateZ(20px);
+        transform-style: preserve-3d;
+    }
+    .planesAppsCirculoColor.primera.der{
+        top: 23%;
+        left: 71%;
+        z-index: -1;
+    }
+    .planesAppsCirculoColor.primera.izq{
+        top: -30px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+    }
+
+    .planesAppsCirculoColor.segunda.der{
+        top: 58%;
+        left: 71%;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.segunda.izq{
+        top: 32%;
+        left: 0;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+    }
+
+    .planesAppsCirculoColor.tercera.der{
+        top: 92%;
+        left: 71%;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.tercera.izq{
+        top: 66%;
+        left: 0;
+        z-index: -1;
+    }
+
 }
 
 
