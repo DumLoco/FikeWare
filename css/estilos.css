@@ -4,27 +4,35 @@
     src: url(../fuentes/CaviarDreams.ttf);
 }
 
-body {
-    font-family: 'Noto Sans JP', sans-serif;
-    font-weight: 500;
-    overflow-x: hidden;
+.titulo{
+    font-family: 'Work Sans', sans-serif;
+    text-align: center; 
+    margin-top: 30px; 
+    font-size: 40px; 
+    font-weight: 900;
 }
 
-html{
+body {
+    /*font-family: 'Noto Sans JP', sans-serif;*/
+    /*font-weight: 500;*/
+    overflow-x: hidden;
+    font-family: 'Karla', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+}
+
+html {
     scroll-behavior: smooth;
 }
+
 #header {
-    /* background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562)), url(../img/fondo.jpg);
-width: 100%;
-background-position: center;
-background-attachment: fixed;
-background-size: cover;*/
     width: 100%;
-    height: 760px;
+    height: 762px;
     position: static;
     overflow: hidden;
-    background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+    background-image: linear-gradient(to right, hsla(26, 97%, 35%, 0.342), hsla(22, 79%, 53%, 0.562));
     margin-top: -50px;
+    /*clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);*/
+    object-fit: cover;
 }
 
 video {
@@ -33,6 +41,7 @@ video {
     object-fit: cover;
     top: 0;
     overflow: hidden;
+    /*clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);*/
 }
 
 #derechos {
@@ -48,14 +57,19 @@ video {
     text-align: center;
     z-index: -100;
     justify-content: center;
+    
 }
+/*.absolute video{
+    opacity: 0.7;
+}*/
 
 #quienes {
     width: 100%;
-    background-image: url(../img/efectowave.png);
+    /*background-image: url(../img/efectowave.png);
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
+    margin-top: 120px;
 }
 
 .social-buttons ul li {
@@ -67,7 +81,7 @@ video {
     text-align: left;
 }
 
-.social-buttons ul {
+.social-buttons ul {    
     float: left;
     width: 100%;
     padding: 4% 10% 0 0;
@@ -75,7 +89,7 @@ video {
 
 .social-buttons i {
     font-size: 40px;
-    color: #8B4513;
+    color: #ff8800;
     padding-right: 6%;
 }
 
@@ -106,6 +120,11 @@ nav a {
     text-align: center;
 }
 
+.iconos-servicios img{
+    width: 190px;
+   margin-top: 15%;
+}
+
 .quienes-iconos {
     text-align: center;
     float: inherit;
@@ -126,9 +145,6 @@ nav a {
 #navbar {
     /*overflow: hidden;*/
     padding: 10px;
-    /* Large padding which will shrink on scroll (using JS) */
-    transition: 0.4s;
-    /* Adds a transition effect when the padding is decreased */
     width: 100%;
     top: 0;
     /* At the top */
@@ -137,7 +153,7 @@ nav a {
 
 #contacto {
     width: 100%;
-    background-image: linear-gradient(to right, hsla(28, 100%, 69%, 0.479), hsla(29, 98%, 50%, 0.534)), url(../img/CirculoFondo.png);
+    /*background-image: linear-gradient(to right, hsla(28, 100%, 69%, 0.479), hsla(29, 98%, 50%, 0.534)), url(../img/CirculoFondo.png);*/
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -145,12 +161,10 @@ nav a {
 }
 
 .ns {
-    background: #ff7e5f;
-    /* fallback for old browsers */
+    /*background: #ff7e5f;
     background: -webkit-linear-gradient(to right, #feb47b, #ff7e5f);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #feb47b, #ff7e5f);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #feb47b, #ff7e5f);*/
+    background-color: white;
 }
 
 footer {
@@ -160,14 +174,28 @@ footer {
 
 #header-textos-3 {
     text-align: center;
+    display: inline;
+    text-justify: auto;
+    align-items: center;
+    justify-content: center;
+    width: 1600px;
+}
+
+#fraseprueba{
+    display: inline;
+    font-size: 80px;
+    text-align: center;
+    color: #fffcf9;
+    font-weight: 900;
 }
 
 #header-textos-3 p {
     display: inline;
-    font-size: 360%;
+    font-size: 20px;
     text-align: center;
-    color: #fdf8f2;
-    font-weight: 800;
+    color: #fcedde;
+    font-weight: 600;
+    width: 100%;
 }
 
 #navbarNav li a {
@@ -177,25 +205,36 @@ footer {
     padding-left: 15px;
 }
 
+#navbarContacto li a {
+    color: black;
+    font-weight: 500;
+    padding-right: 15px;
+    padding-left: 15px;
+
+}
+
 #Planes {
     background-color: #fcecd9;
 }
 
 .PlanesTodos .RectanguloPlanes {
-    background: linear-gradient(to bottom, #ffe2f6, #ffacb3);
+    background: white;
     width: 25%;
     margin: 20px;
     text-align: center;
-    height: 630px;
+    height: 1150px;
     transition: transform 0.5s ease;
-    border-radius: 2px;
-    -webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
-    -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
-    box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
+    -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);*/
+   /* box-shadow: 5px 8px 12px 15px rgba(0, 0, 0, 0.075), -5px -5px 6px 12px rgba(0, 0, 0, 0.075);*/
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.192);
 }
 
 .PlanesTodos .RectanguloPlanes:hover {
     transform: translatey(-30px);
+    /*box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.120), -5px -5px 6px 12px rgba(0, 0, 0, 0.120);*/
+    box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.295);
 }
 
 #navbarNav li a:hover {
@@ -208,99 +247,188 @@ footer {
     left: 30%;
 }
 
-.dropdown-menu{
-    background-color:  hsla(26, 81%, 72%, 0.068);
+.dropdown-menu {
+    background-color: hsla(26, 81%, 72%, 0.068);
     border: none;
 }
 
-.dropdown-menu a:hover{
-    color:black;
+.dropdown-menu a:hover {
+    color: black;
 }
 
-#PlanesContainer{
+#PlanesContainer {
     background-color: red;
 }
 
-    /*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
+.blur{
+    width: 25%;
+    height: 930px;
+     -webkit-filter: blur(20px);
+     -moz-filter: blur(20px);
+     -o-filter: blur(20px);
+    -ms-filter: blur(20px);
+     filter: blur(20px);
+}
 
-    @media only screen and (min-width: 1700px) {
-        /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
-        #header {
-            width: 100%;
-            height: 1002px;
-            position: static;
-            overflow: hidden;
-            background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
-            margin-top: -50px;
-        }
-        video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            top: 0;
-            overflow: hidden;
-        }
-        .absolute {
-            width: 100%;
-            height: 1000px;
-            top: 0;
-            right: 0;
-            position: absolute;
-            text-align: center;
-            z-index: -100;
-            justify-content: center;
-        }
-        #navbarNav li a {
-            color: white;
-            font-weight: 500;
-            padding-right: 20px;
-            padding-left: 20px;
-        }
-        #navbarNav {
-            position: relative;
-            left: 60%;
-        }
-        #logo {
-            position: relative;
-            right: 25%;
-        }
-        .containersServicios {
-            width: 450px;
-            margin-right: 1.5%;
-            margin-left: 1.5%;
-            margin-top: 5%;
-            text-align: center;
-            margin-bottom: 5%;
-        }
-        .textosdefrases {
-            text-align: center;
-            padding: 6% 0;
-        }
-        .contenedorServicios{
-            display: flex;
-        }
-        .PlanesTodos {
-            display: flex;
-            justify-content: center;
-        }
-        .btnPlanBasico {
-            margin-bottom: 600px;
-        }
-    }
-    .RectanguloPlanes h1{
-        margin-bottom: 20%;
-    }
+.inputs-contacto{
+    margin-right: 65px; 
+    width: 240px; 
+    border: none;
+    border-bottom: 2px solid rgb(255, 102, 0); 
+    border-radius: 3px;
+}
+.inputs-contacto:focus{
+    outline: none;
+    border-bottom:2px solid rgb(185, 1, 1);
+}
 
-@media only screen and (max-width:1699px){ /*SIRVE PARA PANTALLES MENORES A 1700*/
+.mensaje-contacto{
+    width: 750px; 
+    height: 150px;
+    margin-top: 30px;  
+    margin-right: 2px; 
+    border: none; 
+    border-bottom: 2px solid rgb(255, 102, 0); 
+    border-radius: 3px; 
+}
+
+.mensaje-contacto:focus{
+    border-bottom:2px solid rgb(185, 1, 1); 
+    outline: none;
+}
+
+.botonMaxImportancia.appsCard.primera:hover{
+    color: black;
+}
+
+.botonMaxImportancia.appsCard.segunda:hover{
+    color: black;
+}
+
+.botonMaxImportancia.appsCard.tercera:hover{
+    color: black;
+}
+
+.botonMaxImportancia.appsCard.segunda:before, .botonMaxImportancia.appsCard.segunda:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #1bf6b4;
+    transition:400ms ease all;
+  }
+  .botonMaxImportancia.appsCard.segunda:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .botonMaxImportancia.appsCard.segunda:hover:before, .botonMaxImportancia.appsCard.segunda:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .botonMaxImportancia.appsCard.segunda:focus{
+      outline: none;
+  }
+
+  .botonMaxImportancia.appsCard.tercera:before, .botonMaxImportancia.appsCard.tercera:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #eb656e ;
+    transition:400ms ease all;
+  }
+  .botonMaxImportancia.appsCard.tercera:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .botonMaxImportancia.appsCard.tercera:hover:before, .botonMaxImportancia.appsCard.tercera:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .botonMaxImportancia.appsCard.tercera:focus{
+      outline: none;
+  }
+
+  .Contactotriangulo{
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 400px 800px 0 0;
+    border-color: #ff8800 transparent transparent transparent;
+    position: absolute;
+    z-index: -1;
+  }
+/*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
+
+@media only screen and (min-width: 1700px) {
+    /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
+    #header {
+        width: 100%;
+        height: 1102px;
+        position: static;
+        overflow: hidden;
+        background-image: linear-gradient(to right, hsla(26, 97%, 35%, 0.342), hsla(22, 79%, 53%, 0.562));
+        margin-top: -50px;
+    }
+    video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        top: 0;
+        overflow: hidden;
+    }
+    .absolute {
+        width: 100%;
+        height: 1102px;
+        top: 0;
+        right: 0;
+        position: absolute;
+        text-align: center;
+        z-index: -100;
+        justify-content: center;
+    }
+    #navbarNav li a {
+        color: white;
+        font-weight: 500;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    #navbarNav {
+        position: relative;
+        left: 60%;
+    }
+    #logo {
+        position: relative;
+        right: 25%;
+    }
     .containersServicios {
-        width: 335px;
-        margin-right: 1%;
-        margin-left: 1%;
+        width: 450px;
+        margin-right: 1.5%;
+        margin-left: 1.5%;
         margin-top: 5%;
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+
+    .textosdefrases {
+        text-align: center;
+        padding: 6.5% 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    .textosdefrases h1 {
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+        font-size: 60px;
+    }
+    .contenedorServicios {
         display: flex;
     }
     .PlanesTodos {
@@ -310,24 +438,1172 @@ footer {
     .btnPlanBasico {
         margin-bottom: 600px;
     }
-    .RectanguloPlanes h1{
-        margin-bottom: 20%;
+    #contacto {
+        width: 100%;
+      /*  background-image: linear-gradient(to right, hsla(28, 100%, 69%, 0.479), hsla(29, 98%, 50%, 0.534)), url(../img/CirculoFondo.png);*/
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
     }
-    #imagenes-containter{
+    #imagenes-containter {
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+    }
+    .proyecto-imagenes {
+        width: 500px;
+        height: 228px;
+        margin: 0 50px 0 50px
+    }
+    .proyecto-imagenes:hover .overlay {
+        opacity: 1;
+    }
+    .proyecto-imagenes:hover{
+        opacity: 1;
+    }
+    .overlay {
+        position: relative;
+        top: -244px;
+        bottom: inherit;
+        left: inherit;
+        right: inherit;
+        height: 229px;
+        width: inherit;
+        opacity: 0;
+        transition: .8s ease;
+        background-color: rgba(255, 136, 0, 0.623);
+        border-radius: 10px;
+    }
+    .text {
+        color: white;
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: 800;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .formatotexto{
+        width: 100%; 
+        margin-top: 130px; 
+        text-align: right; 
+        margin-right: 86px;
+    }
+    .imagenes-proyectos-p{
+        width: 700px;
+        margin-top: 130px;
+        background-color: rgb(255, 136, 0);
+        height: 319px;
+        opacity: 0.7;
+        margin-right: 60px;
+        margin-left: 60px;
+        z-index: -1;
+    }
+    
+    .imagenes{
+        width: 700px;
+        margin-top: -335px;
+        height: 319px;
+        position: absolute;
+        transition: transform 0.7s ease;
+        margin-right: 60px;
+        margin-left: 75px;
+    }
+    .formatoImagenConSombra:hover .overlayProyectos {
+        opacity: 1;
+        transform: translate(-15px, 16px);
+    }
+    .formatoImagenConSombra:hover{
+        opacity: 1;
+    }
+    .formatoImagenConSombra:hover .imagenes{
+        transform: translate(-15px, 16px);
+    }
+    .overlayProyectos {
+        opacity: 0;
+        transition: .8s ease;
+        background-color: rgba(0, 0, 0, 0.788);
+   
+        width: 700px;
+        margin-top: -335px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+        margin-right: 60px;
+        margin-left: 75px;
+    }
+    
+    .imagenes:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    
+    .imagenesi{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenesi:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    #proyectosprincipal {
+        width: 100%;
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
+    }
+    .botonNC{
+        text-align: center;
+        padding: 6px 10px 6px 10px;
+        width: 230px;
+        height: 36px;
+        border-radius: 18px;
+        background: linear-gradient(to bottom right, #fd505e71, #f8b6596b);
+        border: solid 1px transparent;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 300;
+        transition: ease-in 0.2s;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .botonNC span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonNC span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonNC:hover span {
+        padding-right: 25px;
+      }
+
+      .botonNC:hover{
+        border: 2px solid rgb(255, 136, 0);
+        color: black;
+      }
+      
+      .botonNC:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      .contenedorServicios {
+        display: flex;
+    }
+
+    .cardServicios{
+        position: relative;
+        width: 320px;
+        height: 320px;
+        transform-style: preserve-3d;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 60px;
+        border-radius: 5%;
+    }
+
+    .cardServicios .cara{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 0.5s ease-in-out;
+        backface-visibility: hidden;
+        transform: perspective(500px) rotateY(0deg);
+
+    }
+    .cardServicios .cara.frente{
+        text-align: center;
+       
+    }
+
+    .cardServicios .cara.frente h1{
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(92, 91, 91);
+    }
+
+
+    .cardServicios:hover .cara.frente{
+        transform: perspective(500px) rotateY(180deg);
+      }
+
+    .cardServicios:hover .cara.atras{
+        transform: perspective(500px) rotateY(360deg);
+      }
+    .cardServicios .cara.atras{
+        background: linear-gradient(to bottom right, #ff5b69, #fcba5e);
+        /*background-color: rgb(255, 136, 0);*/
+        transform: perspective(500px) rotateY(180deg);
+        color: white;
+        text-align: center;
+        border-radius: 1%;
+      }
+      .lineaSeparaTextoVertical{
+        width: 4px; 
+        height: 60px; 
+        background-color:#fcba5ecc;/* rgb(255, 72, 0); #fcba5e*/
+        margin-left: 20px; 
+        margin-top: 20px; 
+        margin-right: 10px;
+      }
+      .botonServiciosMas{
+        background-color: #ffc48152;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        padding: 6px;
+        width: 140px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+        font-weight: 600;
+        border: 2px solid rgb(250, 219, 187);
+        margin-top: 35px;
+    }
+
+    .botonServiciosMas.gestionBoton{
+        margin-top: 15px;
+    }
+
+    .botonServiciosMas span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonServiciosMas span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonServiciosMas:hover span {
+        padding-right: 25px;
+      }
+
+      .botonServiciosMas:hover{
+       
+        border: 2px solid rgb(255, 123, 0);
+      }
+      
+      .botonServiciosMas:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      .img-proyectos{
+        width: 500px; 
+        border-radius: 10px; 
+        margin-bottom: 15px;
+        box-shadow:0px 8px 15px 5px rgba(0, 0, 0, 0.151);
+    }
+    .container-quienes{
+        display: flex;
+    }
+    .container-quienes img{
+        width: 600px;
+    }
+    .rectanguloCentro{
+        width: 99%;
+        height: 320px;
+        background: linear-gradient(90deg, rgba(94,102,105,1) 0%, rgba(56,62,64,1) 25%, rgba(56,62,64,1) 50%, rgba(56,62,64,1) 75%, rgba(94,102,105,1) 100%);       position: absolute;
+        margin-top: 8px;
+    }
+    .cuadradoIzq, .cuadradoDer{
+        width: 6000px;
+        height: 180px;
+        z-index: -1;
+        background-color: rgb(255, 136, 0);
+    }
+    .cuadradoIzq{
+        margin-left: 0;
+    }
+    .cuadradoDer{
+        margin-left: 70%;
+        margin-top: 8.5%;
+    }
+    .ProyectosCuadradoBorde{
+        width: 550px;
+        height: 400px;
+        border: 3px dashed rgb(250, 169, 76);
+        margin-top: 100px;
+        margin-left: 150px;
+        z-index: -2;
+        position: fixed;
+    }
+    .ProyectoRectanguloOscuro{
+        width: 400px;
+        height: 150px;
+        background-color: rgba(56,62,64,1);
+        margin-left: 100px;
+        margin-top: 130px;
+        margin-left: 270px;
+        position: fixed;
+        z-index: 1;
+        padding: 0;
+    }
+    .ProyectosCuadradoColor{
+        width: 450px;
+        height: 350px;
+        background-color: rgb(255, 136, 0);/*linear-gradient(to right, #ffa600, #ff9a01);*/
+        margin-top: 220px;
+        margin-left: 60px;
+        z-index: -1;
+        position: fixed;
+    }
+    .ProyectosCuadradoColor img{
+        width: 390px;
+        height: 230px;
+        z-index: 3;
+        position: fixed;
+        margin-top: 100px;
+        margin-left: 30px;
+        filter: grayscale(600%);
+        filter: contrast(80%)
+    }
+    .ProyectosCuadradoColor2{
+        width: 450px;
+        height: 350px;
+        background-color: rgb(81, 230, 76); /*linear-gradient(to right, #ffa600, #ff9a01);*/
+        margin-top: 220px;
+        margin-left: 60px;
+        z-index: -1;
+        position: fixed;
+    }
+    .ProyectosCuadradoColor2 img{
+        width: 390px;
+        height: 230px;
+        z-index: 3;
+        position: fixed;
+        margin-top: 100px;
+        margin-left: 30px;
+        filter: grayscale(600%);
+        filter: contrast(80%)
+    }
+    .subrayado{
+        /* background-color: rgb(255, 136, 0);*/
+         background: linear-gradient(to right, #fdae72, rgb(255, 136, 0)); 
+         width: 90px; 
+         height: 6px; 
+         margin-left: auto; 
+         margin-right: auto;
+     }
+     .wave{
+        position: absolute;
+        top: 84.5%;
+        left: 0;
+    }
+    .botonMaxImportancia.inicio{
+        margin-left: 21%
+    }
+    .planesWebInicial{
+        margin-top: 84%;
+      }
+    .planesWebEmprendedor{
+        margin-top: 25%;
+      }
+    .planesWebCoorporativo{
+          margin-top: 8.8%;
+      }
+      .tituloQuieneSomos{
+        font-weight: 900;
+        font-size: 35px; 
+        margin-top: 120px;
+    }
+    .imagenQuienesSomos{
+        margin-right: 15%;
+    }
+    .procesoTextoGrande{
+        color: black;
+        font-size: 80px;
+        font-weight: 900;
+    }
+    .procesoTextos{
+        margin-left: 15%;
+    }
+    .procesoTextoImagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .procesoImagen{
+        margin-right: 13%;
+    }
+    .planesAppsCardContainer{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+    }
+    .tituloPlanesApps{
+        font-size: 35px;
+        font-weight: 900;
+        color: black;
+    }
+    .planesAppsGlass{
+        background: white;
+        width: 27%;
+        height: 350px;
+        background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        margin-left: 25px;
+        margin-right: 25px;
+        z-index: 2;
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.158);
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+    }
+    .planesAppsCirculoColor{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        border-radius: 50%;
+
+    }
+    .planesAppsCirculoColor.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+    }
+    .tituloplanesAppsGlass{
+        font-size: 30px;
+        transform: translateZ(20px);
+        transform-style: preserve-3d;
+    }
+    .planesAppsCirculoColor.primera.der{
+        top: 74%;
+        left: 29.5%;
+        z-index: 1;
+    }
+    .planesAppsCirculoColor.primera.izq{
+        top: -30px;
+        left: 80px;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+    }
+
+    .planesAppsCirculoColor.segunda.der{
+        top: 74%;
+        left: 59%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.segunda.izq{
+        top: -30px;
+        left: 34.5%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+    }
+
+    .planesAppsCirculoColor.tercera.der{
+        top: 74%;
+        left: 88.5%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.tercera.izq{
+        top: -30px;
+        left: 64%;
+        z-index: 1;
+    }
+
+    .seccionProceso{
+        margin-bottom: 120px;
+    }
+
+    .botonMaxImportancia.appsCard.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+        margin-top: 45px;
+    }
+    .cardGlassContainer{
+        width: 80%; 
+        display: flex;
+        flex-direction:column; 
+        justify-content: center; 
+        text-align: center;
+        transform-style: preserve-3d;
+    }
+    .botonMaxImportancia.appsCard.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+        margin-top: 45px;
+    }
+
+    .botonMaxImportancia.appsCard.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+        margin-top: 45px;
+    }
+    .tituloContacto{
+        text-align: left;
+    }
+
+
+
+}
+
+.TitulosRectangulos {
+    font-size: 30px; 
+    font-weight: 900;
+    margin-bottom: 40px;
+}
+
+@media only screen and (max-width:1699px) {
+    /*SIRVE PARA PANTALLES MENORES A 1700*/
+    .containersServicios {
+        width: 300px;
+        margin-right: 1%;
+        margin-left: 1%;
+        margin-top: 5%;
+        text-align: center;
+        margin-bottom: 5%;
+        height: 300px;
+    }
+
+    .contenedorServicios {
+        display: flex;
+    }
+
+    .cardServicios{
+        position: relative;
+        width: 320px;
+        height: 320px;
+        transform-style: preserve-3d;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 60px;
+        border-radius: 5%;
+    }
+
+
+    .cardServicios .cara{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-style: preserve-3d;
+        transition: 0.5s ease-in-out;
+        backface-visibility: hidden;
+        transform: perspective(500px) rotateY(0deg);
+    }
+    .cardServicios .cara.frente{
+        text-align: center;
+       
+    }
+
+    .cardServicios .cara.frente h1{
+        font-size: 25px;
+        font-weight: 600;
+        color: rgb(92, 91, 91);
+    }
+
+
+    .cardServicios:hover .cara.frente{
+        transform: perspective(500px) rotateY(180deg);
+      }
+
+    .cardServicios:hover .cara.atras{
+        transform: perspective(500px) rotateY(360deg);
+      }
+    .cardServicios .cara.atras{
+        background: linear-gradient(to bottom right, #ff5b69, #fcba5e);
+        /*background-color: rgb(255, 136, 0);*/
+        transform: perspective(500px) rotateY(180deg);
+        color: white;
+        text-align: center;
+        border-radius: 1%;
+      }
+
+    .PlanesTodos {
         display: flex;
         justify-content: center;
     }
-    
-    .proyecto-imagenes{
-        width: 500px; 
-        margin: 0 20px 0 20px
+    .btnPlanBasico {
+        margin-bottom: 600px;
+    }
+    .RectanguloPlanes h1 {
+        margin-bottom: 20%;
+    }
+    #imagenes-containter {
+        display: flex;
+        justify-content: center;
+        margin-top: 65px;
+    }
+    .proyecto-imagenes {
+        width: 500px;
+        margin: 0 20px 0 20px;
+        height: 228px;
     }
     
-    .proyecto-imagenes:hover{
-        filter: invert();
+    .proyecto-imagenes:hover .overlay {
+        opacity: 1;
+    }
+    .overlay {
+        position: relative;
+        top: -244px;
+        bottom: inherit;
+        left: inherit;
+        right: inherit;
+        height: 229px;
+        width: inherit;
+        opacity: 0;
+        transition: .8s ease;
+        background-color: rgba(255, 136, 0, 0.623);
+        border-radius: 10px;
+    }
+    .text {
+        color: white;
+        font-size: 80px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        font-weight: 800;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+    .imagenes-proyectos-p{
+        width: 700px;
+        margin-top: 130px;
+        margin-left: 70px;
+        background-color: rgb(66, 94, 255);
+        height: 319px;
+        opacity: 0.7;
+    }
+    
+    .imagenes{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenes:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    .imagenes-proyectos-pi{
+        width: 700px;
+        margin-top: 130px;
+        margin-left: 70px;
+        background-color: rgb(66, 94, 255);
+        height: 319px;
+        opacity: 0.7;
+    }
+    
+    .imagenesi{
+        width: 700px;
+        margin-top: -376px;
+        margin-left: 86px;
+        height: 319px;
+        position: relative;
+        transition: transform 0.7s ease;
+    }
+    
+    .imagenesi:hover{
+        transform: translate(10px,-10px);
+    }
+    
+    #proyectosprincipal {
+        width: 100%;
+        background-image: linear-gradient(to right, #feb47bf3, #ff7f5fe5), url(../img/CirculoFondo.png);
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
+    }
+    #formatoTexto{
+        width: 100%; 
+        margin-top: 130px; 
+        text-align: right; 
+        margin-right: 86px;
+        margin-left: 20px;
+    }
+    .subrayado{
+       /* background-color: rgb(255, 136, 0);*/
+        background: linear-gradient(to right, #fdae72, rgb(255, 136, 0)); 
+        width: 90px; 
+        height: 6px; 
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    /*.botonServiciosMas{
+        background-color: #ffc48152;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        padding: 6px;
+        width: 140px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+        font-weight: 600;
+        border: 2px solid rgb(250, 219, 187);
+        margin-top: 20px;
+    }*/
+    
+
+    .botonServiciosMas{
+        background-color: #ffc48152;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        padding: 6px;
+        width: 140px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+        font-weight: 600;
+        border: 2px solid rgb(250, 219, 187);
+        margin-top: 35px;
+    }
+
+    .botonServiciosMas.gestionBoton{
+        margin-top: 15px;
+    }
+
+
+
+    .botonServiciosMas span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonServiciosMas span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonServiciosMas:hover span {
+        padding-right: 25px;
+      }
+
+      .botonServiciosMas:hover{
+       
+        border: 2px solid rgb(255, 123, 0);
+      }
+      
+      .botonServiciosMas:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      .lineaSeparaTextoVertical{
+        width: 4px; 
+        height: 60px; 
+        background-color:#fcba5ecc;/* rgb(255, 72, 0); #fcba5e*/
+        margin-left: 20px; 
+        margin-top: 20px; 
+        margin-right: 10px;
+      }
+      #creaciones{
+        text-align: center;
+        padding: 7px;
+        width: 200px;
+        height: 36px;
+        border-radius: 18px;
+        background-color: #ffb01c;
+        border: solid 1px transparent;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+      }
+      .botonNC{
+        text-align: center;
+        padding: 6px 10px 6px 10px;
+        width: 230px;
+        height: 36px;
+        border-radius: 18px;
+        background: linear-gradient(to bottom right, #fd505e71, #f8b6596b);
+        border: solid 1px transparent;
+        color: rgb(0, 0, 0);
+        font-size: 18px;
+        font-weight: 300;
+        transition: ease-in 0.2s;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+    }
+    .botonNC span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonNC span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonNC:hover span {
+        padding-right: 25px;
+      }
+
+      .botonNC:hover{
+        border: 2px solid rgb(255, 136, 0);
+        color: black;
+      }
+      
+      .botonNC:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      .textosdefrases {
+        text-align: center;
+        padding: 8% 0;
+        font-family: 'Work Sans', sans-serif;
+    }
+    .textosdefrases h1 {
+        font-weight: 800;
+        color: rgb(255, 255, 255);
+        font-size: 50px;
+    }
+
+    .botonHeader{
+        text-align: center;
+        padding: 10px 16px 10px 16px;
+        width: 380px;
+        height: 46px;
+        border-radius: 18px;
+        background: linear-gradient(to bottom right, #fd505e, #ffae00);
+        border: solid 1px transparent;
+        color: white;
+        font-size: 18px;
+        font-weight: 500;
+        transition: ease-in 0.2s;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        margin-left: 120px;
+    }
+    .botonHeader span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .botonHeader span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+      .botonHeader:hover span {
+        padding-right: 25px;
+      }
+
+      .botonHeader:hover{
+        border: 2px solid rgb(255, 136, 0);
+        color: white;
+      }
+      
+      .botonHeader:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+      .img-proyectos{
+        width: 500px; 
+        border-radius: 10px; 
+        margin-bottom: 15px;
+        box-shadow:0px 8px 15px 5px rgba(0, 0, 0, 0.151);
+    }
+    .container-quienes{
+        display: flex;
+    }
+    .container-quienes img{
+        width: 600px;
+    }
+    .tituloQuieneSomos{
+        font-weight: 900;
+        font-size: 35px; 
+        margin-top: 120px;
+    }
+
+    .rectanguloCentro{
+        width: 99%;
+        height: 320px;
+        background: linear-gradient(90deg, rgba(94,102,105,1) 0%, rgba(56,62,64,1) 25%, rgba(56,62,64,1) 50%, rgba(56,62,64,1) 75%, rgba(94,102,105,1) 100%);       position: absolute;
+        margin-top: 8px;
+    }
+    .cuadradoIzq, .cuadradoDer{
+        width: 6000px;
+        height: 180px;
+        z-index: -1;
+        background-color: rgb(255, 136, 0);
+    }
+    .cuadradoIzq{
+        margin-left: 0;
+    }
+    .cuadradoDer{
+        margin-left: 70%;
+        margin-top: 11.5%;
+    }
+    .ProyectosCuadradoBorde{
+        width: 550px;
+        height: 400px;
+        border: 3px dashed rgb(250, 169, 76);
+        margin-top: 100px;
+        margin-left: 150px;
+        z-index: -2;
+        position: fixed;
+    }
+    .ProyectoRectanguloOscuro{
+        width: 400px;
+        height: 150px;
+        background-color: rgba(56,62,64,1);
+        margin-left: 100px;
+        margin-top: 130px;
+        margin-left: 270px;
+        position: fixed;
+        z-index: 1;
+        padding: 0;
+    }
+    .ProyectosCuadradoColor{
+        width: 450px;
+        height: 350px;
+        background-color: rgb(255, 136, 0); /*linear-gradient(to right, #ffa600, #ff9a01);*/
+        margin-top: 220px;
+        margin-left: 60px;
+        z-index: -1;
+        position: fixed;
+    }
+    .ProyectosCuadradoColor img{
+        width: 390px;
+        height: 230px;
+        z-index: 3;
+        position: fixed;
+        margin-top: 100px;
+        margin-left: 30px;
+        filter: grayscale(600%);
+        filter: contrast(80%)
+    }
+    .ProyectosCuadradoColor2{
+        width: 450px;
+        height: 350px;
+        background-color: rgb(81, 230, 76); /*linear-gradient(to right, #ffa600, #ff9a01);*/
+        margin-top: 220px;
+        margin-left: 60px;
+        z-index: -1;
+        position: fixed;
+    }
+    .ProyectosCuadradoColor2 img{
+        width: 390px;
+        height: 230px;
+        z-index: 3;
+        position: fixed;
+        margin-top: 100px;
+        margin-left: 30px;
+        filter: grayscale(600%);
+        filter: contrast(80%)
+    }
+    .wave{
+    position: absolute;
+    top: 83.5%;
+    left: 0;
+    }
+    .botonMaxImportancia.inicio{
+        margin-left: 9%
+    }   
+    .planesWebInicial{
+        margin-top: 130%;
+      }
+    .planesWebEmprendedor{
+        margin-top: 47%;
+      }
+    .planesWebCoorporativo{
+          margin-top: 8.8%;
+      }
+    .procesoTextoGrande{
+        color: black;
+        font-size: 80px;
+        font-weight: 900;
+    }
+    .procesoTextos{
+        margin-left: 10%;
+    }
+    .procesoTextoImagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .procesoImagen{
+        margin-right: 8%;
+    }
+
+    .planesAplicacionesBarra{
+        width: 100%;
+        background-color: #ff7d04;
+        height: 200px;
+        margin-top: 100px;
+    }
+
+    .planesAppsCardContainer{
+        display: flex;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+    }
+    .tituloPlanesApps{
+        font-size: 35px;
+        font-weight: 900;
+        color: black;
+    }
+    .planesAppsGlass{
+        background: white;
+        width: 27%;
+        height: 350px;
+        background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        margin-left: 25px;
+        margin-right: 25px;
+        z-index: 2;
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.158);
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+    }
+    .planesAppsCirculoColor{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        border-radius: 50%;
+
+    }
+    .planesAppsCirculoColor.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+    }
+    .tituloplanesAppsGlass{
+        font-size: 30px;
+        transform: translateZ(20px);
+        transform-style: preserve-3d;
+    }
+    .planesAppsCirculoColor.primera.der{
+        top: 74%;
+        left: 26%;
+        z-index: 1;
+    }
+    .planesAppsCirculoColor.primera.izq{
+        top: -30px;
+        left: 30px;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+    }
+
+    .planesAppsCirculoColor.segunda.der{
+        top: 74%;
+        left: 57%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.segunda.izq{
+        top: -30px;
+        left: 33%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+    }
+
+    .planesAppsCirculoColor.tercera.der{
+        top: 74%;
+        left: 87.5%;
+        z-index: 1;
+    }
+
+    .planesAppsCirculoColor.tercera.izq{
+        top: -30px;
+        left: 65%;
+        z-index: 1;
+    }
+
+    .seccionProceso{
+        margin-bottom: 120px;
+    }
+
+    .botonMaxImportancia.appsCard.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+        margin-top: 45px;
+    }
+    .cardGlassContainer{
+        width: 80%; 
+        display: flex;
+        flex-direction:column; 
+        justify-content: center; 
+        text-align: center;
+        transform-style: preserve-3d;
+    }
+    .botonMaxImportancia.appsCard.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+        margin-top: 45px;
+    }
+
+    .botonMaxImportancia.appsCard.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+        margin-top: 45px;
+    }
+
+    .imagenQuienesSomos{
+        margin-right: 5%;
+    }
+    .textosQuienesSomos{
+        margin-left: -10%;
     }
 }
-@media only screen and (max-width: 1300px){ /*SIRVE PARA PANTALLES MENORES A 1300*/
+
+@media only screen and (max-width: 1300px) {
+    /*SIRVE PARA PANTALLES MENORES A 1300*/
     .containersServicios {
         width: 265px;
         margin-right: 1%;
@@ -336,7 +1612,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: flex;
     }
     .PlanesTodos {
@@ -346,11 +1622,25 @@ footer {
     .btnPlanBasico {
         margin-bottom: 600px;
     }
-    .RectanguloPlanes h1{
+    .RectanguloPlanes h1 {
         margin-bottom: 20%;
     }
+    .container-quienes{
+        display: flex;
+    }
+    .container-quienes img{
+        width: 600px;
+    }
+    .tituloQuieneSomos{
+        font-weight: 900;
+        font-size: 35px; 
+        margin-top: 120px;
+    }
+
 }
-@media only screen and (max-width: 1000px){ /*SIRVE PARA PANTALLES MENORES A 1000*/
+
+@media only screen and (max-width: 1000px) {
+    /*SIRVE PARA PANTALLES MENORES A 1000*/
     .containersServicios {
         width: 450px;
         margin-right: 1%;
@@ -359,7 +1649,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: block;
     }
     .PlanesTodos {
@@ -370,11 +1660,40 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    .RectanguloPlanes h1{
+    .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
+    #imagenes-containter{
+       
+        width: 500px;
+        display:inline-block;
+        text-align: center;
+    }
+    #imagenes-containter a{
+        width: 500px;
+    }
+    .proyecto-imagenes{
+        width: 500px;
+    }
+    .img-proyectos{
+        width: 300px; 
+        height: 500px;
+        border-radius: 10px; 
+        border: 2px solid rgb(187, 124, 7);
+        margin-bottom: 15px;
+    }
+    .container-quienes{
+        display: flex;
+    }
+    .tituloQuieneSomos{
+        font-weight: 900;
+        font-size: 35px; 
+        margin-top: 120px;
+    }
 }
-@media only screen and (max-width: 410px){ /*SIRVE PARA PANTALLES MENORES A 410*/
+
+@media only screen and (max-width: 450px) {
+    /*SIRVE PARA PANTALLES MENORES A 410*/
     .containersServicios {
         width: 270px;
         margin-right: 1%;
@@ -383,7 +1702,7 @@ footer {
         text-align: center;
         margin-bottom: 5%;
     }
-    .contenedorServicios{
+    .contenedorServicios {
         display: block;
     }
     .PlanesTodos {
@@ -395,10 +1714,165 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
-    .RectanguloPlanes h1{
+
+    .PlanesTodos .RectanguloPlanes.inicial {
+        height: 750px ;
+    }
+
+    .PlanesTodos .RectanguloPlanes.emprendedor {
+        height: 1050px ;
+    }
+
+    .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
+    #imagenes-containter{
+        width: 500px;
+        display:inline-block;
+        text-align: center;
+    }
+    #imagenes-containter a{
+        width: 300px;
+        height: 500px;
+        margin-bottom: 15px;
+    }
+    .proyecto-imagenes{
+        width: 300px;
+        height: 500px;
+        margin-bottom: 15px;
+    }
+    .img-proyectos{
+        width: 300px; 
+        height: 500px;
+        border-radius: 10px; 
+        border: 2px solid rgb(187, 124, 7);
+        margin-bottom: 15px;
+    }
+    .container-quienes{
+        justify-content: center;
+       display: inline;
+    }
+    .container-quienes img{
+        width: 300px;
+        margin-left: auto;
+    }
+    .tituloQuieneSomos{
+        font-weight: 900;
+        font-size: 35px; 
+    }
+    .wave{
+      display: none;
+     }
+     .procesoTextoImagenes{
+         display: block;
+     }
+     .procesoTextoGrande{
+         font-size: 55px;
+         line-height: 75px;
+     }
+     .procesoImagen img{
+         width: 100%;
+     }
+
+     .planesAppsCardContainer{
+        display: block;
+        position: relative;
+        z-index: 2;
+        justify-content: center;
+    }
+    .tituloPlanesApps{
+        font-size: 35px;
+        font-weight: 900;
+        color: black;
+    }
+    .planesAppsGlass{
+        background: white;
+        width: 90%;
+        height: 350px;
+        background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
+        border-radius: 10px;
+        backdrop-filter: blur(10px);
+        margin-left: 25px;
+        margin-right: 25px;
+        z-index: 2;
+        box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.158);
+        display: flex;
+        justify-content: center;
+        transform-style: preserve-3d;
+        margin-top: 35px;
+    }
+    
+    .planesAppsCirculoColor{
+        width: 120px;
+        height: 120px;
+        position: absolute;
+        border-radius: 50%;
+
+    }
+    .planesAppsCirculoColor.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+    }
+    .tituloplanesAppsGlass{
+        font-size: 30px;
+        transform: translateZ(20px);
+        transform-style: preserve-3d;
+    }
+    .planesAppsCirculoColor.primera.der{
+        top: 23%;
+        left: 71%;
+        z-index: -1;
+    }
+    .planesAppsCirculoColor.primera.izq{
+        top: -30px;
+        left: 0;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.segunda{
+        background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
+    }
+
+    .planesAppsCirculoColor.segunda.der{
+        top: 58%;
+        left: 71%;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.segunda.izq{
+        top: 32%;
+        left: 0;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.tercera{
+        background: linear-gradient(to right bottom, #7b4397 ,  #dc2430 );
+    }
+
+    .planesAppsCirculoColor.tercera.der{
+        top: 92%;
+        left: 71%;
+        z-index: -1;
+    }
+
+    .planesAppsCirculoColor.tercera.izq{
+        top: 66%;
+        left: 0;
+        z-index: -1;
+    }
+    .botonMaxImportancia.planesWebInicial{
+        margin-top: 40px;
+    }
+    .botonMaxImportancia.planesWebEmprendedor{
+        margin-top: 40px;
+    }
+    .PlanesTodos .RectanguloPlanes:hover {
+        transform: translatey(0px);
+        /*box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.120), -5px -5px 6px 12px rgba(0, 0, 0, 0.120);*/
+    }
 }
+}
+
+
 /*-----------------------------------------------------------------------*/
 
 .TextosFooter {
@@ -408,7 +1882,8 @@ footer {
 #Frase1 {
     background-image: url(../img/frasefondo1.jpg);
     background-position: center;
-    background-attachment: scroll; /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
+    background-attachment: scroll;
+    /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
     background-size: cover;
     width: 100%;
     height: 300px;
@@ -425,21 +1900,74 @@ footer {
     background-repeat: no-repeat;
 }
 
+.botonMidImportancia {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: rgb(252, 134, 0);
+    font-weight: 900;
+    font-size: 17px;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 55px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+  
+  .botonMidImportancia span {
+    position: relative; 
+    z-index: 1;
+  }
+  
+  .botonMidImportancia:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #fa9804;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  
+  .botonMidImportancia:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+  .botonMidImportancia:hover{
+    color: white;
+  }
+  .botonMidImportancia:focus {
+    outline: none;
+  }
+  
+
+
+/*
 .textosdefrases {
     text-align: center;
-    padding: 8.5% 0;
-}
-
+    padding: 6.5% 0;
+    font-size: 30px;
+}*/
+/*
 .textosdefrases h1 {
     font-weight: 900;
     color: black;
-}
+    font-size: 80px;
+}*/
 
 .textosdefrases h1 span {
     padding-left: 5px;
     padding-right: 5px;
 }
-
+/*
 #spanfrase1 {
     background: linear-gradient(to right, #feb47b, #ff7e5f);
     padding-left: 9px;
@@ -450,7 +1978,7 @@ footer {
     -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
     box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);
 }
-
+*/
 #spanfrase2 {
     background: linear-gradient(to left, #feb47b, #fe8060);
     padding-left: 9px;
@@ -463,21 +1991,65 @@ footer {
 }
 
 
+.botonMaxImportancia{
+    background:#ff7b00;
+    color:#fff;
+    border:none;
+    position:relative;
+    height:50px;
+    font-size:1.3em;
+    padding:0 2em;
+    cursor:pointer;
+    transition:800ms ease all;
+    outline:none;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+.botonMaxImportancia:hover{
+    background:#fff;
+    color:#ff7b00;
+  }
+.botonMaxImportancia:before, .botonMaxImportancia:after{
+    content:'';
+    position:absolute;
+    top:0;
+    right:0;
+    height:2px;
+    width:0;
+    background: #ffae00;
+    transition:400ms ease all;
+  }
+.botonMaxImportancia:after{
+    right:inherit;
+    top:inherit;
+    left:0;
+    bottom:0;
+  }
+  .botonMaxImportancia:hover:before, .botonMaxImportancia:hover:after{
+    width:100%;
+    transition:800ms ease all;
+  }
+  .botonMaxImportancia:focus{
+      outline: none;
+  }
+  
+  
 
 /*PROYECTOS, ADAPTADOS A PANTALLA 1366*768*/
-#imagenes-containter{
+
+
+/*
+#imagenes-containter {
     display: flex;
     justify-content: center;
 }
 
-.proyecto-imagenes{
-    width: 500px; 
+.proyecto-imagenes {
+    width: 500px;
     margin: 0 20px 0 20px
 }
 
-.proyecto-imagenes:hover{
+.proyecto-imagenes:hover {
     filter: invert();
-
 }
 
 #proyectos {
@@ -486,4 +2058,60 @@ footer {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+}*/
+/*
+.imagenes-proyectos-p{
+    width: 700px;
+    margin-top: 130px;
+    margin-left: 70px;
+    background-color: rgb(66, 94, 255);
+    height: 319px;
+    opacity: 0.7;
 }
+
+.imagenes{
+    width: 700px;
+    margin-top: -376px;
+    margin-left: 86px;
+    height: 319px;
+    position: relative;
+    transition: transform 0.7s ease;
+}
+
+.imagenes:hover{
+    transform: translate(10px,-10px);
+}
+
+
+
+.imagenes-proyectos-pi{
+    width: 700px;
+    margin-top: 130px;
+    margin-left: 70px;
+    background-color: rgb(66, 94, 255);
+    height: 319px;
+    opacity: 0.7;
+}
+
+.imagenesi{
+    width: 700px;
+    margin-top: -376px;
+    margin-left: 86px;
+    height: 319px;
+    position: relative;
+    transition: transform 0.7s ease;
+}
+
+.imagenesi:hover{
+    transform: translate(10px,-10px);
+}
+
+#proyectosprincipal {
+    width: 100%;
+    background-image: linear-gradient(to right, #feb47bf3, #ff7f5fe5), url(../img/CirculoFondo.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: static;
+}
+*/

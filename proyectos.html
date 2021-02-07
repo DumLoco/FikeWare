@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FikeWare</title>
+    <!--BOOSTRAP 4-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <!--CSS-->
+    <link rel="stylesheet" href="css/estilos.css">
+    <!--ICONOS (fa fa...--)-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--ICONO DE PAGINA-->
+    <link rel="icon" href="img/logoico.ico">
+    <!--SCRIPT DE JQUERY-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;1,200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Karla:ital,wght@0,300;1,200&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--NAVIGATION DE BOOSTRAP-->
+    <nav id="navbarContacto" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; box-shadow: 0px 1px 15px 2px rgba(0, 0, 0, 0.308);">
+        <!--Fixed-top hace que la barra quede arriba y visible siempre-->
+        <div class="container">
+            <a id="logo" class="navbar-brand" href="index.html">
+                <div style="display: inline;"></div>
+                <div id="Fike" style="display: inline;"><img style="width: 30%; margin-bottom: 5%;"
+                        src="img/logotipo2.png">Fike</div>
+                <div id="Ware" style="display: inline; font-weight: 600;">Ware</div>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <!--Para agregar esta barra a la derecha agregamos ml-auto en la clase-->
+                <ul id="Navbarnombres" class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" id="inicio2" href="#header">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="quienes2" href="#quienes">Quienes Somos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="servicios2" href="#servicios">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="contacto2" href="#contacto">Contacto</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                            <img class="logoMundo" id="mundoLogo" src="img/Mundo1.svg" alt="">
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#es" onclick="window.location.href = '#es'; return false;"
+                                data-reload>Español</a>
+                            <a class="dropdown-item" href="#eng" onclick="window.location.href = '#eng'; return false;"
+                                data-reload>English</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="ProyectosPaginasWeb" style="margin-top: 20px;">
+       <!-- <div style="margin-left: -45px;">
+            <div class="ProyectosCuadradoBorde">
+
+            </div>
+            <div class="ProyectoRectanguloOscuro">
+                <div>
+                    <h1 style="font-size: 25px; color: white; margin-top: 15px; text-align: center; font-weight: 900;">
+                        VERSA INDUSTRIAL</h1>
+                    <div style="line-height : 10px; margin-left: 50px;" >
+
+                        <p style="font-size: 15px; color: white; margin-top: 15px; text-align: left; font-weight: 600;">
+                            Tecnologias: Xxxx</p>
+
+                        <p style="font-size: 15px; color: white; text-align: left; font-weight: 600;">
+                            Objetivo/Alcance: Xxxx</p>
+
+                        <p style="font-size: 15px; color: white; text-align: left; font-weight: 600;">
+                            Metodologias: Xxxxx</p> 
+                    </div>
+                </div>
+
+            </div>
+            <div class="ProyectosCuadradoColor">
+                <div>
+                    <img src="img/PruebaProyecto1.PNG" alt="">
+                </div>
+            </div>
+        </div>
+        
+
+        <div style="margin-left: 650px;">
+            <div class="ProyectosCuadradoBorde">
+
+            </div>
+            <div class="ProyectoRectanguloOscuro">
+                <div>
+                    <h1 style="font-size: 25px; color: white; margin-top: 15px; text-align: center; font-weight: 900;">
+                        VERSA INDUSTRIAL</h1>
+                    <div style="line-height : 10px; margin-left: 50px;">
+
+                        <p style="font-size: 15px; color: white; margin-top: 15px; text-align: left; font-weight: 600;">
+                            Tecnologias: Xxxx</p>
+
+                        <p style="font-size: 15px; color: white; text-align: left; font-weight: 600;">
+                            Objetivo/Alcance: Xxxx</p>
+
+                        <p style="font-size: 15px; color: white; text-align: left; font-weight: 600;">
+                            Metodologias: Xxxxx</p> 
+                    </div>
+                </div>
+
+            </div>
+            <div class="ProyectosCuadradoColor2">
+                <div>
+                    <img src="img/PruebaProyecto2.PNG" alt="">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    -->
+
+    <!--CONTACTO-->
+   
+    <section id="proyectosprincipal" >
+                <br><br><br>
+                <div class="" style="display: flex; width: 100%; justify-content: center;">
+                    <div class="formatoImagenConSombra">
+                        <div class="imagenes-proyectos-p"></div>
+                        <div>
+                            <img class="imagenes" src="img/PruebaProyecto1.PNG" alt="">
+                        </div>
+                        <div class="overlayProyectos">
+                            <div class="text">Google</div>
+                        </div>
+                        
+                    </div>
+
+
+                    
+                    <div id="formatoImagenConSombra">
+                        <div class="imagenes-proyectos-p"></div>
+                        <img class="imagenes" src="img/PruebaProyecto1.PNG" alt="">
+                        
+                        
+                    </div>
+
+                </div>
+            
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>-->
+    <!--
+    /*MIERDA QUE VA A SERVIR DESPUES Y TAMBIEN PARA LA NAVBAR*/ 
+    <script src="js/PoyectosScroll.js "></script>
+-->
+
+</body>

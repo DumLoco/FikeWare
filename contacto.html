@@ -15,20 +15,17 @@
     <link rel="icon" href="img/logoico.ico">
     <!--SCRIPT DE JQUERY-->
     <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-
+    <!--GOOGLE FONTS-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Karla&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;500&display=swap" rel="stylesheet">
 
 </head>
 
 <body>
 
     <!--NAVIGATION DE BOOSTRAP-->
-    <nav class="navbar navbar-default ">
-    </nav>
-    <nav class="navbar navbar-default ">
-    </nav>
-    <nav class="navbar navbar-default ">
-    </nav>
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light fixed-top">
+    <nav id="navbarContacto" class="navbar navbar-expand-lg navbar-light fixed-top" style="background-color: white; box-shadow: 0px 2px 5px 4px rgba(253, 95, 3, 0.171);">
         <!--Fixed-top hace que la barra quede arriba y visible siempre-->
         <div class="container">
             <a id="logo" class="navbar-brand" href="index.html">
@@ -69,76 +66,69 @@
         </div>
     </nav>
 
-<!--CONTACTO-->
-<section id="contacto" >
-    <div class="container">
-        <div class="row">
-            <div class="col-md-7">
-                <form class=" my-4" action="correo.php" method="POST">
-                    <div class="card-body">
-                        <div class="mt-3">
-                            <br>
-                            <p id="formcontact" class="h3 mb-3">Contacto</p>
-                            <p id="sabermas"> Si queres saber mas sobre nuestros servicios, te invitamos a enviarnos tu consulta.</p>
-                        </div>
-                        <div class="form-group">
-                            <!--Pone los imputs para los textos-->
-                            <input id="nombre" type="name" name="nombre" placeholder="Nombre y Apellido" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <input id="email" type="email" name="email" placeholder="Email" class="form-control" required>
-                        </div>
-                        <div class="form-group">
-                            <input id="asunto2" type="text" name="asunto" placeholder="Asunto" class="form-control" required>
-                        </div>
-                        <div class="form-group" required>
-                            <!--Aca solo va un mensaje por eso textarea-->
-                            <!--La clase form-control le da estilo al borde-->
-                            <textarea id="mensaje" rows="10" cols="30" name="mensaje" placeholder="Mensaje" class="form-control"></textarea>
-                        </div>
-                        <!--btn-block hace que ocupe todo el ancho y lo otro de la class, es como arriba para dar estilos-->
-                        <button id="enviar" type="submit" class="btn btn-outline-secondary">Enviar</button>
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-2">
-                <!--Espacio entre las columnas-->
-            </div>
-            <div class="col-md-3 " id="contacto-links">
-                <br>
-                <p class="h3" id="seguinos" style="margin-top: 58px;">Seguinos en:</p>
-                <div class="social-buttons">
-                    <ul>
-                        <li>
-                            <a href="www.instagram.com/ivoguzman" target="blank">
-                                <i class="fa fa-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="www.linkedin.com" target="blank">
-                                <i class="fa fa-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="www.facebook.com" target="blank">
-                                <i class="fa fa-facebook"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <p class="h3" id="mas" style="margin-top: 140px;">Mas:</p>
-                    <p style="padding-top: 8%;">+54 15 6259-2369</p>
-                    <a href="mailto: paginaloca@gmail.com" target="blank" style="color: rgb(88, 86, 86);;">paginaloca@gmail.com</a>
-                </div>
-            </div>
+    <!--CONTACTO-->
+    <section id="contacto">
+        <br><br><br>
+        <div class="Contactotriangulo">
+            
         </div>
-    </div>
-</section>
+        <div class="containerGral" >
+            <div style="width: 60%; display: flex; justify-content: justify; margin-right: auto; margin-left: auto; margin-top: 5%;">
+                <div class=" ladoIzq" style="width: 45%; background-color: rgba(247, 243, 243, 0.377); color: black; backdrop-filter: blur(20px); border-radius: 10px; box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.123);">
+                    <div class=" textosIzq " style="margin-left: 20px; margin-top: 30px;">
+                        <a href="mailto: paginaloca@gmail.com " target="blank " style="color: black; font-size: 35px;">Contact@fikeware.com</a>
+                        <h1 style="font-size: 38px; margin-top: 15px;">+54 9 11-6829-6326</h1>
+                        <!--Qu esto infiera si estas desde movile y te abra directo el llamar o wpp-->
+                        <h2 style="margin-top: 40px;">Seguinos en: </h2>
 
+                        <div class="social-buttons">
+                            <ul>
+                                <li>
+                                    <a href="www.instagram.com/ivoguzman " target="blank">
+                                        <i class="fa fa-instagram "></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="www.linkedin.com " target="blank ">
+                                        <i class="fa fa-linkedin "></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="www.facebook.com " target="blank ">
+                                        <i class="fa fa-facebook "></i>
+                                    </a>
+                                </li>
+                            </ul>
 
-<script src="js/ReducNav.js"></script>
-    <script src="js/AnimacionNavBar.js"></script>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="ladoDer" style="width: 55%; margin-left: 80px;">
+                    <h1 class="titulo tituloContacto">No dudes en contactarnos!</h1>
+                    <div>
+                        <br>
+                        <form class="formularioTriple " style="display: flex; width: 750px; ">
+                            <input class="inputs-contacto" type="text " id="Nombre " name="Nombre " placeholder="Nombre y Apellido">
+                            <input class="inputs-contacto" type="email " id="Email " name="Email " placeholder="Email ">
+                            <input class="inputs-contacto" type="text " id="Asunto " name="Asunto " placeholder="Asunto ">
+                        </form>
+                    </div>
+                    <div>
+                        <form>
+                            <textarea class="mensaje-contacto" name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                        </form>
+                    </div>
+                    <div>
+
+                    </div>
+                  
+                    <button class="botonMaxImportancia" > Enviar</button>
+                </div>
+            </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </section>
+
+   
 
 </body>
