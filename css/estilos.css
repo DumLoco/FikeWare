@@ -372,10 +372,10 @@ footer {
     /*SIRVE PARA RESPONSIVE PANTALLAS DE MAS DE 1700px HACER LO MISMO PARA FONO*/
     #header {
         width: 100%;
-        height: 1002px;
+        height: 1102px;
         position: static;
         overflow: hidden;
-        background-image: linear-gradient(to right, hsla(26, 67%, 70%, 0.562), hsla(22, 100%, 69%, 0.562));
+        background-image: linear-gradient(to right, hsla(26, 97%, 35%, 0.342), hsla(22, 79%, 53%, 0.562));
         margin-top: -50px;
     }
     video {
@@ -387,7 +387,7 @@ footer {
     }
     .absolute {
         width: 100%;
-        height: 1002px;
+        height: 1102px;
         top: 0;
         right: 0;
         position: absolute;
@@ -610,14 +610,13 @@ footer {
 
     .cardServicios{
         position: relative;
-        width: 280px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         transform-style: preserve-3d;
         margin-left: 40px;
         margin-right: 40px;
         margin-top: 60px;
         border-radius: 5%;
-
     }
 
     .cardServicios .cara{
@@ -659,8 +658,15 @@ footer {
         text-align: center;
         border-radius: 1%;
       }
+      .lineaSeparaTextoVertical{
+        width: 4px; 
+        height: 60px; 
+        background-color:#fcba5ecc;/* rgb(255, 72, 0); #fcba5e*/
+        margin-left: 20px; 
+        margin-top: 20px; 
+        margin-right: 10px;
+      }
       .botonServiciosMas{
-        border-radius: 10px;
         background-color: #ffc48152;
         border: none;
         color: #ffffff;
@@ -673,8 +679,13 @@ footer {
         margin: 2px;
         font-weight: 600;
         border: 2px solid rgb(250, 219, 187);
-        margin-top: 20px;
+        margin-top: 35px;
     }
+
+    .botonServiciosMas.gestionBoton{
+        margin-top: 15px;
+    }
+
     .botonServiciosMas span {
         cursor: pointer;
         display: inline-block;
@@ -802,7 +813,7 @@ footer {
      }
      .wave{
         position: absolute;
-        top: 65.5%;
+        top: 84.5%;
         left: 0;
     }
     .botonMaxImportancia.inicio{
@@ -983,13 +994,15 @@ footer {
 
     .cardServicios{
         position: relative;
-        width: 280px;
-        height: 300px;
+        width: 320px;
+        height: 320px;
         transform-style: preserve-3d;
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 40px;
+        margin-right: 40px;
+        margin-top: 60px;
         border-radius: 5%;
     }
+
 
     .cardServicios .cara{
         position: absolute;
@@ -1145,7 +1158,7 @@ footer {
         margin-left: auto; 
         margin-right: auto;
     }
-    .botonServiciosMas{
+    /*.botonServiciosMas{
         background-color: #ffc48152;
         color: #ffffff;
         text-align: center;
@@ -1158,7 +1171,31 @@ footer {
         font-weight: 600;
         border: 2px solid rgb(250, 219, 187);
         margin-top: 20px;
+    }*/
+    
+
+    .botonServiciosMas{
+        background-color: #ffc48152;
+        border: none;
+        color: #ffffff;
+        text-align: center;
+        font-size: 16px;
+        padding: 6px;
+        width: 140px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 2px;
+        font-weight: 600;
+        border: 2px solid rgb(250, 219, 187);
+        margin-top: 35px;
     }
+
+    .botonServiciosMas.gestionBoton{
+        margin-top: 15px;
+    }
+
+
+
     .botonServiciosMas span {
         cursor: pointer;
         display: inline-block;
@@ -1677,6 +1714,15 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .PlanesTodos .RectanguloPlanes.inicial {
+        height: 750px ;
+    }
+
+    .PlanesTodos .RectanguloPlanes.emprendedor {
+        height: 1050px ;
+    }
+
     .RectanguloPlanes h1 {
         margin-bottom: 10%;
     }
@@ -1715,9 +1761,7 @@ footer {
         font-size: 35px; 
     }
     .wave{
-        position: absolute;
-        top: 107.5%;
-        left: 0;
+      display: none;
      }
      .procesoTextoImagenes{
          display: block;
@@ -1815,7 +1859,17 @@ footer {
         left: 0;
         z-index: -1;
     }
-
+    .botonMaxImportancia.planesWebInicial{
+        margin-top: 40px;
+    }
+    .botonMaxImportancia.planesWebEmprendedor{
+        margin-top: 40px;
+    }
+    .PlanesTodos .RectanguloPlanes:hover {
+        transform: translatey(0px);
+        /*box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.120), -5px -5px 6px 12px rgba(0, 0, 0, 0.120);*/
+    }
+}
 }
 
 

@@ -31,6 +31,7 @@
 
 <body>
     <!--NAVIGATION DE BOOSTRAP-->
+   
     <nav class="navbar navbar-default ">
     </nav>
     <nav class="navbar navbar-default ">
@@ -93,10 +94,7 @@
                     <p>Somos un grupo de desarrolladores y profesionales de Marketing.</p>
                 </div>
             </div>
-            <button class="botonMaxImportancia inicio">NUESTRO TRABAJO</button>
-            <div style="text-align: center; margin-top: 20%;">
-                <a href="#servicios"><img src="img/flecah-abajo.png" style="width: 5%;"></a>
-            </div>
+            <button onclick="window.location.href = '#servicios'"; class="botonMaxImportancia inicio">NUESTRO TRABAJO</button>
         </div>
         <div class="absolute">
             <video playsinline autoplay muted loop>
@@ -118,7 +116,7 @@
             <br><br><br>
             <div id="servicios-texto">
                 <div class="h2">
-                    <p id="nuestros3" class="titulo" style="font-weight: 900; font-size: 40px;">Nuestros Servicios</p>
+                    <p id="nuestros3" class="titulo" style="font-weight: 900; font-size: 40px; ">Nuestros Servicios</p>
                 </div>
                 <div class="subrayado">
                 </div>
@@ -135,7 +133,7 @@
                     </div>
                 </div>
                 <div>
-                    <button class="botonMidImportancia" onclick="location.href='proyectos.html';"><span>Proyectos</span>
+                    <button class="botonMidImportancia" onclick="location.href='#proyectos';"><span>Proyectos</span>
                 </div>
             </div>
             <br>
@@ -239,10 +237,9 @@
                                 <p style="margin-top: 3px; margin-bottom: 3px; padding: 0;">Multiplataforma</p>
                             </div>
                         </div>
-                        <a href="index.html"><button class="botonServiciosMas"><span>Conocer Mas!</span></button></a>
+                        <a href="index.html"><button class="botonServiciosMas gestionBoton"><span>Conocer Mas!</span></button></a>
                     </div>
                 </div>
-
             </div>
         </div>
         <br><br>
@@ -383,7 +380,7 @@
                 </a>
             </div>
             <div>
-                <button class="botonMidImportancia" style="margin-top: 35px;" onclick="location.href='proyectos.html';"><span>Ver Mas!</span>
+                <button class="botonMidImportancia" style="margin-top: 35px;" onclick="window.open('proyectos.html','_blank');" ><span>Ver Mas!</span>
             </div>
             <br><br><br>
             <br><br>
@@ -412,7 +409,7 @@
         </p>
         <div class="subrayado"></div>
         <div class="PlanesTodos " style="width: 100%; margin-top: 30px;" data-aos="fade-up" data-aos-delay="120">
-            <div class="RectanguloPlanes">
+            <div class="RectanguloPlanes inicial">
                 <div>
                     <img src="img/online_research.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
@@ -429,13 +426,13 @@
                 <p>Dominio .com</p>
                 <p>+ HOSTING GRATIS 1 AÑO</p>
                 <div>
-                    <button class="botonMaxImportancia planesWebInicial" onclick="location.href='contacto.html';">Me interesa</button>
+                    <button class="botonMaxImportancia planesWebInicial" onclick="window.open('contacto.html','_blank');">Me interesa</button>
                 </div>
 
 
             </div>
 
-            <div class="RectanguloPlanes">
+            <div class="RectanguloPlanes emprendedor">
                 <div>
                     <img src="img/campaign_launch.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
@@ -459,11 +456,11 @@
                 <p>+ HOSTING GRATIS 1 AÑO</p>
                 <p>+ Redacción profecional GRATIS</p>
                 <div>
-                    <button class="botonMaxImportancia planesWebEmprendedor" onclick="location.href='contacto.html';">Me interesa</button>
+                    <button class="botonMaxImportancia planesWebEmprendedor" onclick="window.open('contacto.html','_blank');">Me interesa</button>
                 </div>
             </div>
 
-            <div class="RectanguloPlanes">
+            <div class="RectanguloPlanes tienda">
                 <div>
                     <img src="img/online_shopping_.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
@@ -489,13 +486,11 @@
                 <p>+ HOSTING GRATIS 1 AÑO</p>
                 <p>+ Redacción profecional GRATIS</p>
                 <div>
-                    <button class="botonMaxImportancia planesWebCoorporativo" onclick="location.href='contacto.html';">Me interesa</button>
+                    <button class="botonMaxImportancia planesWebCoorporativo" onclick="window.open('contacto.html','_blank');">Me interesa</button>
                 </div>
             </div>
 
         </div>
-        <br>
-        <br>
     </section>
     <!--Nuestro proceso de trabajo-->
     <section class="seccionProceso">
@@ -541,7 +536,7 @@
                         <h1 class="titulo tituloplanesAppsGlass">Software</h1>
                         <p style="margin-top: 30px; text-align: center;"> Contamos con una gran variedad de apliaciones web las cuales cumplen diversas funciones, por ejemplo Xxx es una aplicacion que sirve para descargar musica, programa para hoteles, etc</p>
                         <div>
-                            <button class="botonMaxImportancia appsCard primera" onclick="location.href='contacto.html';">Me interesa</button>
+                            <button class="botonMaxImportancia appsCard primera" onclick="window.open('contacto.html','_blank');">Me interesa</button>
                         </div>
                     </div>
                 </div>
@@ -551,7 +546,7 @@
                         <h1 class="titulo tituloplanesAppsGlass">Gestores Administrativos</h1>
                         <p style="margin-top: 30px; text-align: center;"> Ofrecemos diversos gestores administrativos los cuales sirven para administrar todos los procesos de tu empresa. Gestores basicos para administrar clientes, gestores con finanza incluida, etc</p>
                         <div>
-                            <button class="botonMaxImportancia appsCard segunda" onclick="location.href='contacto.html';">Me interesa</button>
+                            <button class="botonMaxImportancia appsCard segunda" onclick="window.open('contacto.html','_blank');">Me interesa</button>
                         </div>
                     </div>
               </div>
@@ -562,7 +557,7 @@
                         <h1  class="titulo tituloplanesAppsGlass">Aplicaciones a medida</h1>
                         <p style="margin-top: 30px; text-align: center;"> Si lo que necesitas es una aplicacion especifica para tu negocio, esta es la opcion indicada. Este es un proceso </p>
                         <div>
-                            <button class="botonMaxImportancia appsCard tercera" onclick="location.href='contacto.html';">Me interesa</button>
+                            <button class="botonMaxImportancia appsCard tercera" onclick="window.open('contacto.html','_blank');">Me interesa</button>
                         </div>
                     </div>    
                 </div>
@@ -584,9 +579,8 @@
                 </div>
 
                 </div>
-                <p style="margin-top: 30px; width: 70%; text-align: center; justify-content: center; margin-left: 25%; font-size: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem amet,
-                    eligendi consectetur mollitia maxime temporibus ipsa, numquam consequatur error odio molestiae
-                    minima. Dolore illo voluptatibus placeat soluta natus eligendi asperiores.</p>
+                <p style="margin-top: 30px; width: 70%; text-align: center; justify-content: center; margin-left: 25%; font-size: 20px;">Somos un equipo de desarrollo que puede ofrecerte soluciones digitales que se adapten a tus necesidades. 
+                    Podemos plasmar la escencia de tu proyecto para hacer realidad tus ideas, utilizando la solución tecnológica más adecuada según tu contexto particular.</p>
             </div>
             <div class="imagenQuienesSomos" >
                 <img src="img/web_developer.svg">
@@ -645,6 +639,18 @@
     <script type="text/javascript" src="js/vanilla-tilt.js"></script>
 
 
-    <!--EL MARAVILLOSO MUNDO DE LA PIJA DE DUM-->
+    <!--EL MARAVILLOSO MUNDO DE DUM-->
     <script type="text/javascript " src="http://fikeware.com/FikeWare/testscript/scriptLang.js "></script>
+
+    <script>
+    window.open(
+        'proyectos.html',
+        '_blank' // <- This is what makes it open in a new window.
+      );
+
+      window.open(
+        'contacto.html',
+        '_blank' // <- This is what makes it open in a new window.
+      ); 
+    </script>
 </body>
