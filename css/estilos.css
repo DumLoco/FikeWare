@@ -168,7 +168,7 @@ nav a {
 }
 
 footer {
-    background: linear-gradient(to right, #ffbb87, #fc7540);
+    background-color:#363635;
     text-align: center;
 }
 
@@ -729,7 +729,7 @@ footer {
     .rectanguloCentro{
         width: 99%;
         height: 320px;
-        background: linear-gradient(90deg, rgba(94,102,105,1) 0%, rgba(56,62,64,1) 25%, rgba(56,62,64,1) 50%, rgba(56,62,64,1) 75%, rgba(94,102,105,1) 100%);       position: absolute;
+        background: linear-gradient(90deg, rgb(56, 57, 58) 0%, rgb(29, 30, 31) 25%, rgb(29, 30, 31) 50%, rgb(29, 30, 31) 75%, rgb(64, 68, 70) 100%);       position: absolute;
         margin-top: 8px;
     }
     .cuadradoIzq, .cuadradoDer{
@@ -994,12 +994,12 @@ footer {
 
     .cardServicios{
         position: relative;
-        width: 320px;
-        height: 320px;
+        width: 280px;
+        height: 300px;
         transform-style: preserve-3d;
         margin-left: 40px;
         margin-right: 40px;
-        margin-top: 60px;
+        margin-top: 40px;
         border-radius: 5%;
     }
 
@@ -1368,7 +1368,7 @@ footer {
     .rectanguloCentro{
         width: 99%;
         height: 320px;
-        background: linear-gradient(90deg, rgba(94,102,105,1) 0%, rgba(56,62,64,1) 25%, rgba(56,62,64,1) 50%, rgba(56,62,64,1) 75%, rgba(94,102,105,1) 100%);       position: absolute;
+        background: linear-gradient(90deg, rgb(56, 57, 58) 0%, rgb(29, 30, 31) 25%, rgb(29, 30, 31) 50%, rgb(29, 30, 31) 75%, rgb(64, 68, 70) 100%);       position: absolute;
         margin-top: 8px;
     }
     .cuadradoIzq, .cuadradoDer{
@@ -1909,11 +1909,11 @@ footer {
     outline: none;
     overflow: hidden;
     position: relative;
-    color: rgb(252, 134, 0);
+    color: rgb(255, 255, 255);
     font-weight: 900;
     font-size: 17px;
-    background-color: rgb(255, 255, 255);
-    padding: 10px 55px;
+    background-color: #fa9804;
+    padding: 8px 30px;
     margin: 0 auto;
     box-shadow: 0 5px 15px rgba(0,0,0,0.20);
   }
@@ -1929,8 +1929,21 @@ footer {
     left: 0;
     top: 0;
     height: 490%;
-    width: 140%;
-    background: #fa9804;
+    width: 170%;
+    background: #fffcf7;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  .botonMidImportancia.verMas:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 190%;
+    background: #fffcf7;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
@@ -1942,7 +1955,7 @@ footer {
     transform: translateX(-9%) translateY(-25%) rotate(45deg);
   }
   .botonMidImportancia:hover{
-    color: white;
+    color: #fa9804;
   }
   .botonMidImportancia:focus {
     outline: none;
