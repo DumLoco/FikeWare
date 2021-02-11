@@ -1600,6 +1600,9 @@ footer {
     .textosQuienesSomos{
         margin-left: -10%;
     }
+    .botonMasSimbolo:focus{
+        outline: none;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
