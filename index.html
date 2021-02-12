@@ -428,6 +428,7 @@
                 </div>
                 <br>
                 <p class="TitulosRectangulos">Presencia en Internet</p>
+               
                 <p>Diseño de marca y sitio web</p>
                 <p>Dominio www.tuPagina.com</p>
                 <p>Posicionamiento en internet</p>
@@ -436,7 +437,7 @@
                 <p>Adaptable a celular</p>
                 <div>
                     <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25"
-                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoPrimera', 'RectanguloPlanesPrimera');">
+                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoPrimera', 'RectanguloPlanesPrimera', 'botonPlanes','100px', '52px');">
                 </div>
                 <div id="RectangulosPlanesVerMasTextoPrimera" style="display: none;">
                     <p>8 secciones</p>
@@ -455,7 +456,7 @@
                 </div>
 
                 <div>
-                    <button class="botonMaxImportancia planesWebInicial"
+                    <button id='botonPlanes' class="botonMaxImportancia planesWebInicial"
                         onclick="window.open('contacto.html','_blank');">Me interesa</button>
                 </div>
 
@@ -476,20 +477,20 @@
                 <p>Manejo de seguridad (Login, usuarios, roles, permisos)</p>
                 <div>
                     <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25"
-                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoSegunda', 'RectanguloPlanesSegunda');">
+                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoSegunda', 'RectanguloPlanesSegunda', 'botonPlanesSegunda','250px', '30px');">
                 </div>
                 <div id='RectangulosPlanesVerMasTextoSegunda' class="RectangulosPlanesVerMasTexto"
                     style="display: none;">
-                    <p>10 secciones</p>
-                    <p>50 Imagenes</p>
-                    <p>7 Cuentas de correo electronico @TuEmpresa</p>
+                    <p>12 secciones</p>
+                    <p>150 Imagenes</p>
+                    <p>10 Cuentas de correo electronico @TuEmpresa</p>
                     <p>Integracion con WhatsApp Business</p>
-                    <p>Certificado de Seguridad - SSL</p>
+                    <p>Hasta 100 productos (Imagenes, precios, descripcion)</p>
                     <p>+ HOSTING GRATIS 1 AÑO</p>
                     <p>+ Redacción profecional GRATIS</p>
                 </div>
                 <div>
-                    <button class="botonMaxImportancia planesWebEmprendedor"
+                    <button id='botonPlanesSegunda' class="botonMaxImportancia planesWebEmprendedor"
                         onclick="window.open('contacto.html','_blank');">Me interesa</button>
                 </div>
             </div>
@@ -499,7 +500,7 @@
                     <img src="img/online_shopping_.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
                 <br>
-                <p class="TitulosRectangulos">Tienda/Corporativo</p>
+                <p class="TitulosRectangulos">A medida</p>
                 <p>Sitio Web Dinamico</p>
                 <p>Adaptable a todos los dispositivos</p>
                 <p>18 secciones</p>
@@ -717,9 +718,21 @@
                 
             }
 
-            function botonMasFunciones(objetoMostrarOcultarId, objetoIdAumentarTamaño){
+            function cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal){
+                const elementoCambiarPosicion = document.getElementById(elementoIdCambiarPosicion);
+
+                if (elementoCambiarPosicion.style.marginTop != marginTopNuevo){
+                    elementoCambiarPosicion.style.marginTop = marginTopNuevo
+                }else{
+                    elementoCambiarPosicion.style.marginTop = marginTopOriginal
+                }
+                
+            }
+
+            function botonMasFunciones(objetoMostrarOcultarId, objetoIdAumentarTamaño,elementoIdCambiarPosicion,marginTopNuevo,marginTopOriginal){
                 OcultarMostrar(objetoMostrarOcultarId)
                 aumentarReducirTamaño(objetoIdAumentarTamaño)
+                cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal)
             }
 
         </script>
