@@ -339,7 +339,7 @@
         </div>
     </section>
 
-   
+
     <!--PROYECTOS-->
     <section id="proyectos" style="background-image: url(img/CirculoFondo.png); background-position: center; background-attachment: scroll; background-size: cover;
         background-repeat: no-repeat;">
@@ -382,8 +382,8 @@
     </section>
 
 
-     <!--COMENTARIOS CLIENTES-->
-     <section>
+    <!--COMENTARIOS CLIENTES-->
+    <section>
         <div style="display: flex; justify-content: center;">
             <div class="rectanguloCentro">
                 <div data-aos="fade-up-right" data-aos-delay="100">
@@ -435,7 +435,8 @@
                 <p>Monitoreo de visitas a la pagina</p>
                 <p>Adaptable a celular</p>
                 <div>
-                    <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25" height="25" onclick="OcultarMostrar('RectangulosPlanesVerMasTextoSegunda')">   
+                    <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25"
+                        height="25" onclick="OcultarMostrar('RectangulosPlanesVerMasTextoSegunda')">
                 </div>
                 <div id="RectangulosPlanesVerMasTextoSegunda" style="display: none;">
                     <p>8 secciones</p>
@@ -461,7 +462,7 @@
 
             </div>
 
-            <div class="RectanguloPlanes emprendedor">
+            <div id = "RectanguloPlanesPrimera" class="RectanguloPlanes emprendedor"> 
                 <div>
                     <img src="img/campaign_launch.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
@@ -474,9 +475,11 @@
                 <p>Base de datos (Articulos, clientes, etc)</p>
                 <p>Manejo de seguridad (Login, usuarios, roles, permisos)</p>
                 <div>
-                    <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25" height="25" onclick="OcultarMostrar('RectangulosPlanesVerMasTextoPrimera')">   
+                    <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25"
+                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoPrimera', 'RectanguloPlanesPrimera');">
                 </div>
-                <div id='RectangulosPlanesVerMasTextoPrimera' class="RectangulosPlanesVerMasTexto" style="display: none;">
+                <div id='RectangulosPlanesVerMasTextoPrimera' class="RectangulosPlanesVerMasTexto"
+                    style="display: none;">
                     <p>10 secciones</p>
                     <p>50 Imagenes</p>
                     <p>7 Cuentas de correo electronico @TuEmpresa</p>
@@ -689,17 +692,38 @@
 
         <!--EL MARAVILLOSO MUNDO DE DUM-->
         <script type="text/javascript " src="http://fikeware.com/FikeWare/testscript/scriptLang.js "></script>
-        
+
 
         <!---->
         <script>
-             function OcultarMostrar(objetoId){
-                 const objeto = document.getElementById(objetoId)
-                 if (objeto.style.display === 'none'){
-                    document.getElementById(objetoId).style.display = 'inline';
-                 }else{
-                    document.getElementById(objetoId).style.display = 'none';
-                 }                
-             }
+            function OcultarMostrar(objetoMostrarOcultarId) {
+                const objeto = document.getElementById(objetoMostrarOcultarId);
+                if (objeto.style.display === 'none') {
+                    objeto.style.display = 'inline';
+                } else {
+                    objeto.style.display = 'none';
+                }
+            }
+
+
+            function aumentarReducirTamaño(objetoIdAumentarTamaño) {
+                const objetoAumentar = document.getElementById(objetoIdAumentarTamaño);
+                alert(objetoAumentar.style.height + objetoAumentar.className+objetoAumentar.clientHeight )
+            
+                if (objetoAumentar.clientHeight > 1000){
+                    objetoAumentar.style.height = "600px";
+                    alert('entroGrande');
+                }else if (objetoAumentar.clientHeight < 1000){
+                    objetoAumentar.style.height= "1150px";
+                    alert('entroChico');
+                }
+                
+            }
+
+            function botonMasFunciones(objetoMostrarOcultarId, objetoIdAumentarTamaño){
+                OcultarMostrar(objetoMostrarOcultarId)
+                aumentarReducirTamaño(objetoIdAumentarTamaño)
+            }
+
         </script>
 </body>
