@@ -422,7 +422,7 @@
         </p>
         <div class="subrayado"></div>
         <div class="PlanesTodos " style="width: 100%; margin-top: 30px;" data-aos="fade-up" data-aos-delay="120">
-            <div class="RectanguloPlanes inicial">
+            <div id='RectanguloPlanesPrimera' class="RectanguloPlanes inicial">
                 <div>
                     <img src="img/online_research.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
@@ -436,9 +436,9 @@
                 <p>Adaptable a celular</p>
                 <div>
                     <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25"
-                        height="25" onclick="OcultarMostrar('RectangulosPlanesVerMasTextoSegunda')">
+                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoPrimera', 'RectanguloPlanesPrimera');">
                 </div>
-                <div id="RectangulosPlanesVerMasTextoSegunda" style="display: none;">
+                <div id="RectangulosPlanesVerMasTextoPrimera" style="display: none;">
                     <p>8 secciones</p>
                     <p>40 Imagenes</p>
                     <p>Alta en Google</p>
@@ -462,7 +462,7 @@
 
             </div>
 
-            <div id = "RectanguloPlanesPrimera" class="RectanguloPlanes emprendedor"> 
+            <div id = "RectanguloPlanesSegunda" class="RectanguloPlanes emprendedor"> 
                 <div>
                     <img src="img/campaign_launch.svg" style="width: 200px; margin-bottom: -40px;">
                 </div>
@@ -476,9 +476,9 @@
                 <p>Manejo de seguridad (Login, usuarios, roles, permisos)</p>
                 <div>
                     <input class="botonMasSimbolo" type=image src="img/iconfinder___Plus_1904677.svg" width="25"
-                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoPrimera', 'RectanguloPlanesPrimera');">
+                        height="25" onclick="botonMasFunciones('RectangulosPlanesVerMasTextoSegunda', 'RectanguloPlanesSegunda');">
                 </div>
-                <div id='RectangulosPlanesVerMasTextoPrimera' class="RectangulosPlanesVerMasTexto"
+                <div id='RectangulosPlanesVerMasTextoSegunda' class="RectangulosPlanesVerMasTexto"
                     style="display: none;">
                     <p>10 secciones</p>
                     <p>50 Imagenes</p>
@@ -708,14 +708,11 @@
 
             function aumentarReducirTamaño(objetoIdAumentarTamaño) {
                 const objetoAumentar = document.getElementById(objetoIdAumentarTamaño);
-                alert(objetoAumentar.style.height + objetoAumentar.className+objetoAumentar.clientHeight )
-            
+
                 if (objetoAumentar.clientHeight > 1000){
-                    objetoAumentar.style.height = "600px";
-                    alert('entroGrande');
+                    objetoAumentar.style.height = "620px";
                 }else if (objetoAumentar.clientHeight < 1000){
                     objetoAumentar.style.height= "1150px";
-                    alert('entroChico');
                 }
                 
             }

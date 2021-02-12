@@ -222,7 +222,7 @@ footer {
     width: 25%;
     margin: 20px;
     text-align: center;
-    height: 600px;
+    height: 620px;
     transition: transform 0.5s ease;
     border-radius: 4px;
     /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
@@ -1451,10 +1451,10 @@ footer {
         margin-left: 9%
     }   
     .planesWebInicial{
-        margin-top: 130%;
+        margin-top: 15%;
       }
     .planesWebEmprendedor{
-        margin-top: 47%;
+        margin-top: 8%;
       }
     .planesWebCoorporativo{
           margin-top: 8.8%;
