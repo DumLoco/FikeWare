@@ -633,7 +633,6 @@ footer {
     }
     .cardServicios .cara.frente{
         text-align: center;
-       
     }
 
     .cardServicios .cara.frente h1{
@@ -997,8 +996,8 @@ footer {
         width: 280px;
         height: 300px;
         transform-style: preserve-3d;
-        margin-left: 40px;
-        margin-right: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
         margin-top: 40px;
         border-radius: 5%;
     }
