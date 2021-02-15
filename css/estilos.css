@@ -1602,6 +1602,15 @@ footer {
     .botonMasSimbolo:focus{
         outline: none;
     }
+    .linksFooterMapa{
+        display: flex; 
+        flex-direction: column; 
+        text-align: left;
+    }
+    .linksFooterMapa a{
+        color: white;
+        text-decoration: none;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
