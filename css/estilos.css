@@ -46,6 +46,7 @@ video {
 
 #derechos {
     display: inline-block;
+    color: white;
 }
 
 .absolute {
@@ -102,6 +103,40 @@ video {
     font-size: 40px;
     text-decoration: none;
 }
+
+
+
+.social-buttons-footer ul li {
+    list-style: none;
+    display: block;
+}
+
+.social-buttons-footer {
+    text-align: left;
+}
+
+.social-buttons-footer ul {    
+    float: left;
+    width: 100%;
+    padding: 4% 10% 0 0;
+}
+
+.social-buttons-footer i {
+    font-size: 25px;
+    color: #fae4cb;
+    padding-right: 6%;
+}
+
+.social-buttons-footer i:hover {
+    font-size: 25px;
+    color: #D2691E;
+}
+
+.social-buttons-footer a {
+    font-size: 25px;
+    text-decoration: none;
+}
+
 
 #servicios-internos {
     text-align: center;
@@ -1611,6 +1646,21 @@ footer {
         color: white;
         text-decoration: none;
     }
+    .linksFooterMapa a:hover{
+        color: rgb(255, 136, 0);
+        text-decoration: none;
+    }
+    .tituloFooter{
+        font-weight: 900;
+        font-size: 25px;
+        color: rgb(255, 145, 0);
+    }
+    .textoBloque{
+        display: block; 
+        text-align: left; 
+        margin-left: 55px; 
+        margin-right: 55px;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1885,10 +1935,6 @@ footer {
 
 
 /*-----------------------------------------------------------------------*/
-
-.TextosFooter {
-    padding-top: 12px;
-}
 
 #Frase1 {
     background-image: url(../img/frasefondo1.jpg);
