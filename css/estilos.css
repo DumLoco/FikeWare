@@ -1937,10 +1937,10 @@ footer {
 /*-----------------------------------------------------------------------*/
 
 #Frase1 {
-    background-image: url(../img/frasefondo1.jpg);
+    background-image: url(../img/frasefondo2.jpg);
     background-position: center;
     background-attachment: scroll;
-    /*HACE QUE LA IMAGEN QUEDE ESTATICA ON SCROLL*/
+   
     background-size: cover;
     width: 100%;
     height: 300px;
@@ -1948,7 +1948,7 @@ footer {
 }
 
 #Frase2 {
-    background-image: url(../img/frasefondo3.jpg);
+    background-image: url(../img/frasefondo1.jpg);
     background-position: center;
     background-attachment: scroll;
     background-size: cover;
