@@ -1558,6 +1558,7 @@ footer {
         font-size: 30px;
         transform: translateZ(20px);
         transform-style: preserve-3d;
+        margin-top: 100px;
     }
     .planesAppsCirculoColor.primera.der{
         top: 74%;
@@ -1948,6 +1949,16 @@ footer {
 }
 
 #Frase2 {
+    background-image: url(../img/frasefondo3.jpg);
+    background-position: center;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+}
+
+#Frimage {
     background-image: url(../img/frasefondo1.jpg);
     background-position: center;
     background-attachment: scroll;
