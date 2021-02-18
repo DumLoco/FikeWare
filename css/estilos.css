@@ -4,6 +4,8 @@
     src: url(../fuentes/CaviarDreams.ttf);
 }
 
+
+
 .titulo{
     font-family: 'Work Sans', sans-serif;
     text-align: center; 
@@ -24,9 +26,11 @@ html {
     scroll-behavior: smooth;
 }
 
+
+
 #header {
     width: 100%;
-    height: 762px;
+    height: 902px;
     position: static;
     overflow: hidden;
     background-image: linear-gradient(to right, hsla(26, 97%, 35%, 0.342), hsla(22, 79%, 53%, 0.562));
@@ -37,7 +41,7 @@ html {
 
 video {
     width: 100%;
-    height: 759px;
+    height: 902px;
     object-fit: cover;
     top: 0;
     overflow: hidden;
@@ -246,6 +250,12 @@ footer {
     padding-right: 15px;
     padding-left: 15px;
 
+}
+
+.container-inicio{
+    margin-top: 13%; 
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 #Planes {
@@ -850,14 +860,11 @@ footer {
         top: 84.5%;
         left: 0;
     }
-    .botonMaxImportancia.inicio{
-        margin-left: 21%
-    }
     .planesWebInicial{
-        margin-top: 84%;
+        margin-top: 10%;
       }
     .planesWebEmprendedor{
-        margin-top: 25%;
+        margin-top: 10%;
       }
     .planesWebCoorporativo{
           margin-top: 8.8%;
@@ -901,7 +908,7 @@ footer {
     .planesAppsGlass{
         background: white;
         width: 27%;
-        height: 350px;
+        height: 380px;
         background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
         border-radius: 10px;
         backdrop-filter: blur(10px);
@@ -989,7 +996,7 @@ footer {
     }
     .botonMaxImportancia.appsCard.segunda{
         background: linear-gradient(to right bottom, #1bf6b4 ,  #c83095 );
-        margin-top: 45px;
+        margin-top: 20px;
     }
 
     .botonMaxImportancia.appsCard.tercera{
@@ -1000,6 +1007,33 @@ footer {
         text-align: left;
     }
 
+    .botonMasSimbolo:focus{
+        outline: none;
+    }
+    .linksFooterMapa{
+        display: flex; 
+        flex-direction: column; 
+        text-align: left;
+    }
+    .linksFooterMapa a{
+        color: white;
+        text-decoration: none;
+    }
+    .linksFooterMapa a:hover{
+        color: rgb(255, 136, 0);
+        text-decoration: none;
+    }
+    .tituloFooter{
+        font-weight: 900;
+        font-size: 25px;
+        color: rgb(255, 145, 0);
+    }
+    .textoBloque{
+        display: block; 
+        text-align: left; 
+        margin-left: 55px; 
+        margin-right: 55px;
+    }
 
 
 }
@@ -1482,7 +1516,7 @@ footer {
     left: 0;
     }
     .botonMaxImportancia.inicio{
-        margin-left: 9%
+        margin-top: 50px;
     }   
     .planesWebInicial{
         margin-top: 52px;
@@ -1931,8 +1965,43 @@ footer {
         transform: translatey(0px);
         /*box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.120), -5px -5px 6px 12px rgba(0, 0, 0, 0.120);*/
     }
+    #fraseprueba{
+        display: inline;
+        font-size: 60px;
+        text-align: center;
+        color: #fffcf9;
+        font-weight: 900;
+    }
+
+    #header-textos-3 p {
+        display: inline;
+        font-size: 18px;
+        text-align: center;
+        color: #fcedde;
+        font-weight: 600;
+        width: 100%;
+    }
+    .container-inicio{
+        margin-top: 30%; 
+        margin-bottom: 100px;
+        text-align: center;
+    }
+
+    .titulo-principal{
+        margin-bottom: 30px;
+    }
+
+    
+    /*SCROLL LATERAL
+    html {
+        overflow-x: hidden;    
+    
+
+    }
+*/
+    
 }
-}
+
 
 
 /*-----------------------------------------------------------------------*/
