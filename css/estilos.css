@@ -1092,7 +1092,6 @@ footer {
     }
 
     .contenedorCheckTexto.sitioWebFull{
-        
         text-align: left; 
         width: 80%;
     }
@@ -1829,7 +1828,46 @@ footer {
         margin-top: 40px;
         margin-bottom: 100px;
       }
+      .parrafo{
+        font-size: 20px;
+    }
+    .contenedorCheckTexto{
+        display: flex; 
+        text-align: justify; 
+        justify-content: center;
+    }
 
+    .checkImg{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px; 
+        margin-top: 3px;
+    }
+
+    .contenedorCheckTexto.sitioWebFull{
+        text-align: left; 
+        width: 80%;
+    }
+    .divSitioWebFullTextosCheck{
+        width: 85%; 
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .PlanesTodos .RectanguloPlanes {
+        background: white;
+        width: 28%;
+        margin: 20px;
+        text-align: center;
+        height: 700px;
+        transition: transform 0.5s ease;
+        border-radius: 4px;
+        /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
+        -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);*/
+       /* box-shadow: 5px 8px 12px 15px rgba(0, 0, 0, 0.075), -5px -5px 6px 12px rgba(0, 0, 0, 0.075);*/
+        box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.192);
+    }
 }
 
 @media only screen and (max-width: 1300px) {
