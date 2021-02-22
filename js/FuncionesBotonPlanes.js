@@ -12,9 +12,9 @@ function aumentarReducirTamaño(objetoIdAumentarTamaño) {
     const objetoAumentar = document.getElementById(objetoIdAumentarTamaño);
 
     if (objetoAumentar.clientHeight > 1000){
-        objetoAumentar.style.height = "620px";
+        objetoAumentar.style.height = "700px";
     }else if (objetoAumentar.clientHeight < 1000){
-        objetoAumentar.style.height= "1150px";
+        objetoAumentar.style.height= "1250px";
     }
     
 }

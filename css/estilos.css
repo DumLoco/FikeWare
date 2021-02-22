@@ -267,7 +267,7 @@ footer {
     width: 25%;
     margin: 20px;
     text-align: center;
-    height: 620px;
+    height: 700px;
     transition: transform 0.5s ease;
     border-radius: 4px;
     /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
@@ -857,7 +857,7 @@ footer {
      }
      .wave{
         position: absolute;
-        top: 75.5%;
+        top: 85%;
         left: 0;
     }
     .planesWebInicial{
@@ -867,7 +867,7 @@ footer {
         margin-top: 10%;
       }
     .planesWebCoorporativo{
-          margin-top: 8.8%;
+          margin-top: 25%;
       }
       .tituloQuieneSomos{
         font-weight: 900;
@@ -1035,7 +1035,67 @@ footer {
         margin-right: 55px;
     }
 
+    .porqueNosotros{
+        font-size: 30px;
+    }
 
+    .numero{
+        font-size: 80px;
+        font-weight: 900;
+        color: rgb(255, 136, 0);
+        margin-top: 20px;
+    }
+
+    .textoIconosPorque{
+        font-size: 20px;
+        text-align: center;
+        font-weight: 700;
+        margin-top: -20px;
+    }
+
+    .añosExperiencia{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .cantProyectos{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    #porqueNosotros{
+        margin-top: 150px;
+    }
+    .contenedorIconosTexto{
+      display: flex; 
+      justify-content: center;
+      margin-top: 40px;
+      margin-bottom: 100px;
+    }
+
+    .botonMaxImportancia.inicio{
+        margin-top: 50px;
+    }   
+
+    .parrafo{
+        font-size: 20px;
+    }
+    .contenedorCheckTexto{
+        display: flex; 
+        text-align: justify; 
+       justify-content: center;
+    }
+
+    .checkImg{
+        width: 20px; 
+        height: 20px; 
+        margin-right: 5px; 
+        margin-top: 3px;
+    }
+
+    .contenedorCheckTexto.sitioWebFull{
+        
+        text-align: left; 
+        width: 80%;
+    }
 
 }
 
