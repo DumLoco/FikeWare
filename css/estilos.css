@@ -1579,13 +1579,13 @@ footer {
         margin-top: 50px;
     }   
     .planesWebInicial{
-        margin-top: 52px;
+        margin-top: 110px;
       }
     .planesWebEmprendedor{
         margin-top: 20px;
       }
     .planesWebCoorporativo{
-          margin-top: 8.8%;
+          margin-top: 189px;
       }
     .procesoTextoGrande{
         color: black;
@@ -1833,8 +1833,8 @@ footer {
     }
     .contenedorCheckTexto{
         display: flex; 
-        text-align: justify; 
-        justify-content: center;
+        text-align: left; 
+        justify-content: left;
     }
 
     .checkImg{
@@ -1844,13 +1844,10 @@ footer {
         margin-top: 3px;
     }
 
-    .contenedorCheckTexto.sitioWebFull{
-        text-align: left; 
-        width: 80%;
-    }
     .divSitioWebFullTextosCheck{
-        width: 85%; 
+        width: 77%; 
         display: flex;
+        justify-content: center;
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
@@ -1860,7 +1857,7 @@ footer {
         width: 28%;
         margin: 20px;
         text-align: center;
-        height: 700px;
+        height: 760px;
         transition: transform 0.5s ease;
         border-radius: 4px;
         /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);

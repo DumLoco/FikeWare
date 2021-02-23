@@ -8,13 +8,21 @@ function OcultarMostrar(objetoMostrarOcultarId) {
 }
 
 
-function aumentarReducirTamaño(objetoIdAumentarTamaño) {
+function aumentarReducirTamaño(objetoIdAumentarTamaño, alturaNueva) {
     const objetoAumentar = document.getElementById(objetoIdAumentarTamaño);
 
     if (objetoAumentar.clientHeight > 1000){
-        objetoAumentar.style.height = "700px";
+        if (screen.width < 1700){
+            objetoAumentar.style.height = "760px";
+        }else{
+            objetoAumentar.style.height = "700px";
+        }
     }else if (objetoAumentar.clientHeight < 1000){
-        objetoAumentar.style.height= "1250px";
+        if (screen.width < 1700){
+            objetoAumentar.style.height = "1250px";
+        }else{
+            objetoAumentar.style.height = "1250px";
+        }
     }
     
 }
