@@ -36,6 +36,7 @@ function cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marg
         elementoCambiarPosicion.style.marginTop = marginTopOriginal
     }
     
+    
 }
 
 function botonMasFunciones(objetoMostrarOcultarId, objetoIdAumentarTamaño,elementoIdCambiarPosicion,marginTopNuevo,marginTopOriginal){
