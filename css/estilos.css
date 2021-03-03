@@ -2283,7 +2283,7 @@ footer {
         color: rgb(255, 145, 0);
         margin-top: 35px;
     }
-    .social-buttons-footer ul li {
+   .social-buttons-footer ul li {
         list-style: none;
         display: inline;
     }
@@ -2295,7 +2295,7 @@ footer {
 
 
 /*-----------------------------------------------------------------------*/
-/*.footerContenedorGeneral{
+.footerContenedorGeneral{
     display: flex; 
     justify-content: center;
     margin-bottom: 30px;
@@ -2305,7 +2305,7 @@ footer {
     display: flex; 
     margin-top: 50px; 
     justify-content: center;
-}*/
+}
 
 
 #Frase1 {
