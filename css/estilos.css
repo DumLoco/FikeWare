@@ -104,6 +104,14 @@ video {
     text-align: center;
 }
 
+.parrafo.porqueNos{
+    text-align: center; 
+    font-weight: 500; 
+    width: 50%; 
+    display: flex; 
+    justify-content: center;
+}
+
 .social-buttons i:hover {
     font-size: 40px;
     color: #D2691E;
@@ -2240,12 +2248,65 @@ footer {
         background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
         margin-top: 10px;
     }
-
+    .parrafo.porqueNos{
+        text-align: center; 
+        font-weight: 500; 
+        width: 90%; 
+        display: flex; 
+        justify-content: center;
+    }
+    
+    .contenedorIconosTexto{
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 100px;
+      }
+      .footerContenedorGeneral{
+        display: flex; 
+        justify-content: center;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    
+    .footerContenedorGrupos{
+        display: flex; 
+        margin-top: 50px; 
+        justify-content: center;
+        flex-direction: column;
+    }
+    .tituloFooter{
+        font-weight: 900;
+        font-size: 25px;
+        color: rgb(255, 145, 0);
+        margin-top: 35px;
+    }
+    .social-buttons-footer ul li {
+        list-style: none;
+        display: inline;
+    }
+    .TextosFooter{
+        width: 95%;
+    }
 }
 
 
 
 /*-----------------------------------------------------------------------*/
+/*.footerContenedorGeneral{
+    display: flex; 
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.footerContenedorGrupos{
+    display: flex; 
+    margin-top: 50px; 
+    justify-content: center;
+}*/
+
 
 #Frase1 {
     background-image: url(../img/frasefondo2.jpg);
