@@ -13,7 +13,7 @@ function aumentarReducirTamaño(objetoIdAumentarTamaño, alturaNueva) {
 
     if (objetoAumentar.clientHeight > 1000){
         if (screen.width < 1700){
-            objetoAumentar.style.height = "760px";
+            objetoAumentar.style.height = "770px";
         }else{
             objetoAumentar.style.height = "700px";
         }
@@ -29,13 +29,20 @@ function aumentarReducirTamaño(objetoIdAumentarTamaño, alturaNueva) {
 
 function cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal){
     const elementoCambiarPosicion = document.getElementById(elementoIdCambiarPosicion);
-
-    if (elementoCambiarPosicion.style.marginTop != marginTopNuevo){
-        elementoCambiarPosicion.style.marginTop = marginTopNuevo
-    }else{
-        elementoCambiarPosicion.style.marginTop = marginTopOriginal
-    }
     
+    if (objetoAumentar.clientHeight > 1000){
+        if (elementoCambiarPosicion.style.marginTop != marginTopNuevo){
+            elementoCambiarPosicion.style.marginTop = marginTopNuevo
+        }else{
+            elementoCambiarPosicion.style.marginTop = marginTopOriginal
+        }
+    }else if (objetoAumentar.clientHeight < 1000){
+        if (elementoCambiarPosicion.style.marginTop != '10px'){
+            elementoCambiarPosicion.style.marginTop = '10px'
+        }else{
+            elementoCambiarPosicion.style.marginTop = '10px'
+        }
+    }
     
 }
 

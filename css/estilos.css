@@ -98,6 +98,12 @@ video {
     padding-right: 6%;
 }
 
+.parrafo.nuestrosServicio{
+    font-size: 20px;
+    color: black; 
+    text-align: center;
+}
+
 .social-buttons i:hover {
     font-size: 40px;
     color: #D2691E;
@@ -242,6 +248,19 @@ footer {
     font-weight: 500;
     padding-right: 15px;
     padding-left: 15px;
+}
+
+.textoLargoComentario{
+    width: 50%; 
+    margin-left: auto; 
+    margin-right: auto; 
+    margin-top: 40px;
+}
+
+.parrafoComentario{
+    color: rgb(248, 248, 248); 
+    font-size: 20px; 
+    text-align: center;
 }
 
 #navbarContacto li a {
@@ -411,6 +430,12 @@ footer {
     position: absolute;
     z-index: -1;
   }
+
+  .textoFrase1{
+    display: flex; 
+    text-align: center; 
+    justify-content: center;
+}
 /*-------------------------------PANTALLAS RESPONSIVE--------------------------------*/
 
 @media only screen and (min-width: 1700px) {
@@ -1857,7 +1882,7 @@ footer {
         width: 28%;
         margin: 20px;
         text-align: center;
-        height: 760px;
+        height: 770px;
         transition: transform 0.5s ease;
         border-radius: 4px;
         /*-webkit-box-shadow: 0px 8px 5px 4px rgba(75, 49, 2, 0.08);
@@ -1978,6 +2003,7 @@ footer {
         width: 300px;
         margin-left: auto;
         margin-right: auto;
+        margin-top: 50px;
     }
 
     .PlanesTodos .RectanguloPlanes.inicial {
@@ -2125,11 +2151,15 @@ footer {
         z-index: -1;
     }
     .botonMaxImportancia.planesWebInicial{
-        margin-top: 40px;
+        margin-top: 10px;
     }
     .botonMaxImportancia.planesWebEmprendedor{
-        margin-top: 40px;
+        margin-top: 220px;
     }
+    .botonMaxImportancia.planesWebCoorporativo{
+        margin-top: 135px;
+    }
+    
     .PlanesTodos .RectanguloPlanes:hover {
         transform: translatey(0px);
         /*box-shadow: 5px 5px 6px 12px rgba(0, 0, 0, 0.120), -5px -5px 6px 12px rgba(0, 0, 0, 0.120);*/
@@ -2159,16 +2189,53 @@ footer {
     .titulo-principal{
         margin-bottom: 30px;
     }
-
-    
-    /*SCROLL LATERAL
-    html {
-        overflow-x: hidden;    
-    
-
+    .parrafo.nuestrosServicio{
+        font-size: 20px;
+        color: black; 
+        text-align: justify;
+        width: 90%;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
     }
-*/
-    
+    .textoFrase1{
+        display: flex; 
+        text-align: center; 
+        justify-content: center;
+    }
+    .textoFrase1 h1{
+        font-size: 45px;
+    }
+    .rectanguloCentro{
+        width: 99%;
+        height: 510px;
+        background: linear-gradient(90deg, rgb(56, 57, 58) 0%, rgb(29, 30, 31) 25%, rgb(29, 30, 31) 50%, rgb(29, 30, 31) 75%, rgb(64, 68, 70) 100%);       position: absolute;
+        margin-top: 8px;
+    } 
+    .comentarioClientes{
+        height: 510px;
+    }
+    .textoLargoComentario{
+        width: 100%; 
+        margin-left: auto; 
+        margin-right: auto; 
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .parrafoComentario{
+        color: rgb(248, 248, 248); 
+        font-size: 20px; 
+        text-align: center;
+        width: 90%;
+    }
+    .cuadradoDer{
+        margin-left: 70%;
+        margin-top: 345px;
+    }
+
 }
 
 
