@@ -2079,7 +2079,7 @@ footer {
     .planesAppsGlass{
         background: white;
         width: 90%;
-        height: 350px;
+        height: 420px;
         background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
         border-radius: 10px;
         backdrop-filter: blur(10px);
@@ -2107,9 +2107,10 @@ footer {
         font-size: 30px;
         transform: translateZ(20px);
         transform-style: preserve-3d;
+        margin-top: 10px;
     }
     .planesAppsCirculoColor.primera.der{
-        top: 23%;
+        top: 330px;
         left: 71%;
         z-index: -1;
     }
@@ -2234,6 +2235,10 @@ footer {
     .cuadradoDer{
         margin-left: 70%;
         margin-top: 345px;
+    }
+    .botonMaxImportancia.appsCard.primera{
+        background: linear-gradient(to right bottom, #f69f1b ,  #c83077 );
+        margin-top: 10px;
     }
 
 }
