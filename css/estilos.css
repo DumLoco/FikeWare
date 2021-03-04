@@ -145,6 +145,15 @@ video {
     padding-right: 6%;
 }
 
+.ladoIzq{
+    width: 45%;
+    background-color: rgba(247, 243, 243, 0.377); 
+    color: black; 
+    backdrop-filter: blur(20px); 
+    border-radius: 10px; 
+    box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.123);
+}
+
 .social-buttons-footer i:hover {
     font-size: 25px;
     color: #D2691E;
@@ -415,6 +424,15 @@ footer {
     background: #eb656e ;
     transition:400ms ease all;
   }
+
+  .containerGral{
+    width: 60%; 
+    display: flex; 
+    justify-content: justify; 
+    margin-right: auto; 
+    margin-left: auto; 
+    margin-top: 5%;
+}
   .botonMaxImportancia.appsCard.tercera:after{
     right:inherit;
     top:inherit;
@@ -2290,11 +2308,47 @@ footer {
     .TextosFooter{
         width: 95%;
     }
+    #contacto {
+        width: 100%;
+        /*background-image: linear-gradient(to right, hsla(28, 100%, 69%, 0.479), hsla(29, 98%, 50%, 0.534)), url(../img/CirculoFondo.png);*/
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        position: static;
+    }
+    .Contactotriangulo{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 200px 300px 0 0;
+        border-color: #ff8800 transparent transparent transparent;
+        position: absolute;
+        z-index: -1;
+      }
+      .ladoIzq{
+        width: 320px;
+        background-color: rgba(247, 243, 243, 0.377); 
+        color: black; 
+        backdrop-filter: blur(20px); 
+        border-radius: 10px; 
+        box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.123);
+    }
+    .containerGral{
+        width: 320px; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        text-align: center; 
+        margin-top: 5%;
+    }
 }
 
 
 
 /*-----------------------------------------------------------------------*/
+
+
+
 .footerContenedorGeneral{
     display: flex; 
     justify-content: center;
