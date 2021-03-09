@@ -390,6 +390,11 @@ footer {
     color: black;
 }
 
+
+
+
+
+
 .botonMaxImportancia.appsCard.segunda:before, .botonMaxImportancia.appsCard.segunda:after{
     content:'';
     position:absolute;
@@ -1146,7 +1151,25 @@ footer {
         text-align: left; 
         width: 80%;
     }
+    .containerTituloSubrayado{
+        margin-left: 20%;
+    }
 
+    .textosQuienesSomos{
+        margin-left: -10%;
+    }
+    .textosQuienesSomos2{
+        margin-left: 25%;
+    }
+    .parrafoQuienes{
+        margin-top: 30px; 
+        width: 70%; 
+        text-align: center; 
+        justify-content: center; 
+        margin-left: 25%; 
+        font-size: 20px;
+    }
+    
 }
 
 .TitulosRectangulos {
@@ -1778,7 +1801,7 @@ footer {
         margin-right: 5%;
     }
     .textosQuienesSomos{
-        margin-left: -10%;
+        margin-left: -25%;
     }
     .botonMasSimbolo:focus{
         outline: none;
@@ -1915,6 +1938,9 @@ footer {
         -moz-box-shadow: 0px 8px 5px 4px rgba(0, 0, 0, 0.08);*/
        /* box-shadow: 5px 8px 12px 15px rgba(0, 0, 0, 0.075), -5px -5px 6px 12px rgba(0, 0, 0, 0.075);*/
         box-shadow: 0px 0px 12px 12px rgba(0, 0, 0, 0.192);
+    }
+    .containerTituloSubrayado{
+        margin-left: 20%;
     }
 }
 
@@ -2071,7 +2097,14 @@ footer {
     }
     .container-quienes img{
         width: 300px;
+        display: flex;
+        justify-content: center;
+        text-align: center;
         margin-left: auto;
+        margin-right: auto;
+    }
+    .imagenQuienesSomos{
+        width: 100%;
     }
     .tituloQuieneSomos{
         font-weight: 900;
@@ -2341,9 +2374,27 @@ footer {
         text-align: center; 
         margin-top: 5%;
     }
-    /*ad*/
+    .containerTituloSubrayado{
+        text-align: center;   
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .textosQuienesSomos2{
+        text-align: center;
+        margin-left: auto;
+    }
+    .parrafoQuienes{
+        margin-top: 30px; 
+        width: 85%; 
+        text-align: center; 
+        justify-content: center; 
+        font-size: 20px;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
-
 
 
 /*-----------------------------------------------------------------------*/
