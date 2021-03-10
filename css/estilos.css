@@ -2036,6 +2036,18 @@ footer {
 
 @media only screen and (max-width: 450px) {
     /*SIRVE PARA PANTALLES MENORES A 410*/
+
+
+    html, body {
+    /*    max-width: 100%; */
+        overflow-x: hidden;
+    /*ancla*/
+        
+    }
+
+  
+
+    
     .containersServicios {
         width: 270px;
         margin-right: 1%;
@@ -2050,6 +2062,7 @@ footer {
     .PlanesTodos {
         display: block;
         justify-content: center;
+
     }
     .PlanesTodos .RectanguloPlanes {
         width: 300px;
@@ -2244,6 +2257,10 @@ footer {
         margin-top: 30%; 
         margin-bottom: 100px;
         text-align: center;
+        /*ancla*/
+        position: absolute;
+
+        
     }
 
     .titulo-principal{
@@ -2274,6 +2291,7 @@ footer {
     } 
     .comentarioClientes{
         height: 510px;
+  
     }
     .textoLargoComentario{
         width: 100%; 
