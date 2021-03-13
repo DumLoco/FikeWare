@@ -30,13 +30,13 @@ function aumentarReducirTamaño(objetoIdAumentarTamaño, alturaNueva) {
 function cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal){
     const elementoCambiarPosicion = document.getElementById(elementoIdCambiarPosicion);
     
-    if (objetoAumentar.clientHeight > 1000){
+    if (screen.width > 1600){
         if (elementoCambiarPosicion.style.marginTop != marginTopNuevo){
             elementoCambiarPosicion.style.marginTop = marginTopNuevo
         }else{
             elementoCambiarPosicion.style.marginTop = marginTopOriginal
         }
-    }else if (objetoAumentar.clientHeight < 1000){
+    }else if (screen.width < 1600){
         if (elementoCambiarPosicion.style.marginTop != '10px'){
             elementoCambiarPosicion.style.marginTop = '10px'
         }else{
