@@ -1169,7 +1169,14 @@ footer {
         margin-left: 25%; 
         font-size: 20px;
     }
-    
+    .ladoDer{
+        width: 55%; 
+        margin-left: 80px;
+    }
+    .formularioTriple{
+        display: flex; 
+        width: 750px;
+    }
 }
 
 .TitulosRectangulos {
@@ -1942,6 +1949,15 @@ footer {
     .containerTituloSubrayado{
         margin-left: 20%;
     }
+    .ladoDer{
+        width: 55%; 
+        margin-left: 80px;
+    }
+    .formularioTriple{
+        display: flex; 
+        width: 750px;
+    }
+
 }
 
 @media only screen and (max-width: 1300px) {
@@ -2142,14 +2158,14 @@ footer {
         background: linear-gradient(to right bottom, rgba(252, 250, 249, 0.568), rgba(253, 235, 209, 0.233) );/*linear-gradient(to right bottom, rgba(255, 255, 255, 0.568), rgba(255, 255, 255, 0.233) );*/
         border-radius: 10px;
         backdrop-filter: blur(10px);
-        margin-left: 25px;
-        margin-right: 25px;
+        margin-left: auto;
+        margin-right: auto;
         z-index: 2;
         box-shadow: 0px 1px 24px -1px rgba(0, 0, 0, 0.158);
         display: flex;
         justify-content: center;
         transform-style: preserve-3d;
-        margin-top: 35px;
+        margin-top: 55px;
     }
     
     .planesAppsCirculoColor{
@@ -2338,6 +2354,15 @@ footer {
         list-style: none;
         display: inline;
     }
+    .social-buttons {
+        text-align: center;
+    }
+    
+    .social-buttons ul {    
+        float: center;
+        width: 100%;
+        padding: 4% 10% 0 0;
+    }
     .TextosFooter{
         width: 95%;
     }
@@ -2359,15 +2384,19 @@ footer {
         z-index: -1;
       }
       .ladoIzq{
-        width: 320px;
+        width: 300px;
         background-color: rgba(247, 243, 243, 0.377); 
         color: black; 
         backdrop-filter: blur(20px); 
         border-radius: 10px; 
         box-shadow: 2px 2px 10px 10px rgba(0, 0, 0, 0.123);
+        margin-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
     }
     .containerGral{
-        width: 320px; 
+        width: 300px; 
         display: flex; 
         flex-direction: column;
         justify-content: center;
@@ -2432,6 +2461,19 @@ footer {
         animation-duration: 1.5s;
         animation-iteration-count: infinite;
         animation-name: scroll;
+    }
+    .ladoDer{
+        width: 85%; 
+        margin-left: 0px;
+    }
+    .formularioTriple{
+        display: flex; 
+        width: 750px;
+        flex-direction: column;
+    }
+    .inputs-contacto{
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 }
 
