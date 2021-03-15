@@ -7,52 +7,79 @@ function OcultarMostrar(objetoMostrarOcultarId) {
     }
 }
 
-
 function aumentarReducirTamaño(objetoIdAumentarTamaño, alturaNueva) {
     const objetoAumentar = document.getElementById(objetoIdAumentarTamaño);
 
-    if (objetoAumentar.clientHeight > 1000){ //Verifca Tamaño del objeto
-        if (screen.width > 1700){ //Verifca Tamaño de pantalla 1920
-            objetoAumentar.style.height = "700px";
-        }else{
-            if(screen.width > 1200){ //1366
-                objetoAumentar.style.height = "770px";
-            }
-            if(screen.width < 550){ //450
-                objetoAumentar.style.height = "1270px";
-            }       
-        }
-    }else if (objetoAumentar.clientHeight < 1000){ //Verifca Tamaño del objeto
-        if (screen.width < 1700){
-            objetoAumentar.style.height = "1400px";
-        }else{
-            objetoAumentar.style.height = "1250px";
+    function AumentaReduceTamaño(alturaObjetoVerificar, alturaObjetoGrande, AlturaObjetoChico) {
+        if (objetoAumentar.clientHeight > alturaObjetoVerificar) { //Verifca Tamaño del objeto
+            objetoAumentar.style.height = AlturaObjetoChico;
+        } else {
+            objetoAumentar.style.height = alturaObjetoGrande;
         }
     }
-    
+
+    function DefinirRectangulo(objetoIdAumentarTamaño, alturaObjetoVerificar, alturaObjetoGrande, AlturaObjetoChico, alturaObjetoVerificarSeg, alturaObjetoGrandeSeg, AlturaObjetoChicoSeg){
+        if (objetoIdAumentarTamaño == "RectanguloPlanesPrimera") {
+            AumentaReduceTamaño(alturaObjetoVerificar, alturaObjetoGrande, AlturaObjetoChico)
+        } else if (objetoIdAumentarTamaño == "RectanguloPlanesSegunda") {
+            AumentaReduceTamaño(alturaObjetoVerificarSeg, alturaObjetoGrandeSeg, AlturaObjetoChicoSeg)
+        }
+    }
+
+
+
+    if (screen.width > 1400) {
+        DefinirRectangulo(objetoIdAumentarTamaño, 1000, "1250px", "700px", 900, "970px", "700px")
+    } else if (screen.width < 1400 && screen.width > 700) {
+       /* AumentaReduceTamaño(1000, "1400px", "770px")*/
+        DefinirRectangulo(objetoIdAumentarTamaño, 1000, "1400px", "770px", 1051, "1270px", "770px")
+    } else if (screen.width < 700) { //Verifca Tamaño del objeto para pantallas mobile
+        DefinirRectangulo(objetoIdAumentarTamaño, 1051, "1570px", "770px", 1051, "1370px", "870px")
+    }
 }
 
-function cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal){
+
+
+function cambiarPosicionElemento(elementoIdCambiarPosicion) {
     const elementoCambiarPosicion = document.getElementById(elementoIdCambiarPosicion);
-    
-    if (screen.width > 1400){
-        if (elementoCambiarPosicion.style.marginTop != marginTopNuevo){
+
+    function switchMarginTop(marginTopNuevo, marginTopOriginal) {
+        if (elementoCambiarPosicion.style.marginTop != marginTopNuevo) {
             elementoCambiarPosicion.style.marginTop = marginTopNuevo
-        }else{
+        } else {
             elementoCambiarPosicion.style.marginTop = marginTopOriginal
         }
-    }else if (screen.width < 1700){
-        if (elementoCambiarPosicion.style.marginTop != '10px;'){
-            elementoCambiarPosicion.style.marginTop = '10px;'
-        }else{
-            elementoCambiarPosicion.style.marginTop = '110px;'
+    }
+
+    if (screen.width > 1400) {
+        switchMarginTop("10%", "10%");
+    } else if (screen.width < 1400 && screen.width > 700) {
+        if(elementoIdCambiarPosicion == 'botonPlanes'){
+            switchMarginTop("15%", "110px");
+        }else if (elementoIdCambiarPosicion == 'botonPlanesSegunda') {
+            alert("Entro")
+            switchMarginTop("30px", "20px");
+        }
+        
+    } else if (screen.width < 700) { //Verifca Tamaño del objeto para pantallas mobile
+        switchMarginTop("2%", "10%");
+    }
+
+    function switchMarginTop(marginTopNuevo, marginTopOriginal) {
+        if (elementoCambiarPosicion.style.marginTop != marginTopNuevo) {
+            elementoCambiarPosicion.style.marginTop = marginTopNuevo
+        } else {
+            elementoCambiarPosicion.style.marginTop = marginTopOriginal
         }
     }
-    
+
 }
 
-function botonMasFunciones(objetoMostrarOcultarId, objetoIdAumentarTamaño,elementoIdCambiarPosicion,marginTopNuevo,marginTopOriginal){
+    
+
+
+function botonMasFunciones(objetoMostrarOcultarId, objetoIdAumentarTamaño, elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal) {
     OcultarMostrar(objetoMostrarOcultarId)
     aumentarReducirTamaño(objetoIdAumentarTamaño)
-    cambiarPosicionElemento(elementoIdCambiarPosicion, marginTopNuevo, marginTopOriginal)
+    cambiarPosicionElemento(elementoIdCambiarPosicion)
 }

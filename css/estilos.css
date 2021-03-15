@@ -2079,7 +2079,7 @@ footer {
     }
 
     .PlanesTodos .RectanguloPlanes.emprendedor {
-        height: 1050px ;
+        height: 870px ;
     }
 
     .RectanguloPlanes h1 {
@@ -2230,7 +2230,7 @@ footer {
         margin-top: 10px;
     }
     .botonMaxImportancia.planesWebEmprendedor{
-        margin-top: 220px;
+        margin-top: 10%;
     }
     .botonMaxImportancia.planesWebCoorporativo{
         margin-top: 135px;
