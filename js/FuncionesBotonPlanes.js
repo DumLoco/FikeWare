@@ -57,7 +57,6 @@ function cambiarPosicionElemento(elementoIdCambiarPosicion) {
         if(elementoIdCambiarPosicion == 'botonPlanes'){
             switchMarginTop("15%", "110px");
         }else if (elementoIdCambiarPosicion == 'botonPlanesSegunda') {
-            alert("Entro")
             switchMarginTop("30px", "20px");
         }
         
